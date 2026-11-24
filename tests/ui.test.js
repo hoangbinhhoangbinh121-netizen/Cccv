@@ -167,3 +167,14 @@ test('nút bán/khoá nhanh sau khi câu được cá hoạt động và chống
   const b = svc('economyService').balance(id); i = await run(X.click(id, `fa|${id}|sell|${fid}`)); assert.match(String(X.last(i).p.content), /Đã bán/); const b2 = svc('economyService').balance(id); assert.ok(b2 > b);
   i = await run(X.click(id, `fa|${id}|sell|${fid}`)); assert.equal(svc('economyService').balance(id), b2);
 });
+
+group('Tự cài đặt khi khởi động (host không có terminal)');
+test('tự đăng ký lệnh một lần, lần sau bỏ qua; tải emoji khi chưa có', async () => {
+  const auto = require('../src/autosetup'); const Dj = require('discord.js'); const S = req('database/repositories/settings'); let puts = 0;
+  const orig = Dj.REST.prototype.put; Dj.REST.prototype.put = function (...a) { puts++; return orig.apply(this, a); };
+  try {
+    S.unset('commands_hash'); await auto.commands(); assert.equal(puts, 1); assert.ok(S.getRaw('commands_hash')); await auto.commands(); assert.equal(puts, 1);
+    const emoji = req('ui/emoji'); let synced = 0; const o = emoji.syncToDiscord; emoji.syncToDiscord = async () => { synced++; return { created: 1, reused: 0, failed: [], total: 1 }; };
+    S.unset('emoji_ids'); S.unset('emoji_manifest_hash'); await auto.emojis({}); assert.equal(synced, 1); assert.ok(S.getRaw('emoji_manifest_hash')); emoji.syncToDiscord = o;
+  } finally { Dj.REST.prototype.put = orig; }
+});

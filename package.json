@@ -5,7 +5,9 @@
   "main": "src/index.js",
   "license": "UNLICENSED",
   "private": true,
-  "engines": { "node": ">=20" },
+  "engines": {
+    "node": ">=22.5"
+  },
   "scripts": {
     "start": "node src/index.js",
     "deploy": "node scripts/deploy-commands.js",
@@ -16,7 +18,9 @@
     "test": "node scripts/test.js"
   },
   "dependencies": {
-    "better-sqlite3": "^11.7.0",
     "discord.js": "^14.17.3"
+  },
+  "optionalDependencies": {
+    "better-sqlite3": "^11.7.0"
   }
 }

@@ -71,3 +71,45 @@ docker compose up -d && docker compose logs -f
 | Người chơi kẹt "đang có phiên câu" | `/fishing-admin unstick nguoi:@user`. |
 | Nghi ngờ lệch số liệu | `/fishing-admin integrity-check`. |
 | Mất dữ liệu / hỏng DB | `/restore_db` (bản mới nhất) hoặc chép tay tệp giải nén từ `backups/` vào `data/fishing.sqlite` khi bot đang tắt. |
+
+## Termux (Android) + GitHub
+
+**Máy tính / nơi đang giữ code – đưa lên GitHub (một lần):**
+```bash
+cd THIEN-TONG-FISHING
+git init -b main
+git add .
+git commit -m "Thiên Tông Fishing Bot v1.0"
+git remote add origin https://github.com/<TÊN_BẠN>/<TÊN_REPO>.git
+git push -u origin main        # mật khẩu = Personal Access Token (Settings → Developer settings → Tokens, quyền repo)
+```
+Các lần sau: `git add . && git commit -m "mô tả" && git push`. `.env`, `node_modules`, DB và backup đã nằm trong `.gitignore` nên không bị đẩy lên – **không bao giờ commit `.env`** (chứa token bot).
+
+**Termux – kéo code về và chạy:**
+```bash
+pkg update && pkg upgrade -y
+pkg install -y nodejs git          # cần Node >= 22.5 (kiểm tra: node -v)
+git clone https://github.com/<TÊN_BẠN>/<TÊN_REPO>.git
+cd <TÊN_REPO>
+npm install                        # better-sqlite3 là tuỳ chọn; không build được trên Termux thì bot tự dùng node:sqlite
+cp .env.example .env && nano .env  # điền DISCORD_TOKEN, CLIENT_ID, GUILD_ID, OWNER_IDS
+npm run deploy && npm run emojis
+termux-wake-lock                   # giữ máy không ngủ
+npm start
+```
+Chạy nền: `pkg install tmux` rồi `tmux new -s bot`, chạy `npm start`, thoát bằng Ctrl+B rồi D (vào lại: `tmux attach -t bot`).
+
+**Cập nhật bot trên Termux sau khi đã push bản mới:**
+```bash
+cd <TÊN_REPO> && git pull && npm install && npm run deploy && npm start
+```
+Nếu repo là **private**: dùng `git clone https://<TÊN_BẠN>:<TOKEN>@github.com/<TÊN_BẠN>/<TÊN_REPO>.git`, hoặc cài `pkg install gh` rồi `gh auth login`.
+Dữ liệu người chơi (`data/`, `backups/`) chỉ nằm trên Termux và không bị `git pull` ghi đè; hãy dùng `/backupdb` định kỳ.
+
+## Host không có terminal (VibeHost, Pterodactyl…)
+
+1. Tab **GitHub**: liên kết repo và kéo (pull) code về `/home/container`. Hoặc tải ZIP lên tab **Files** rồi giải nén.
+2. Tab **Startup**: đặt **Main file / JS file** = `src/index.js` (mặc định host chạy `index.js` ở thư mục gốc nên báo `Cannot find module '/home/container/index.js'`).
+3. Bấm **Start** một lần: bot tự tạo file `.env` mẫu rồi dừng. Tab **Files**: mở file `.env` (xem `.env.example`) với `DISCORD_TOKEN`, `CLIENT_ID`, `GUILD_ID`, `OWNER_IDS`. Nếu tab Startup có sẵn ô biến môi trường thì điền thẳng ở đó cũng được (biến host được ưu tiên hơn `.env`).
+4. Bấm **Start**. Host tự `npm install`. Lần chạy đầu bot **tự đăng ký lệnh slash và tự tải emoji** (`AUTO_SETUP=1`, tắt bằng `AUTO_SETUP=0`); xem tiến trình ở Console. Không cần chạy `npm run deploy` / `npm run emojis`.
+5. Dữ liệu nằm trong `data/` và `backups/` của host – tải về định kỳ qua tab Files/SFTP hoặc dùng `/backupdb`.
