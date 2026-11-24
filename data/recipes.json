@@ -1,0 +1,298 @@
+{
+ "rods": [
+  {
+   "id": "craft_rod_t2_a",
+   "rod": "rod_t2_a",
+   "name": "Cần Đồng Cổ",
+   "xu": 600,
+   "mats": {
+    "phoi_dong": 6,
+    "go_soi": 5
+   },
+   "level": 1
+  },
+  {
+   "id": "craft_rod_t2_b",
+   "rod": "rod_t2_b",
+   "name": "Cần Hoa Đào",
+   "xu": 600,
+   "mats": {
+    "phoi_dong": 6,
+    "go_soi": 5
+   },
+   "level": 1
+  },
+  {
+   "id": "craft_rod_t3_a",
+   "rod": "rod_t3_a",
+   "name": "Cần Thép Lam",
+   "xu": 1860,
+   "mats": {
+    "thoi_bac": 7,
+    "phoi_dong": 5
+   },
+   "level": 5
+  },
+  {
+   "id": "craft_rod_t3_b",
+   "rod": "rod_t3_b",
+   "name": "Cần Ngân Vân",
+   "xu": 1860,
+   "mats": {
+    "thoi_bac": 7,
+    "phoi_dong": 5
+   },
+   "level": 5
+  },
+  {
+   "id": "craft_rod_t4_a",
+   "rod": "rod_t4_a",
+   "name": "Cần Hoàng Kim",
+   "xu": 5766,
+   "mats": {
+    "thoi_vang": 8,
+    "thoi_bac": 5
+   },
+   "level": 12
+  },
+  {
+   "id": "craft_rod_t4_b",
+   "rod": "rod_t4_b",
+   "name": "Cần Hỏa Kim",
+   "xu": 5766,
+   "mats": {
+    "thoi_vang": 8,
+    "thoi_bac": 5
+   },
+   "level": 12
+  },
+  {
+   "id": "craft_rod_t5_a",
+   "rod": "rod_t5_a",
+   "name": "Cần Băng Tinh",
+   "xu": 17875,
+   "mats": {
+    "manh_kim_cuong": 9,
+    "thoi_vang": 5
+   },
+   "level": 20
+  },
+  {
+   "id": "craft_rod_t5_b",
+   "rod": "rod_t5_b",
+   "name": "Cần Lục Bảo",
+   "xu": 17875,
+   "mats": {
+    "manh_kim_cuong": 9,
+    "thoi_vang": 5
+   },
+   "level": 20
+  },
+  {
+   "id": "craft_rod_t6_a",
+   "rod": "rod_t6_a",
+   "name": "Cần Tử Diễm",
+   "xu": 55411,
+   "mats": {
+    "loi_su_thi": 10,
+    "manh_kim_cuong": 5
+   },
+   "level": 30
+  },
+  {
+   "id": "craft_rod_t6_b",
+   "rod": "rod_t6_b",
+   "name": "Cần Hắc Tử",
+   "xu": 55411,
+   "mats": {
+    "loi_su_thi": 10,
+    "manh_kim_cuong": 5
+   },
+   "level": 30
+  },
+  {
+   "id": "craft_rod_t7_a",
+   "rod": "rod_t7_a",
+   "name": "Cần Thiên Sứ",
+   "xu": 171775,
+   "mats": {
+    "vay_rong": 11,
+    "loi_su_thi": 5
+   },
+   "level": 40
+  },
+  {
+   "id": "craft_rod_t7_b",
+   "rod": "rod_t7_b",
+   "name": "Cần Tinh Tú",
+   "xu": 171775,
+   "mats": {
+    "vay_rong": 11,
+    "loi_su_thi": 5
+   },
+   "level": 40
+  },
+  {
+   "id": "craft_rod_t8_a",
+   "rod": "rod_t8_a",
+   "name": "Cần Xích Diễm",
+   "xu": 532502,
+   "mats": {
+    "tinh_hoa_than_thoai": 12,
+    "vay_rong": 5
+   },
+   "level": 52
+  },
+  {
+   "id": "craft_rod_t8_b",
+   "rod": "rod_t8_b",
+   "name": "Cần Xích Long",
+   "xu": 532502,
+   "mats": {
+    "tinh_hoa_than_thoai": 12,
+    "vay_rong": 5
+   },
+   "level": 52
+  },
+  {
+   "id": "craft_rod_t9_a",
+   "rod": "rod_t9_a",
+   "name": "Cần Hắc Long",
+   "xu": 1650757,
+   "mats": {
+    "manh_co_dai": 13,
+    "tinh_hoa_than_thoai": 5
+   },
+   "level": 65
+  },
+  {
+   "id": "craft_rod_t9_b",
+   "rod": "rod_t9_b",
+   "name": "Cần Kim Quang Cổ",
+   "xu": 1650757,
+   "mats": {
+    "manh_co_dai": 13,
+    "tinh_hoa_than_thoai": 5
+   },
+   "level": 65
+  },
+  {
+   "id": "craft_rod_t10_a",
+   "rod": "rod_t10_a",
+   "name": "Cần Thủy Thần",
+   "xu": 5117346,
+   "mats": {
+    "tinh_hoa_than_cap": 14,
+    "manh_co_dai": 5
+   },
+   "level": 80
+  },
+  {
+   "id": "craft_rod_t10_b",
+   "rod": "rod_t10_b",
+   "name": "Cần Thiên Tông",
+   "xu": 5117346,
+   "mats": {
+    "tinh_hoa_than_cap": 14,
+    "manh_co_dai": 5
+   },
+   "level": 80
+  }
+ ],
+ "items": [
+  {
+   "id": "craft_da_trung",
+   "name": "Ghép Đá Cường Hóa Trung",
+   "out": {
+    "da_cuong_hoa_trung": 1
+   },
+   "in": {
+    "da_cuong_hoa_so": 3
+   },
+   "xu": 400
+  },
+  {
+   "id": "craft_da_cao",
+   "name": "Ghép Đá Cường Hóa Cao",
+   "out": {
+    "da_cuong_hoa_cao": 1
+   },
+   "in": {
+    "da_cuong_hoa_trung": 3
+   },
+   "xu": 3000
+  },
+  {
+   "id": "craft_da_so",
+   "name": "Luyện Đá Cường Hóa Sơ",
+   "out": {
+    "da_cuong_hoa_so": 2
+   },
+   "in": {
+    "vay_ca": 8,
+    "go_soi": 4
+   },
+   "xu": 100
+  },
+  {
+   "id": "craft_bua",
+   "name": "Chế Bùa Bảo Hộ",
+   "out": {
+    "bua_bao_ho": 1
+   },
+   "in": {
+    "tinh_the_bang": 3,
+    "thoi_bac": 1
+   },
+   "xu": 800
+  },
+  {
+   "id": "craft_moi_bac",
+   "name": "Chế Mồi Giả Bạc",
+   "out": {
+    "moi_moi_gia_bac": 10
+   },
+   "in": {
+    "thoi_bac": 1,
+    "vay_ca": 5
+   },
+   "xu": 200
+  },
+  {
+   "id": "craft_moi_long_lan",
+   "name": "Chế Mồi Long Lân",
+   "out": {
+    "moi_moi_long_lan": 10
+   },
+   "in": {
+    "vay_rong": 2,
+    "ngoc_trai": 2
+   },
+   "xu": 4000
+  },
+  {
+   "id": "craft_trung_quy",
+   "name": "Chế Trứng Thú Quý",
+   "out": {
+    "trung_thu_quy": 1
+   },
+   "in": {
+    "ngoc_trai": 3,
+    "re_co_thu": 3
+   },
+   "xu": 6000
+  },
+  {
+   "id": "craft_ruong_vang",
+   "name": "Chế Rương Vàng",
+   "out": {
+    "ruong_vang": 1
+   },
+   "in": {
+    "thoi_vang": 3,
+    "thoi_bac": 3
+   },
+   "xu": 3000
+  }
+ ]
+}

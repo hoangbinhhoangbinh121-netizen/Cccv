@@ -1,0 +1,3336 @@
+[
+ {
+  "id": "ca_ro_phi",
+  "name": "Cá Rô Phi",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.16,
+  "maxWeight": 1.24,
+  "pricePerKg": 63,
+  "exp": 10,
+  "difficulty": 19,
+  "spawnWeight": 1.25,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 37,
+   "sat": 80,
+   "pattern": "plain",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_diec",
+  "name": "Cá Diếc",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.13,
+  "maxWeight": 1.96,
+  "pricePerKg": 38,
+  "exp": 10,
+  "difficulty": 21,
+  "spawnWeight": 0.85,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   "bao"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 71,
+   "sat": 70,
+   "pattern": "belly",
+   "features": [],
+   "dark": true
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_bong",
+  "name": "Cá Bống",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.12,
+  "maxWeight": 0.64,
+  "pricePerKg": 106,
+  "exp": 10,
+  "difficulty": 22,
+  "spawnWeight": 0.86,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 12,
+   "sat": 71,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_chach",
+  "name": "Cá Chạch",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.31,
+  "maxWeight": 2.02,
+  "pricePerKg": 30,
+  "exp": 10,
+  "difficulty": 25,
+  "spawnWeight": 1.01,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "nang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 41,
+   "sat": 56,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_chep",
+  "name": "Cá Chép",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.13,
+  "maxWeight": 1.58,
+  "pricePerKg": 45,
+  "exp": 10,
+  "difficulty": 21,
+  "spawnWeight": 0.82,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "suong_mu"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 71,
+   "sat": 67,
+   "pattern": "belly",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_tre",
+  "name": "Cá Trê",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.23,
+  "maxWeight": 3.42,
+  "pricePerKg": 21,
+  "exp": 10,
+  "difficulty": 18,
+  "spawnWeight": 1.12,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 120,
+   "sat": 67,
+   "pattern": "dorsal",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_ro_dong",
+  "name": "Cá Rô Đồng",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.13,
+  "maxWeight": 1.4,
+  "pricePerKg": 47,
+  "exp": 10,
+  "difficulty": 19,
+  "spawnWeight": 1.04,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 19,
+   "sat": 59,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_me",
+  "name": "Cá Mè",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.16,
+  "maxWeight": 2,
+  "pricePerKg": 41,
+  "exp": 10,
+  "difficulty": 22,
+  "spawnWeight": 1.25,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 119,
+   "sat": 80,
+   "pattern": "dorsal",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_tram_co",
+  "name": "Cá Trắm Cỏ",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.14,
+  "maxWeight": 1.7,
+  "pricePerKg": 47,
+  "exp": 10,
+  "difficulty": 19,
+  "spawnWeight": 0.92,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 117,
+   "sat": 77,
+   "pattern": "scales",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_loc_bong",
+  "name": "Cá Lóc Bông",
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.28,
+  "maxWeight": 3.14,
+  "pricePerKg": 54,
+  "exp": 16,
+  "difficulty": 30,
+  "spawnWeight": 1.11,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 95,
+   "sat": 66,
+   "pattern": "dorsal",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_chep_vang",
+  "name": "Cá Chép Vàng",
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "location": "ao_lang",
+  "minWeight": 0.19,
+  "maxWeight": 2.16,
+  "pricePerKg": 72,
+  "exp": 16,
+  "difficulty": 28,
+  "spawnWeight": 1.03,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   "nang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 119,
+   "sat": 58,
+   "pattern": "spots",
+   "features": [],
+   "dark": true
+  },
+  "desc": "Hiếm • sống ở Ao Làng."
+ },
+ {
+  "id": "ca_sac_ran",
+  "name": "Cá Sặc Rằn",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.12,
+  "maxWeight": 1.66,
+  "pricePerKg": 77,
+  "exp": 14,
+  "difficulty": 22,
+  "spawnWeight": 0.92,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   "bao"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 145,
+   "sat": 77,
+   "pattern": "spots",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_that_lat",
+  "name": "Cá Thát Lát",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.42,
+  "maxWeight": 3.36,
+  "pricePerKg": 30,
+  "exp": 14,
+  "difficulty": 25,
+  "spawnWeight": 0.74,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 66,
+   "sat": 59,
+   "pattern": "plain",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_huong",
+  "name": "Cá Hường",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.15,
+  "maxWeight": 1.87,
+  "pricePerKg": 54,
+  "exp": 14,
+  "difficulty": 18,
+  "spawnWeight": 0.7,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 142,
+   "sat": 55,
+   "pattern": "belly",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_me_hoa",
+  "name": "Cá Mè Hoa",
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.17,
+  "maxWeight": 1.65,
+  "pricePerKg": 77,
+  "exp": 14,
+  "difficulty": 22,
+  "spawnWeight": 0.95,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 93,
+   "sat": 80,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Phổ Thông • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_troi",
+  "name": "Cá Trôi",
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.24,
+  "maxWeight": 2.68,
+  "pricePerKg": 97,
+  "exp": 22,
+  "difficulty": 32,
+  "spawnWeight": 1.07,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "nang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 172,
+   "sat": 62,
+   "pattern": "plain",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_lang",
+  "name": "Cá Lăng",
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.48,
+  "maxWeight": 4.34,
+  "pricePerKg": 59,
+  "exp": 22,
+  "difficulty": 36,
+  "spawnWeight": 1.08,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 147,
+   "sat": 63,
+   "pattern": "plain",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_chien",
+  "name": "Cá Chiên",
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.5,
+  "maxWeight": 4.88,
+  "pricePerKg": 55,
+  "exp": 22,
+  "difficulty": 28,
+  "spawnWeight": 1.12,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 137,
+   "sat": 67,
+   "pattern": "stripes",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_anh_vu",
+  "name": "Cá Anh Vũ",
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.29,
+  "maxWeight": 1.86,
+  "pricePerKg": 133,
+  "exp": 22,
+  "difficulty": 30,
+  "spawnWeight": 1.08,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 102,
+   "sat": 63,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_ho",
+  "name": "Cá Hô",
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.15,
+  "maxWeight": 1.64,
+  "pricePerKg": 170,
+  "exp": 22,
+  "difficulty": 36,
+  "spawnWeight": 1.14,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 103,
+   "sat": 69,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_chinh_ho",
+  "name": "Cá Chình Hồ",
+  "rarity": 3,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.51,
+  "maxWeight": 2.94,
+  "pricePerKg": 207,
+  "exp": 35,
+  "difficulty": 46,
+  "spawnWeight": 0.78,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 99,
+   "sat": 63,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_ngoc_ho",
+  "name": "Cá Ngọc Hồ",
+  "rarity": 3,
+  "category": "nuoc_ngot",
+  "location": "ho_thanh_binh",
+  "minWeight": 0.24,
+  "maxWeight": 3.56,
+  "pricePerKg": 180,
+  "exp": 35,
+  "difficulty": 39,
+  "spawnWeight": 0.74,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   "suong_mu"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 160,
+   "sat": 59,
+   "pattern": "stripes",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Hồ Thanh Bình."
+ },
+ {
+  "id": "ca_hoi_tuyet",
+  "name": "Cá Hồi Tuyết",
+  "rarity": 2,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 0.31,
+  "maxWeight": 3.21,
+  "pricePerKg": 124,
+  "exp": 27,
+  "difficulty": 34,
+  "spawnWeight": 0.88,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 140,
+   "sat": 73,
+   "pattern": "plain",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_tuyet_bac",
+  "name": "Cá Tuyết Bắc",
+  "rarity": 2,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 0.32,
+  "maxWeight": 3.61,
+  "pricePerKg": 115,
+  "exp": 27,
+  "difficulty": 29,
+  "spawnWeight": 0.92,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 192,
+   "sat": 77,
+   "pattern": "scales",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_bon_bang",
+  "name": "Cá Bơn Băng",
+  "rarity": 2,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 1.36,
+  "maxWeight": 22.6,
+  "pricePerKg": 20,
+  "exp": 27,
+  "difficulty": 30,
+  "spawnWeight": 0.96,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "nang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "T",
+   "hue": 220,
+   "sat": 81,
+   "pattern": "belly",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_chay_bang",
+  "name": "Cá Chày Băng",
+  "rarity": 2,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 0.33,
+  "maxWeight": 4.76,
+  "pricePerKg": 73,
+  "exp": 27,
+  "difficulty": 28,
+  "spawnWeight": 0.73,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 217,
+   "sat": 58,
+   "pattern": "belly",
+   "features": [],
+   "dark": true
+  },
+  "desc": "Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_hoi_van",
+  "name": "Cá Hồi Vân",
+  "rarity": 3,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 0.44,
+  "maxWeight": 4.77,
+  "pricePerKg": 207,
+  "exp": 44,
+  "difficulty": 40,
+  "spawnWeight": 0.87,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 194,
+   "sat": 72,
+   "pattern": "stripes",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_duoi_bang",
+  "name": "Cá Đuối Băng",
+  "rarity": 3,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 1.5,
+  "maxWeight": 34.82,
+  "pricePerKg": 25,
+  "exp": 44,
+  "difficulty": 41,
+  "spawnWeight": 0.7,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "T",
+   "hue": 170,
+   "sat": 55,
+   "pattern": "plain",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_hoi_bac",
+  "name": "Cá Hồi Bạc",
+  "rarity": 3,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 0.41,
+  "maxWeight": 4.49,
+  "pricePerKg": 224,
+  "exp": 44,
+  "difficulty": 45,
+  "spawnWeight": 1.19,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "suong_mu"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 198,
+   "sat": 74,
+   "pattern": "belly",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_nham_suong",
+  "name": "Cá Nhám Sương",
+  "rarity": 3,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 20.59,
+  "maxWeight": 233.06,
+  "pricePerKg": 4,
+  "exp": 44,
+  "difficulty": 43,
+  "spawnWeight": 0.78,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "S",
+   "hue": 109,
+   "sat": 63,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_cau_gai_bang",
+  "name": "Cá Cầu Gai Băng",
+  "rarity": 3,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 0.31,
+  "maxWeight": 1.7,
+  "pricePerKg": 452,
+  "exp": 44,
+  "difficulty": 39,
+  "spawnWeight": 1.01,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 156,
+   "sat": 56,
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_kiem_bang",
+  "name": "Cá Kiếm Băng",
+  "rarity": 4,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 0.5,
+  "maxWeight": 5.99,
+  "pricePerKg": 407,
+  "exp": 71,
+  "difficulty": 48,
+  "spawnWeight": 0.85,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   "nang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 209,
+   "sat": 70,
+   "pattern": "plain",
+   "features": [
+    "glow"
+   ],
+   "dark": true
+  },
+  "desc": "Sử Thi • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_rong_bang",
+  "name": "Cá Rồng Băng",
+  "rarity": 4,
+  "category": "vung_bang",
+  "location": "song_bang",
+  "minWeight": 11.11,
+  "maxWeight": 103.58,
+  "pricePerKg": 23,
+  "exp": 71,
+  "difficulty": 55,
+  "spawnWeight": 1.13,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 115,
+   "sat": 68,
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Sông Băng."
+ },
+ {
+  "id": "ca_reu_xanh",
+  "name": "Cá Rêu Xanh",
+  "rarity": 3,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 0.53,
+  "maxWeight": 4.9,
+  "pricePerKg": 248,
+  "exp": 53,
+  "difficulty": 38,
+  "spawnWeight": 0.85,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 62,
+   "sat": 70,
+   "features": [],
+   "dark": true
+  },
+  "desc": "Quý Hiếm • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_la_cay",
+  "name": "Cá Lá Cây",
+  "rarity": 3,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 1.84,
+  "maxWeight": 34.21,
+  "pricePerKg": 35,
+  "exp": 53,
+  "difficulty": 45,
+  "spawnWeight": 1.1,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "T",
+   "hue": 120,
+   "sat": 65,
+   "pattern": "dorsal",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_suoi_da",
+  "name": "Cá Suối Đá",
+  "rarity": 3,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 0.32,
+  "maxWeight": 4.76,
+  "pricePerKg": 257,
+  "exp": 53,
+  "difficulty": 41,
+  "spawnWeight": 0.82,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 121,
+   "sat": 67,
+   "pattern": "belly",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_nam_do",
+  "name": "Cá Nấm Đỏ",
+  "rarity": 3,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 0.41,
+  "maxWeight": 4.19,
+  "pricePerKg": 272,
+  "exp": 53,
+  "difficulty": 43,
+  "spawnWeight": 1.08,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 119,
+   "sat": 63,
+   "pattern": "belly",
+   "features": [],
+   "dark": false
+  },
+  "desc": "Quý Hiếm • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_ho_rung",
+  "name": "Cá Hổ Rừng",
+  "rarity": 4,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 0.57,
+  "maxWeight": 3.85,
+  "pricePerKg": 859,
+  "exp": 86,
+  "difficulty": 52,
+  "spawnWeight": 0.98,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 16,
+   "sat": 83,
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_luc_bao",
+  "name": "Cá Lục Bảo",
+  "rarity": 4,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 0.6,
+  "maxWeight": 8.03,
+  "pricePerKg": 382,
+  "exp": 86,
+  "difficulty": 52,
+  "spawnWeight": 0.83,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "nang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 99,
+   "sat": 68,
+   "pattern": "plain",
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_da_quang",
+  "name": "Cá Dạ Quang",
+  "rarity": 4,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 2.19,
+  "maxWeight": 34.86,
+  "pricePerKg": 77,
+  "exp": 86,
+  "difficulty": 51,
+  "spawnWeight": 1,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "A",
+   "hue": 138,
+   "sat": 55,
+   "pattern": "stripes",
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_re_co_thu",
+  "name": "Cá Rễ Cổ Thụ",
+  "rarity": 4,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 0.9,
+  "maxWeight": 8.92,
+  "pricePerKg": 342,
+  "exp": 86,
+  "difficulty": 48,
+  "spawnWeight": 1.15,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   "mua"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 33,
+   "sat": 70,
+   "features": [
+    "glow"
+   ],
+   "dark": true
+  },
+  "desc": "Sử Thi • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_trang_rung",
+  "name": "Cá Trăng Rừng",
+  "rarity": 4,
+  "category": "nuoc_ngot",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 0.46,
+  "maxWeight": 3.9,
+  "pricePerKg": 848,
+  "exp": 86,
+  "difficulty": 52,
+  "spawnWeight": 1.25,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 57,
+   "sat": 80,
+   "pattern": "plain",
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "tinh_linh_rung",
+  "name": "Tinh Linh Rừng",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 17.3,
+  "maxWeight": 261.7,
+  "pricePerKg": 27,
+  "exp": 144,
+  "difficulty": 66,
+  "spawnWeight": 1.05,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 129,
+   "sat": 60,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_chua_rung",
+  "name": "Cá Chúa Rừng",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 32.71,
+  "maxWeight": 500.83,
+  "pricePerKg": 16,
+  "exp": 144,
+  "difficulty": 63,
+  "spawnWeight": 1.17,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "S",
+   "hue": 135,
+   "sat": 72,
+   "pattern": "scales",
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Rừng Nguyên Sinh."
+ },
+ {
+  "id": "ca_ngu_dai_duong",
+  "name": "Cá Ngừ Đại Dương",
+  "rarity": 4,
+  "category": "nuoc_man",
+  "location": "bien_sau",
+  "minWeight": 0.67,
+  "maxWeight": 6.81,
+  "pricePerKg": 469,
+  "exp": 101,
+  "difficulty": 49,
+  "spawnWeight": 0.71,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 145,
+   "sat": 56,
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_thu_vang",
+  "name": "Cá Thu Vàng",
+  "rarity": 4,
+  "category": "nuoc_man",
+  "location": "bien_sau",
+  "minWeight": 0.54,
+  "maxWeight": 8.63,
+  "pricePerKg": 383,
+  "exp": 101,
+  "difficulty": 52,
+  "spawnWeight": 0.71,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "mua"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 210,
+   "sat": 56,
+   "pattern": "plain",
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_mu_do",
+  "name": "Cá Mú Đỏ",
+  "rarity": 4,
+  "category": "nuoc_man",
+  "location": "bien_sau",
+  "minWeight": 0.41,
+  "maxWeight": 5.29,
+  "pricePerKg": 701,
+  "exp": 101,
+  "difficulty": 52,
+  "spawnWeight": 1.13,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 200,
+   "sat": 68,
+   "pattern": "dorsal",
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_chim_bien",
+  "name": "Cá Chim Biển",
+  "rarity": 4,
+  "category": "nuoc_man",
+  "location": "bien_sau",
+  "minWeight": 0.58,
+  "maxWeight": 6.91,
+  "pricePerKg": 550,
+  "exp": 101,
+  "difficulty": 49,
+  "spawnWeight": 0.86,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 239,
+   "sat": 71,
+   "pattern": "stripes",
+   "features": [
+    "glow"
+   ],
+   "dark": false
+  },
+  "desc": "Sử Thi • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_kiem_xanh",
+  "name": "Cá Kiếm Xanh",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "bien_sau",
+  "minWeight": 0.74,
+  "maxWeight": 9.59,
+  "pricePerKg": 1131,
+  "exp": 168,
+  "difficulty": 62,
+  "spawnWeight": 1.28,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   "bao"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 187,
+   "sat": 83,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_map_xanh",
+  "name": "Cá Mập Xanh",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "bien_sau",
+  "minWeight": 42.3,
+  "maxWeight": 626.04,
+  "pricePerKg": 15,
+  "exp": 168,
+  "difficulty": 59,
+  "spawnWeight": 0.8,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   "mua"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "S",
+   "hue": 201,
+   "sat": 65,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_duoi_quy",
+  "name": "Cá Đuối Quỷ",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "bien_sau",
+  "minWeight": 3.72,
+  "maxWeight": 27.64,
+  "pricePerKg": 343,
+  "exp": 168,
+  "difficulty": 62,
+  "spawnWeight": 0.89,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "nang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "T",
+   "hue": 130,
+   "sat": 74,
+   "pattern": "plain",
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_buom",
+  "name": "Cá Buồm",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "bien_sau",
+  "minWeight": 0.63,
+  "maxWeight": 4.79,
+  "pricePerKg": 1888,
+  "exp": 168,
+  "difficulty": 60,
+  "spawnWeight": 1.14,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 128,
+   "sat": 69,
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_ngu_vay_xanh",
+  "name": "Cá Ngừ Vây Xanh",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "bien_sau",
+  "minWeight": 250.98,
+  "maxWeight": 4230,
+  "pricePerKg": 2,
+  "exp": 168,
+  "difficulty": 62,
+  "spawnWeight": 1.19,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "suong_mu"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "W",
+   "hue": 226,
+   "sat": 74,
+   "pattern": "plain",
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_map_trang_khong_lo",
+  "name": "Cá Mập Trắng Khổng Lồ",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "bien_sau",
+  "minWeight": 59.33,
+  "maxWeight": 737.1,
+  "pricePerKg": 29,
+  "exp": 288,
+  "difficulty": 74,
+  "spawnWeight": 1.03,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   "suong_mu"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "S",
+   "hue": 239,
+   "sat": 58,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": true
+  },
+  "desc": "Thần Thoại • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_voi_lung_gu",
+  "name": "Cá Voi Lưng Gù",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "bien_sau",
+  "minWeight": 352.8,
+  "maxWeight": 4410,
+  "pricePerKg": 6,
+  "exp": 288,
+  "difficulty": 69,
+  "spawnWeight": 1.22,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "W",
+   "hue": 132,
+   "sat": 77,
+   "pattern": "plain",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Thoại • sống ở Biển Sâu."
+ },
+ {
+  "id": "ca_long_den",
+  "name": "Cá Lồng Đèn",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "vuc_tham",
+  "minWeight": 3.05,
+  "maxWeight": 29.14,
+  "pricePerKg": 351,
+  "exp": 193,
+  "difficulty": 66,
+  "spawnWeight": 0.78,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "A",
+   "hue": 211,
+   "sat": 63,
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "ca_ran_bien_sau",
+  "name": "Cá Rắn Biển Sâu",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "vuc_tham",
+  "minWeight": 1.76,
+  "maxWeight": 6.92,
+  "pricePerKg": 1429,
+  "exp": 193,
+  "difficulty": 60,
+  "spawnWeight": 0.87,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 237,
+   "sat": 72,
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "ca_tui_nuot",
+  "name": "Cá Túi Nuốt",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "vuc_tham",
+  "minWeight": 0.49,
+  "maxWeight": 4.67,
+  "pricePerKg": 2404,
+  "exp": 193,
+  "difficulty": 60,
+  "spawnWeight": 1.17,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 183,
+   "sat": 72,
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "ca_mat_ong",
+  "name": "Cá Mắt Ống",
+  "rarity": 5,
+  "category": "huyen_thoai",
+  "location": "vuc_tham",
+  "minWeight": 0.83,
+  "maxWeight": 8.93,
+  "pricePerKg": 1071,
+  "exp": 193,
+  "difficulty": 62,
+  "spawnWeight": 1.01,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "mua"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 258,
+   "sat": 56,
+   "pattern": "stripes",
+   "features": [
+    "glow",
+    "sparkle"
+   ],
+   "dark": false
+  },
+  "desc": "Huyền Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "ca_cau_quy",
+  "name": "Cá Câu Quỷ",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "vuc_tham",
+  "minWeight": 2.74,
+  "maxWeight": 49.88,
+  "pricePerKg": 647,
+  "exp": 330,
+  "difficulty": 71,
+  "spawnWeight": 0.97,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "A",
+   "hue": 290,
+   "sat": 82,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": true
+  },
+  "desc": "Thần Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "ca_rong_vuc",
+  "name": "Cá Rồng Vực",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "vuc_tham",
+  "minWeight": 24.78,
+  "maxWeight": 474.6,
+  "pricePerKg": 57,
+  "exp": 330,
+  "difficulty": 73,
+  "spawnWeight": 1.08,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 304,
+   "sat": 63,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "muc_ma",
+  "name": "Mực Ma",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "vuc_tham",
+  "minWeight": 9.66,
+  "maxWeight": 65.52,
+  "pricePerKg": 364,
+  "exp": 330,
+  "difficulty": 76,
+  "spawnWeight": 1.05,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "K",
+   "hue": 232,
+   "sat": 60,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "ca_duoi_bong",
+  "name": "Cá Đuối Bóng",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "vuc_tham",
+  "minWeight": 4.49,
+  "maxWeight": 30.87,
+  "pricePerKg": 963,
+  "exp": 330,
+  "difficulty": 71,
+  "spawnWeight": 0.97,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "T",
+   "hue": 191,
+   "sat": 82,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": true
+  },
+  "desc": "Thần Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "nhen_bien_sau",
+  "name": "Nhện Biển Sâu",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "vuc_tham",
+  "minWeight": 8.48,
+  "maxWeight": 105.84,
+  "pricePerKg": 229,
+  "exp": 330,
+  "difficulty": 75,
+  "spawnWeight": 0.71,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "K",
+   "hue": 230,
+   "sat": 56,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Thoại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "quy_vuc_tham",
+  "name": "Quỷ Vực Thẳm",
+  "rarity": 7,
+  "category": "co_dai",
+  "location": "vuc_tham",
+  "minWeight": 3.58,
+  "maxWeight": 55.68,
+  "pricePerKg": 1140,
+  "exp": 550,
+  "difficulty": 78,
+  "spawnWeight": 0.73,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   "suong_mu"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "A",
+   "hue": 257,
+   "sat": 58,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": true
+  },
+  "desc": "Cổ Đại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "kraken_con",
+  "name": "Kraken Con",
+  "rarity": 7,
+  "category": "sinh_vat_than_thoai",
+  "location": "vuc_tham",
+  "minWeight": 8.35,
+  "maxWeight": 157.3,
+  "pricePerKg": 440,
+  "exp": 550,
+  "difficulty": 85,
+  "spawnWeight": 0.8,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "K",
+   "hue": 296,
+   "sat": 65,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Vực Thẳm."
+ },
+ {
+  "id": "ca_long_lan",
+  "name": "Cá Long Lân",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 0.94,
+  "maxWeight": 6.51,
+  "pricePerKg": 4083,
+  "exp": 372,
+  "difficulty": 76,
+  "spawnWeight": 1.02,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 332,
+   "sat": 57,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Thoại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_vay_ngoc",
+  "name": "Cá Vảy Ngọc",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 0.76,
+  "maxWeight": 7.35,
+  "pricePerKg": 4569,
+  "exp": 372,
+  "difficulty": 68,
+  "spawnWeight": 1.21,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 284,
+   "sat": 76,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": true
+  },
+  "desc": "Thần Thoại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_chau_long",
+  "name": "Cá Châu Long",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 0.67,
+  "maxWeight": 7.5,
+  "pricePerKg": 4322,
+  "exp": 372,
+  "difficulty": 69,
+  "spawnWeight": 1.16,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   "cuc_quang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 13,
+   "sat": 71,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Thoại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_thanh_long",
+  "name": "Cá Thanh Long",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 1.6,
+  "maxWeight": 13.61,
+  "pricePerKg": 2069,
+  "exp": 372,
+  "difficulty": 76,
+  "spawnWeight": 1.05,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [
+   "bao"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 334,
+   "sat": 60,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Thoại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_hai_long",
+  "name": "Cá Hải Long",
+  "rarity": 7,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 20.42,
+  "maxWeight": 533.6,
+  "pricePerKg": 148,
+  "exp": 620,
+  "difficulty": 86,
+  "spawnWeight": 0.78,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "mua"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 31,
+   "sat": 63,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_rong_lua",
+  "name": "Cá Rồng Lửa",
+  "rarity": 7,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 25.06,
+  "maxWeight": 264.48,
+  "pricePerKg": 345,
+  "exp": 620,
+  "difficulty": 79,
+  "spawnWeight": 0.98,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 271,
+   "sat": 83,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_rong_sam",
+  "name": "Cá Rồng Sấm",
+  "rarity": 7,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 21.58,
+  "maxWeight": 412.96,
+  "pricePerKg": 220,
+  "exp": 620,
+  "difficulty": 86,
+  "spawnWeight": 1.23,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 31,
+   "sat": 78,
+   "pattern": "stripes",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_ngao_long",
+  "name": "Cá Ngao Long",
+  "rarity": 7,
+  "category": "co_dai",
+  "location": "long_hai",
+  "minWeight": 65.54,
+  "maxWeight": 696,
+  "pricePerKg": 125,
+  "exp": 620,
+  "difficulty": 80,
+  "spawnWeight": 1.23,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "S",
+   "hue": 19,
+   "sat": 78,
+   "pattern": "dorsal",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Long Hải."
+ },
+ {
+  "id": "ca_long_tu",
+  "name": "Cá Long Tu",
+  "rarity": 7,
+  "category": "co_dai",
+  "location": "long_hai",
+  "minWeight": 1.76,
+  "maxWeight": 11.88,
+  "pricePerKg": 7123,
+  "exp": 620,
+  "difficulty": 85,
+  "spawnWeight": 1.25,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 279,
+   "sat": 80,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Long Hải."
+ },
+ {
+  "id": "long_vuong_bien",
+  "name": "Long Vương Biển",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 20.83,
+  "maxWeight": 325.12,
+  "pricePerKg": 619,
+  "exp": 1085,
+  "difficulty": 94,
+  "spawnWeight": 1.12,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   null
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 298,
+   "sat": 57,
+   "pattern": "plain",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Cấp • sống ở Long Hải."
+ },
+ {
+  "id": "hai_chu_long_cung",
+  "name": "Hải Chủ Long Cung",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "long_hai",
+  "minWeight": 453.39,
+  "maxWeight": 5778.5,
+  "pricePerKg": 33,
+  "exp": 1085,
+  "difficulty": 88,
+  "spawnWeight": 1.09,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [
+   "bao"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "W",
+   "hue": 359,
+   "sat": 54,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo"
+   ],
+   "dark": true
+  },
+  "desc": "Thần Cấp • sống ở Long Hải."
+ },
+ {
+  "id": "ca_phoi_co",
+  "name": "Cá Phổi Cổ",
+  "rarity": 7,
+  "category": "co_dai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 0.97,
+  "maxWeight": 10.09,
+  "pricePerKg": 8034,
+  "exp": 690,
+  "difficulty": 85,
+  "spawnWeight": 0.74,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 43,
+   "sat": 59,
+   "pattern": "dorsal",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "ca_vay_tay_co",
+  "name": "Cá Vây Tay Cổ",
+  "rarity": 7,
+  "category": "co_dai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 0.79,
+  "maxWeight": 8,
+  "pricePerKg": 12494,
+  "exp": 690,
+  "difficulty": 79,
+  "spawnWeight": 0.95,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 313,
+   "sat": 80,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "ca_giap_co",
+  "name": "Cá Giáp Cổ",
+  "rarity": 7,
+  "category": "co_dai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 3.76,
+  "maxWeight": 42.46,
+  "pricePerKg": 2290,
+  "exp": 690,
+  "difficulty": 84,
+  "spawnWeight": 0.91,
+  "times": [
+   "night",
+   "dusk"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "T",
+   "hue": 328,
+   "sat": 76,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": true
+  },
+  "desc": "Cổ Đại • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "ca_hoa_thach",
+  "name": "Cá Hóa Thạch",
+  "rarity": 7,
+  "category": "co_dai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 0.79,
+  "maxWeight": 8.93,
+  "pricePerKg": 9142,
+  "exp": 690,
+  "difficulty": 79,
+  "spawnWeight": 1.04,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "R",
+   "hue": 54,
+   "sat": 59,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes"
+   ],
+   "dark": false
+  },
+  "desc": "Cổ Đại • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "ca_rang_kiem_co",
+  "name": "Cá Răng Kiếm Cổ",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 69.85,
+  "maxWeight": 533.4,
+  "pricePerKg": 434,
+  "exp": 1208,
+  "difficulty": 93,
+  "spawnWeight": 1.2,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "S",
+   "hue": 306,
+   "sat": 65,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Cấp • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "muc_co_dai",
+  "name": "Mực Cổ Đại",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 10.26,
+  "maxWeight": 138.68,
+  "pricePerKg": 1441,
+  "exp": 1208,
+  "difficulty": 95,
+  "spawnWeight": 0.71,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [
+   "mua"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "K",
+   "hue": 17,
+   "sat": 46,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Cấp • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "co_long",
+  "name": "Cổ Long",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 26.42,
+  "maxWeight": 589.28,
+  "pricePerKg": 361,
+  "exp": 1208,
+  "difficulty": 89,
+  "spawnWeight": 0.74,
+  "times": [
+   "dawn",
+   "day"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 63,
+   "sat": 49,
+   "pattern": "dorsal",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Cấp • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "ca_than_hai",
+  "name": "Cá Thần Hải",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 453.39,
+  "maxWeight": 6159.5,
+  "pricePerKg": 39,
+  "exp": 1208,
+  "difficulty": 89,
+  "spawnWeight": 0.89,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "W",
+   "hue": 69,
+   "sat": 64,
+   "pattern": "stripes",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Cấp • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "ca_rong_than",
+  "name": "Cá Rồng Thần",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 24.13,
+  "maxWeight": 254,
+  "pricePerKg": 808,
+  "exp": 1208,
+  "difficulty": 93,
+  "spawnWeight": 1.05,
+  "times": [
+   "dawn",
+   "dusk"
+  ],
+  "weatherPref": [
+   "cuc_quang"
+  ],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 314,
+   "sat": 50,
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo"
+   ],
+   "dark": false
+  },
+  "desc": "Thần Cấp • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "leviathan_vinh_hang",
+  "name": "Leviathan Vĩnh Hằng",
+  "rarity": 9,
+  "category": "sinh_vat_doc_nhat",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 418.14,
+  "maxWeight": 6624,
+  "pricePerKg": 81,
+  "exp": 2070,
+  "difficulty": 100,
+  "spawnWeight": 0.71,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "W",
+   "hue": 22,
+   "sat": 46,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo",
+    "prism"
+   ],
+   "dark": false
+  },
+  "desc": "Độc Nhất • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "hai_vuong_thien_tong",
+  "name": "Hải Vương Thiên Tông",
+  "rarity": 9,
+  "category": "sinh_vat_doc_nhat",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 32.57,
+  "maxWeight": 640.32,
+  "pricePerKg": 920,
+  "exp": 2070,
+  "difficulty": 100,
+  "spawnWeight": 1.08,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 54,
+   "sat": 53,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "runes",
+    "halo",
+    "prism"
+   ],
+   "dark": false
+  },
+  "desc": "Độc Nhất • sống ở Hải Vực Cổ Đại."
+ },
+ {
+  "id": "tre_ong_ngan_nam",
+  "name": "Trê Ông Ngàn Năm",
+  "rarity": 3,
+  "category": "sinh_vat_than_thoai",
+  "location": "ao_lang",
+  "minWeight": 3.36,
+  "maxWeight": 5.04,
+  "pricePerKg": 224,
+  "exp": 104,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "L",
+   "hue": 275,
+   "sat": 80,
+   "pattern": "stripes",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Lão Trê Ao Làng."
+ },
+ {
+  "id": "chep_than_ho_xanh",
+  "name": "Chép Thần Hồ Xanh",
+  "rarity": 4,
+  "category": "sinh_vat_than_thoai",
+  "location": "ho_thanh_binh",
+  "minWeight": 3,
+  "maxWeight": 4.5,
+  "pricePerKg": 932,
+  "exp": 235,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "F",
+   "hue": 345,
+   "sat": 80,
+   "pattern": "plain",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Hồ Thần Chép Vàng."
+ },
+ {
+  "id": "kinh_ngu_bang_ha",
+  "name": "Kình Ngư Băng Hà",
+  "rarity": 5,
+  "category": "sinh_vat_than_thoai",
+  "location": "song_bang",
+  "minWeight": 1950,
+  "maxWeight": 2925,
+  "pricePerKg": 6,
+  "exp": 504,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "W",
+   "hue": 20,
+   "sat": 80,
+   "pattern": "scales",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Cự Kình Sông Băng."
+ },
+ {
+  "id": "rong_re_nghin_nam",
+  "name": "Rồng Rễ Nghìn Năm",
+  "rarity": 6,
+  "category": "sinh_vat_than_thoai",
+  "location": "rung_nguyen_sinh",
+  "minWeight": 192,
+  "maxWeight": 288,
+  "pricePerKg": 192,
+  "exp": 1056,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 300,
+   "sat": 80,
+   "pattern": "scales",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Thủy Quái Cổ Thụ."
+ },
+ {
+  "id": "map_vuong_bien_ca",
+  "name": "Mập Vương Biển Cả",
+  "rarity": 7,
+  "category": "sinh_vat_than_thoai",
+  "location": "bien_sau",
+  "minWeight": 360,
+  "maxWeight": 540,
+  "pricePerKg": 302,
+  "exp": 2080,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "S",
+   "hue": 35,
+   "sat": 80,
+   "pattern": "stripes",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Đại Mập Đại Dương."
+ },
+ {
+  "id": "muc_quy_hac_am",
+  "name": "Mực Quỷ Hắc Ám",
+  "rarity": 8,
+  "category": "sinh_vat_than_thoai",
+  "location": "vuc_tham",
+  "minWeight": 72,
+  "maxWeight": 108,
+  "pricePerKg": 4693,
+  "exp": 4200,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "K",
+   "hue": 95,
+   "sat": 80,
+   "pattern": "stripes",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Ma Mực Vực Thẳm."
+ },
+ {
+  "id": "chau_long_chi_ton",
+  "name": "Châu Long Chí Tôn",
+  "rarity": 9,
+  "category": "sinh_vat_doc_nhat",
+  "location": "long_hai",
+  "minWeight": 240,
+  "maxWeight": 360,
+  "pricePerKg": 4318,
+  "exp": 8160,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "D",
+   "hue": 195,
+   "sat": 80,
+   "pattern": "stripes",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Thanh Long Hải Chủ."
+ },
+ {
+  "id": "tam_leviathan",
+  "name": "Tâm Leviathan",
+  "rarity": 9,
+  "category": "sinh_vat_doc_nhat",
+  "location": "hai_vuc_co_dai",
+  "minWeight": 3000,
+  "maxWeight": 4500,
+  "pricePerKg": 330,
+  "exp": 9120,
+  "difficulty": 100,
+  "spawnWeight": 0,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": true,
+  "event": null,
+  "sprite": {
+   "body": "W",
+   "hue": 225,
+   "sat": 80,
+   "pattern": "spots",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn",
+    "halo",
+    "crown"
+   ],
+   "dark": false
+  },
+  "desc": "Chiến lợi phẩm khi hạ Thái Cổ Leviathan."
+ },
+ {
+  "id": "ca_chep_hoa_rong",
+  "name": "Cá Chép Hóa Rồng",
+  "rarity": 6,
+  "category": "su_kien",
+  "location": "event",
+  "minWeight": 2,
+  "maxWeight": 40,
+  "pricePerKg": 517,
+  "exp": 300,
+  "difficulty": 84,
+  "spawnWeight": 1,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": "le_hoi_tet",
+  "sprite": {
+   "body": "D",
+   "hue": 8,
+   "sat": 85,
+   "pattern": "scales",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Cá giới hạn theo sự kiện."
+ },
+ {
+  "id": "ca_den_long_do",
+  "name": "Cá Đèn Lồng Đỏ",
+  "rarity": 5,
+  "category": "su_kien",
+  "location": "event",
+  "minWeight": 2,
+  "maxWeight": 40,
+  "pricePerKg": 221,
+  "exp": 175,
+  "difficulty": 80,
+  "spawnWeight": 1,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": "le_hoi_den_long",
+  "sprite": {
+   "body": "A",
+   "hue": 20,
+   "sat": 85,
+   "pattern": "plain",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Cá giới hạn theo sự kiện."
+ },
+ {
+  "id": "ca_trang_ram",
+  "name": "Cá Trăng Rằm",
+  "rarity": 5,
+  "category": "su_kien",
+  "location": "event",
+  "minWeight": 2,
+  "maxWeight": 40,
+  "pricePerKg": 207,
+  "exp": 175,
+  "difficulty": 80,
+  "spawnWeight": 1,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": "su_kien_gioi_han",
+  "sprite": {
+   "body": "R",
+   "hue": 52,
+   "sat": 85,
+   "pattern": "scales",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Cá giới hạn theo sự kiện."
+ },
+ {
+  "id": "ca_phao_hoa",
+  "name": "Cá Pháo Hoa",
+  "rarity": 6,
+  "category": "su_kien",
+  "location": "event",
+  "minWeight": 2,
+  "maxWeight": 40,
+  "pricePerKg": 476,
+  "exp": 300,
+  "difficulty": 84,
+  "spawnWeight": 1,
+  "times": [
+   "dawn",
+   "day",
+   "dusk",
+   "night"
+  ],
+  "weatherPref": [],
+  "bossOnly": false,
+  "event": "le_hoi_phao_hoa",
+  "sprite": {
+   "body": "F",
+   "hue": 330,
+   "sat": 85,
+   "pattern": "belly",
+   "features": [
+    "glow",
+    "sparkle",
+    "horn"
+   ],
+   "dark": false
+  },
+  "desc": "Cá giới hạn theo sự kiện."
+ }
+]

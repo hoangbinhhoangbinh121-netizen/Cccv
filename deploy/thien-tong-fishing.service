@@ -1,0 +1,21 @@
+[Unit]
+Description=Thien Tong Fishing Bot
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=fishing
+WorkingDirectory=/opt/thien-tong-fishing
+ExecStart=/usr/bin/node src/index.js
+Restart=always
+RestartSec=5
+TimeoutStopSec=30
+# Bảo mật cơ bản
+NoNewPrivileges=true
+ProtectSystem=full
+ReadWritePaths=/opt/thien-tong-fishing/data /opt/thien-tong-fishing/backups
+PrivateTmp=true
+
+[Install]
+WantedBy=multi-user.target

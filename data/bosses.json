@@ -1,0 +1,154 @@
+[
+ {
+  "id": "boss_lao_tre_ao_lang",
+  "name": "Lão Trê Ao Làng",
+  "location": "ao_lang",
+  "level": 5,
+  "rarity": 3,
+  "hp": 6000,
+  "durationMin": 40,
+  "regenPctPerMin": 0,
+  "armorPct": 0,
+  "stanceSeconds": 25,
+  "trophyFish": "tre_ong_ngan_nam",
+  "rewards": {
+   "xu": 5400,
+   "exp": 300,
+   "chest": "ruong_go"
+  },
+  "desc": "Boss khu vực Ao Làng. Mọi người cùng hợp sức để hạ gục!"
+ },
+ {
+  "id": "boss_ho_than_chep_vang",
+  "name": "Hồ Thần Chép Vàng",
+  "location": "ho_thanh_binh",
+  "level": 12,
+  "rarity": 4,
+  "hp": 14000,
+  "durationMin": 40,
+  "regenPctPerMin": 1,
+  "armorPct": 0,
+  "stanceSeconds": 24,
+  "trophyFish": "chep_than_ho_xanh",
+  "rewards": {
+   "xu": 12600,
+   "exp": 700,
+   "chest": "ruong_bac"
+  },
+  "desc": "Boss khu vực Hồ Thanh Bình. Mọi người cùng hợp sức để hạ gục!"
+ },
+ {
+  "id": "boss_cu_kinh_song_bang",
+  "name": "Cự Kình Sông Băng",
+  "location": "song_bang",
+  "level": 20,
+  "rarity": 5,
+  "hp": 30000,
+  "durationMin": 40,
+  "regenPctPerMin": 0,
+  "armorPct": 15,
+  "stanceSeconds": 22,
+  "trophyFish": "kinh_ngu_bang_ha",
+  "rewards": {
+   "xu": 27000,
+   "exp": 1500,
+   "chest": "ruong_vang"
+  },
+  "desc": "Boss khu vực Sông Băng. Mọi người cùng hợp sức để hạ gục!"
+ },
+ {
+  "id": "boss_thuy_quai_co_thu",
+  "name": "Thủy Quái Cổ Thụ",
+  "location": "rung_nguyen_sinh",
+  "level": 30,
+  "rarity": 6,
+  "hp": 60000,
+  "durationMin": 40,
+  "regenPctPerMin": 2,
+  "armorPct": 0,
+  "stanceSeconds": 22,
+  "trophyFish": "rong_re_nghin_nam",
+  "rewards": {
+   "xu": 54000,
+   "exp": 3000,
+   "chest": "ruong_vang"
+  },
+  "desc": "Boss khu vực Rừng Nguyên Sinh. Mọi người cùng hợp sức để hạ gục!"
+ },
+ {
+  "id": "boss_dai_map_dai_duong",
+  "name": "Đại Mập Đại Dương",
+  "location": "bien_sau",
+  "level": 40,
+  "rarity": 7,
+  "hp": 110000,
+  "durationMin": 40,
+  "regenPctPerMin": 0,
+  "armorPct": 20,
+  "stanceSeconds": 20,
+  "trophyFish": "map_vuong_bien_ca",
+  "rewards": {
+   "xu": 99000,
+   "exp": 5500,
+   "chest": "ruong_kim_cuong"
+  },
+  "desc": "Boss khu vực Biển Sâu. Mọi người cùng hợp sức để hạ gục!"
+ },
+ {
+  "id": "boss_ma_muc_vuc_tham",
+  "name": "Ma Mực Vực Thẳm",
+  "location": "vuc_tham",
+  "level": 50,
+  "rarity": 8,
+  "hp": 190000,
+  "durationMin": 40,
+  "regenPctPerMin": 1,
+  "armorPct": 10,
+  "stanceSeconds": 15,
+  "trophyFish": "muc_quy_hac_am",
+  "rewards": {
+   "xu": 171000,
+   "exp": 9500,
+   "chest": "ruong_kim_cuong"
+  },
+  "desc": "Boss khu vực Vực Thẳm. Mọi người cùng hợp sức để hạ gục!"
+ },
+ {
+  "id": "boss_thanh_long_hai_chu",
+  "name": "Thanh Long Hải Chủ",
+  "location": "long_hai",
+  "level": 60,
+  "rarity": 9,
+  "hp": 320000,
+  "durationMin": 40,
+  "regenPctPerMin": 2,
+  "armorPct": 15,
+  "stanceSeconds": 18,
+  "trophyFish": "chau_long_chi_ton",
+  "rewards": {
+   "xu": 288000,
+   "exp": 16000,
+   "chest": "ruong_than_thoai"
+  },
+  "desc": "Boss khu vực Long Hải. Mọi người cùng hợp sức để hạ gục!"
+ },
+ {
+  "id": "boss_thai_co_leviathan",
+  "name": "Thái Cổ Leviathan",
+  "location": "hai_vuc_co_dai",
+  "level": 75,
+  "rarity": 9,
+  "hp": 520000,
+  "durationMin": 40,
+  "regenPctPerMin": 2,
+  "armorPct": 20,
+  "stanceSeconds": 14,
+  "trophyFish": "tam_leviathan",
+  "rewards": {
+   "xu": 468000,
+   "exp": 26000,
+   "chest": "ruong_than_thoai"
+  },
+  "desc": "Boss khu vực Hải Vực Cổ Đại. Mọi người cùng hợp sức để hạ gục!"
+ }
+]

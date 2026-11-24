@@ -1,0 +1,384 @@
+{
+ "achievements": [
+  {
+   "id": "moi_1",
+   "group": "Người Mới Câu Cá",
+   "name": "Mẻ Cá Đầu Tiên",
+   "desc": "",
+   "metric": "total_catch",
+   "target": 1,
+   "reward": {
+    "xu": 100
+   }
+  },
+  {
+   "id": "moi_2",
+   "group": "Người Mới Câu Cá",
+   "name": "Cần Thủ Tập Sự",
+   "desc": "",
+   "metric": "total_catch",
+   "target": 25,
+   "reward": {
+    "xu": 500,
+    "title": "tan_thu"
+   }
+  },
+  {
+   "id": "moi_3",
+   "group": "Người Mới Câu Cá",
+   "name": "Quen Tay Quen Cần",
+   "desc": "",
+   "metric": "total_catch",
+   "target": 100,
+   "reward": {
+    "xu": 1500,
+    "items": {
+     "ruong_go": 1
+    }
+   }
+  },
+  {
+   "id": "cao_1",
+   "group": "Cao Thủ Câu Cá",
+   "name": "Cao Thủ Làng Chài",
+   "desc": "",
+   "metric": "total_catch",
+   "target": 500,
+   "reward": {
+    "xu": 5000,
+    "title": "cao_thu"
+   }
+  },
+  {
+   "id": "cao_2",
+   "group": "Cao Thủ Câu Cá",
+   "name": "Ngư Phủ Lão Luyện",
+   "desc": "",
+   "metric": "total_catch",
+   "target": 2500,
+   "reward": {
+    "xu": 25000,
+    "items": {
+     "ruong_vang": 1
+    }
+   }
+  },
+  {
+   "id": "cao_3",
+   "group": "Cao Thủ Câu Cá",
+   "name": "Vua Câu Cá",
+   "desc": "",
+   "metric": "total_catch",
+   "target": 10000,
+   "reward": {
+    "xu": 150000,
+    "title": "vua_cau_ca",
+    "items": {
+     "ruong_kim_cuong": 2
+    }
+   }
+  },
+  {
+   "id": "cao_4",
+   "group": "Cao Thủ Câu Cá",
+   "name": "Cân Nặng Ngàn Cân",
+   "desc": "",
+   "metric": "total_weight",
+   "target": 1000,
+   "reward": {
+    "xu": 3000
+   }
+  },
+  {
+   "id": "cao_5",
+   "group": "Cao Thủ Câu Cá",
+   "name": "Vạn Cân Thu Hoạch",
+   "desc": "",
+   "metric": "total_weight",
+   "target": 20000,
+   "reward": {
+    "xu": 40000,
+    "items": {
+     "ruong_vang": 1
+    }
+   }
+  },
+  {
+   "id": "hiem_1",
+   "group": "Bậc Thầy Săn Cá Hiếm",
+   "name": "Con Mắt Tinh Đời",
+   "desc": "",
+   "metric": "rare_catch",
+   "target": 5,
+   "reward": {
+    "xu": 2000
+   }
+  },
+  {
+   "id": "hiem_2",
+   "group": "Bậc Thầy Săn Cá Hiếm",
+   "name": "Thợ Săn Cá Hiếm",
+   "desc": "",
+   "metric": "rare_catch",
+   "target": 50,
+   "reward": {
+    "xu": 15000,
+    "title": "tho_san_hiem"
+   }
+  },
+  {
+   "id": "hiem_3",
+   "group": "Bậc Thầy Săn Cá Hiếm",
+   "name": "Bậc Thầy Săn Cá Hiếm",
+   "desc": "",
+   "metric": "rare_catch",
+   "target": 300,
+   "reward": {
+    "xu": 120000,
+    "title": "bac_thay_hiem",
+    "items": {
+     "ruong_kim_cuong": 1
+    }
+   }
+  },
+  {
+   "id": "hiem_4",
+   "group": "Bậc Thầy Săn Cá Hiếm",
+   "name": "Chạm Tay Huyền Thoại",
+   "desc": "",
+   "metric": "legend_catch",
+   "target": 1,
+   "reward": {
+    "xu": 10000
+   }
+  },
+  {
+   "id": "hiem_5",
+   "group": "Bậc Thầy Săn Cá Hiếm",
+   "name": "Kẻ Săn Huyền Thoại",
+   "desc": "",
+   "metric": "legend_catch",
+   "target": 25,
+   "reward": {
+    "xu": 100000,
+    "title": "ke_san_huyen_thoai"
+   }
+  },
+  {
+   "id": "suutap_1",
+   "group": "Nhà Sưu Tập",
+   "name": "Sưu Tầm Nhỏ",
+   "desc": "",
+   "metric": "codex_count",
+   "target": 10,
+   "reward": {
+    "xu": 2000
+   }
+  },
+  {
+   "id": "suutap_2",
+   "group": "Nhà Sưu Tập",
+   "name": "Nhà Sưu Tập",
+   "desc": "",
+   "metric": "codex_count",
+   "target": 40,
+   "reward": {
+    "xu": 30000,
+    "title": "nha_suu_tap"
+   }
+  },
+  {
+   "id": "suutap_3",
+   "group": "Nhà Sưu Tập",
+   "name": "Bách Khoa Toàn Thư Cá",
+   "desc": "",
+   "metric": "codex_count",
+   "target": 85,
+   "reward": {
+    "xu": 300000,
+    "title": "bach_khoa_ca",
+    "items": {
+     "ruong_than_thoai": 1
+    }
+   }
+  },
+  {
+   "id": "bien_1",
+   "group": "Chinh Phục Biển Sâu",
+   "name": "Ra Khơi",
+   "desc": "",
+   "metric": "deep_catch",
+   "target": 25,
+   "reward": {
+    "xu": 10000
+   }
+  },
+  {
+   "id": "bien_2",
+   "group": "Chinh Phục Biển Sâu",
+   "name": "Chinh Phục Biển Sâu",
+   "desc": "",
+   "metric": "deep_catch",
+   "target": 300,
+   "reward": {
+    "xu": 100000,
+    "title": "chinh_phuc_bien_sau"
+   }
+  },
+  {
+   "id": "bien_3",
+   "group": "Chinh Phục Biển Sâu",
+   "name": "Kẻ Diệt Boss",
+   "desc": "",
+   "metric": "boss_kills",
+   "target": 5,
+   "reward": {
+    "xu": 20000,
+    "title": "diet_boss"
+   }
+  },
+  {
+   "id": "bien_4",
+   "group": "Chinh Phục Biển Sâu",
+   "name": "Sát Thủ Boss",
+   "desc": "",
+   "metric": "boss_kills",
+   "target": 50,
+   "reward": {
+    "xu": 200000,
+    "items": {
+     "ruong_than_thoai": 1
+    }
+   }
+  },
+  {
+   "id": "codai_1",
+   "group": "Thợ Săn Cá Cổ Đại",
+   "name": "Dấu Chân Cổ Đại",
+   "desc": "",
+   "metric": "ancient_catch",
+   "target": 1,
+   "reward": {
+    "xu": 50000
+   }
+  },
+  {
+   "id": "codai_2",
+   "group": "Thợ Săn Cá Cổ Đại",
+   "name": "Thợ Săn Cá Cổ Đại",
+   "desc": "",
+   "metric": "ancient_catch",
+   "target": 20,
+   "reward": {
+    "xu": 400000,
+    "title": "tho_san_co_dai"
+   }
+  },
+  {
+   "id": "codai_3",
+   "group": "Thợ Săn Cá Cổ Đại",
+   "name": "Kẻ Độc Nhất",
+   "desc": "",
+   "metric": "unique_catch",
+   "target": 1,
+   "reward": {
+    "xu": 1000000,
+    "title": "ke_doc_nhat",
+    "items": {
+     "ruong_than_thoai": 3
+    }
+   }
+  },
+  {
+   "id": "trangbi_1",
+   "group": "Tay Chơi Trang Bị",
+   "name": "Cần Câu Bạc",
+   "desc": "",
+   "metric": "rod_tier",
+   "target": 3,
+   "reward": {
+    "xu": 3000
+   }
+  },
+  {
+   "id": "trangbi_2",
+   "group": "Tay Chơi Trang Bị",
+   "name": "Cần Câu Huyền Thoại",
+   "desc": "",
+   "metric": "rod_tier",
+   "target": 7,
+   "reward": {
+    "xu": 100000,
+    "title": "than_khi"
+   }
+  },
+  {
+   "id": "trangbi_3",
+   "group": "Tay Chơi Trang Bị",
+   "name": "Cần Thần Cấp",
+   "desc": "",
+   "metric": "rod_tier",
+   "target": 10,
+   "reward": {
+    "xu": 1000000,
+    "title": "chi_ton_can"
+   }
+  },
+  {
+   "id": "xu_1",
+   "group": "Đại Gia Xu",
+   "name": "Có Của Ăn Của Để",
+   "desc": "",
+   "metric": "coins_earned",
+   "target": 100000,
+   "reward": {
+    "xu": 5000
+   }
+  },
+  {
+   "id": "xu_2",
+   "group": "Đại Gia Xu",
+   "name": "Triệu Phú Câu Cá",
+   "desc": "",
+   "metric": "coins_earned",
+   "target": 1000000,
+   "reward": {
+    "xu": 50000,
+    "title": "trieu_phu"
+   }
+  },
+  {
+   "id": "xu_3",
+   "group": "Đại Gia Xu",
+   "name": "Tỷ Phú Hải Vực",
+   "desc": "",
+   "metric": "coins_earned",
+   "target": 100000000,
+   "reward": {
+    "xu": 2000000,
+    "title": "ty_phu"
+   }
+  }
+ ],
+ "titles": {
+  "tan_thu": "Cần Thủ Tập Sự",
+  "cao_thu": "Cao Thủ Làng Chài",
+  "vua_cau_ca": "Vua Câu Cá",
+  "tho_san_hiem": "Thợ Săn Cá Hiếm",
+  "bac_thay_hiem": "Bậc Thầy Săn Cá Hiếm",
+  "ke_san_huyen_thoai": "Kẻ Săn Huyền Thoại",
+  "nha_suu_tap": "Nhà Sưu Tập",
+  "bach_khoa_ca": "Bách Khoa Cá",
+  "chinh_phuc_bien_sau": "Chinh Phục Biển Sâu",
+  "diet_boss": "Diệt Boss",
+  "tho_san_co_dai": "Thợ Săn Cá Cổ Đại",
+  "ke_doc_nhat": "Kẻ Độc Nhất",
+  "than_khi": "Thần Khí Trong Tay",
+  "chi_ton_can": "Chí Tôn Cần Câu",
+  "trieu_phu": "Triệu Phú Câu Cá",
+  "ty_phu": "Tỷ Phú Hải Vực",
+  "quan_quan_dai_hoi": "Quán Quân Đại Hội",
+  "a_quan_dai_hoi": "Á Quân Đại Hội",
+  "ngu_ong": "Ngư Ông"
+ }
+}

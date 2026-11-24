@@ -1,0 +1,551 @@
+[
+ {
+  "id": "thu_meo_muop_cau_ca",
+  "name": "Mèo Mướp Câu Cá",
+  "group": "Mèo Câu Cá",
+  "groupKey": "meo",
+  "rarity": 2,
+  "stats": {
+   "luck": 4,
+   "bite": 6
+  },
+  "color": "#E39B52",
+  "skill": {
+   "id": "tham_tinh",
+   "name": "Thám Thính",
+   "desc": "Cá cắn câu nhanh hơn 25%.",
+   "effect": {
+    "biteSpeed": 25
+   },
+   "chance": 0.21
+  },
+  "innate": {
+   "id": "bam_dinh",
+   "name": "Bám Đình"
+  },
+  "evolve": {
+   "level": 24,
+   "bond": 60,
+   "mats": {
+    "thoi_bac": 9
+   },
+   "xu": 4000
+  },
+  "maxLevel": 50,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "meo",
+   "color": "#E39B52",
+   "stage": 1,
+   "rarity": 2
+  },
+  "desc": "Mèo Câu Cá Hiếm hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_meo_hoang_kim",
+  "name": "Mèo Hoàng Kim",
+  "group": "Mèo Câu Cá",
+  "groupKey": "meo",
+  "rarity": 5,
+  "stats": {
+   "luck": 10,
+   "rare": 6,
+   "bite": 10
+  },
+  "color": "#FFD23F",
+  "skill": {
+   "id": "huong_van",
+   "name": "Hương Vận",
+   "desc": "Tăng 15% tỷ lệ cá hiếm.",
+   "effect": {
+    "rareBonus": 15
+   },
+   "chance": 0.3
+  },
+  "innate": {
+   "id": "tinh_nhanh",
+   "name": "Tinh Nhanh"
+  },
+  "evolve": {
+   "level": 30,
+   "bond": 90,
+   "mats": {
+    "loi_su_thi": 15
+   },
+   "xu": 25000
+  },
+  "maxLevel": 65,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "meo",
+   "color": "#FFD23F",
+   "stage": 1,
+   "rarity": 5
+  },
+  "desc": "Mèo Câu Cá Huyền Thoại hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_cao_bien_nho",
+  "name": "Cáo Biển Nhỏ",
+  "group": "Cáo Biển",
+  "groupKey": "cao",
+  "rarity": 3,
+  "stats": {
+   "rare": 4,
+   "weight": 5
+  },
+  "color": "#E8793A",
+  "skill": {
+   "id": "ho_tro_keo",
+   "name": "Hỗ Trợ Kéo",
+   "desc": "Giảm 20% căng dây.",
+   "effect": {
+    "tensionDown": 20
+   },
+   "chance": 0.24
+  },
+  "innate": {
+   "id": "kien_nhan",
+   "name": "Kiên Nhẫn"
+  },
+  "evolve": {
+   "level": 26,
+   "bond": 70,
+   "mats": {
+    "thoi_vang": 11
+   },
+   "xu": 9000
+  },
+  "maxLevel": 55,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "cao",
+   "color": "#E8793A",
+   "stage": 1,
+   "rarity": 3
+  },
+  "desc": "Cáo Biển Quý Hiếm hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_cao_bien_cuu_vi",
+  "name": "Cáo Biển Cửu Vĩ",
+  "group": "Cáo Biển",
+  "groupKey": "cao",
+  "rarity": 6,
+  "stats": {
+   "rare": 12,
+   "weight": 10,
+   "luck": 6
+  },
+  "color": "#FF6E4A",
+  "skill": {
+   "id": "bat_may",
+   "name": "Bắt May",
+   "desc": "Tăng 20% cân nặng cá.",
+   "effect": {
+    "weightBonus": 20
+   },
+   "chance": 0.32999999999999996
+  },
+  "innate": {
+   "id": "bam_dinh",
+   "name": "Bám Đình"
+  },
+  "evolve": {
+   "level": 32,
+   "bond": 100,
+   "mats": {
+    "vay_rong": 17
+   },
+   "xu": 36000
+  },
+  "maxLevel": 70,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "cao",
+   "color": "#FF6E4A",
+   "stage": 1,
+   "rarity": 6
+  },
+  "desc": "Cáo Biển Thần Thoại hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_rai_ca_song",
+  "name": "Rái Cá Sông",
+  "group": "Rái Cá",
+  "groupKey": "rai",
+  "rarity": 1,
+  "stats": {
+   "exp": 5,
+   "sell": 3
+  },
+  "color": "#9B6B43",
+  "skill": {
+   "id": "dan_loc",
+   "name": "Dẫn Lộc",
+   "desc": "Tăng 20% giá bán cá.",
+   "effect": {
+    "sellBonus": 20
+   },
+   "chance": 0.18
+  },
+  "innate": {
+   "id": "tinh_nhanh",
+   "name": "Tinh Nhanh"
+  },
+  "evolve": {
+   "level": 22,
+   "bond": 50,
+   "mats": {
+    "phoi_dong": 7
+   },
+   "xu": 1000
+  },
+  "maxLevel": 45,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "rai",
+   "color": "#9B6B43",
+   "stage": 1,
+   "rarity": 1
+  },
+  "desc": "Rái Cá Phổ Thông hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_rai_ca_ngoc",
+  "name": "Rái Cá Ngọc",
+  "group": "Rái Cá",
+  "groupKey": "rai",
+  "rarity": 4,
+  "stats": {
+   "exp": 12,
+   "sell": 8,
+   "luck": 4
+  },
+  "color": "#58C7B8",
+  "skill": {
+   "id": "tham_tinh",
+   "name": "Thám Thính",
+   "desc": "Cá cắn câu nhanh hơn 25%.",
+   "effect": {
+    "biteSpeed": 25
+   },
+   "chance": 0.27
+  },
+  "innate": {
+   "id": "kien_nhan",
+   "name": "Kiên Nhẫn"
+  },
+  "evolve": {
+   "level": 28,
+   "bond": 80,
+   "mats": {
+    "manh_kim_cuong": 13
+   },
+   "xu": 16000
+  },
+  "maxLevel": 60,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "rai",
+   "color": "#58C7B8",
+   "stage": 1,
+   "rarity": 4
+  },
+  "desc": "Rái Cá Sử Thi hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_rua_da",
+  "name": "Rùa Đá",
+  "group": "Rùa Cổ Đại",
+  "groupKey": "rua",
+  "rarity": 4,
+  "stats": {
+   "resist": 8,
+   "durability": 10
+  },
+  "color": "#7C8B6A",
+  "skill": {
+   "id": "huong_van",
+   "name": "Hương Vận",
+   "desc": "Tăng 15% tỷ lệ cá hiếm.",
+   "effect": {
+    "rareBonus": 15
+   },
+   "chance": 0.27
+  },
+  "innate": {
+   "id": "bam_dinh",
+   "name": "Bám Đình"
+  },
+  "evolve": {
+   "level": 28,
+   "bond": 80,
+   "mats": {
+    "manh_kim_cuong": 13
+   },
+   "xu": 16000
+  },
+  "maxLevel": 60,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "rua",
+   "color": "#7C8B6A",
+   "stage": 1,
+   "rarity": 4
+  },
+  "desc": "Rùa Cổ Đại Sử Thi hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_huyen_vu_co_dai",
+  "name": "Huyền Vũ Cổ Đại",
+  "group": "Rùa Cổ Đại",
+  "groupKey": "rua",
+  "rarity": 7,
+  "stats": {
+   "resist": 18,
+   "durability": 22,
+   "weight": 8
+  },
+  "color": "#2FB59A",
+  "skill": {
+   "id": "ho_tro_keo",
+   "name": "Hỗ Trợ Kéo",
+   "desc": "Giảm 20% căng dây.",
+   "effect": {
+    "tensionDown": 20
+   },
+   "chance": 0.36
+  },
+  "innate": {
+   "id": "tinh_nhanh",
+   "name": "Tinh Nhanh"
+  },
+  "evolve": {
+   "level": 34,
+   "bond": 110,
+   "mats": {
+    "tinh_hoa_than_thoai": 19
+   },
+   "xu": 49000
+  },
+  "maxLevel": 75,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "rua",
+   "color": "#2FB59A",
+   "stage": 1,
+   "rarity": 7
+  },
+  "desc": "Rùa Cổ Đại Cổ Đại hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_hai_long_con",
+  "name": "Hải Long Con",
+  "group": "Hải Long",
+  "groupKey": "long",
+  "rarity": 6,
+  "stats": {
+   "luck": 8,
+   "rare": 8,
+   "power": 8
+  },
+  "color": "#3AA8FF",
+  "skill": {
+   "id": "bat_may",
+   "name": "Bắt May",
+   "desc": "Tăng 20% cân nặng cá.",
+   "effect": {
+    "weightBonus": 20
+   },
+   "chance": 0.32999999999999996
+  },
+  "innate": {
+   "id": "kien_nhan",
+   "name": "Kiên Nhẫn"
+  },
+  "evolve": {
+   "level": 32,
+   "bond": 100,
+   "mats": {
+    "vay_rong": 17
+   },
+   "xu": 36000
+  },
+  "maxLevel": 70,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "long",
+   "color": "#3AA8FF",
+   "stage": 1,
+   "rarity": 6
+  },
+  "desc": "Hải Long Thần Thoại hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_hai_long_vuong",
+  "name": "Hải Long Vương",
+  "group": "Hải Long",
+  "groupKey": "long",
+  "rarity": 8,
+  "stats": {
+   "luck": 16,
+   "rare": 16,
+   "power": 16,
+   "sell": 10
+  },
+  "color": "#27E8FF",
+  "skill": {
+   "id": "dan_loc",
+   "name": "Dẫn Lộc",
+   "desc": "Tăng 20% giá bán cá.",
+   "effect": {
+    "sellBonus": 20
+   },
+   "chance": 0.39
+  },
+  "innate": {
+   "id": "bam_dinh",
+   "name": "Bám Đình"
+  },
+  "evolve": {
+   "level": 36,
+   "bond": 120,
+   "mats": {
+    "manh_co_dai": 21
+   },
+   "xu": 64000
+  },
+  "maxLevel": 80,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "long",
+   "color": "#27E8FF",
+   "stage": 1,
+   "rarity": 8
+  },
+  "desc": "Hải Long Thần Cấp hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_linh_dang_bien_sau",
+  "name": "Linh Đăng Biển Sâu",
+  "group": "Linh Thú Biển Sâu",
+  "groupKey": "linh",
+  "rarity": 5,
+  "stats": {
+   "detect": 10,
+   "rare": 8
+  },
+  "color": "#B04CE0",
+  "skill": {
+   "id": "tham_tinh",
+   "name": "Thám Thính",
+   "desc": "Cá cắn câu nhanh hơn 25%.",
+   "effect": {
+    "biteSpeed": 25
+   },
+   "chance": 0.3
+  },
+  "innate": {
+   "id": "tinh_nhanh",
+   "name": "Tinh Nhanh"
+  },
+  "evolve": {
+   "level": 30,
+   "bond": 90,
+   "mats": {
+    "loi_su_thi": 15
+   },
+   "xu": 25000
+  },
+  "maxLevel": 65,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "linh",
+   "color": "#B04CE0",
+   "stage": 1,
+   "rarity": 5
+  },
+  "desc": "Linh Thú Biển Sâu Huyền Thoại hỗ trợ cần thủ khi câu cá."
+ },
+ {
+  "id": "thu_linh_thu_vuc_tham",
+  "name": "Linh Thú Vực Thẳm",
+  "group": "Linh Thú Biển Sâu",
+  "groupKey": "linh",
+  "rarity": 9,
+  "stats": {
+   "detect": 22,
+   "rare": 22,
+   "luck": 14,
+   "exp": 15
+  },
+  "color": "#FF4DE1",
+  "skill": {
+   "id": "huong_van",
+   "name": "Hương Vận",
+   "desc": "Tăng 15% tỷ lệ cá hiếm.",
+   "effect": {
+    "rareBonus": 15
+   },
+   "chance": 0.42000000000000004
+  },
+  "innate": {
+   "id": "kien_nhan",
+   "name": "Kiên Nhẫn"
+  },
+  "evolve": {
+   "level": 38,
+   "bond": 130,
+   "mats": {
+    "tinh_hoa_than_cap": 23
+   },
+   "xu": 81000
+  },
+  "maxLevel": 85,
+  "skins": [
+   "Mặc Định",
+   "Tiến Hóa"
+  ],
+  "sprite": {
+   "group": "linh",
+   "color": "#FF4DE1",
+   "stage": 1,
+   "rarity": 9
+  },
+  "desc": "Linh Thú Biển Sâu Độc Nhất hỗ trợ cần thủ khi câu cá."
+ }
+]

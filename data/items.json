@@ -1,0 +1,1226 @@
+[
+ {
+  "stack": 999,
+  "sell": 7,
+  "id": "vay_ca",
+  "name": "Vảy Cá",
+  "type": "material",
+  "tier": 1,
+  "price": 20,
+  "sprite": {
+   "kind": "material",
+   "tier": 1,
+   "id": "vay_ca"
+  },
+  "desc": "Nguyên liệu bậc 1."
+ },
+ {
+  "stack": 999,
+  "sell": 8,
+  "id": "go_soi",
+  "name": "Gỗ Sồi",
+  "type": "material",
+  "tier": 1,
+  "price": 25,
+  "sprite": {
+   "kind": "material",
+   "tier": 1,
+   "id": "go_soi"
+  },
+  "desc": "Nguyên liệu bậc 1."
+ },
+ {
+  "stack": 999,
+  "sell": 28,
+  "id": "phoi_dong",
+  "name": "Phôi Đồng",
+  "type": "material",
+  "tier": 2,
+  "price": 80,
+  "sprite": {
+   "kind": "material",
+   "tier": 2,
+   "id": "phoi_dong"
+  },
+  "desc": "Nguyên liệu bậc 2."
+ },
+ {
+  "stack": 999,
+  "sell": 91,
+  "id": "thoi_bac",
+  "name": "Thỏi Bạc",
+  "type": "material",
+  "tier": 3,
+  "price": 260,
+  "sprite": {
+   "kind": "material",
+   "tier": 3,
+   "id": "thoi_bac"
+  },
+  "desc": "Nguyên liệu bậc 3."
+ },
+ {
+  "stack": 999,
+  "sell": 105,
+  "id": "tinh_the_bang",
+  "name": "Tinh Thể Băng",
+  "type": "material",
+  "tier": 3,
+  "price": 300,
+  "sprite": {
+   "kind": "material",
+   "tier": 3,
+   "id": "tinh_the_bang"
+  },
+  "desc": "Nguyên liệu bậc 3."
+ },
+ {
+  "stack": 999,
+  "sell": 280,
+  "id": "thoi_vang",
+  "name": "Thỏi Vàng",
+  "type": "material",
+  "tier": 4,
+  "price": 800,
+  "sprite": {
+   "kind": "material",
+   "tier": 4,
+   "id": "thoi_vang"
+  },
+  "desc": "Nguyên liệu bậc 4."
+ },
+ {
+  "stack": 999,
+  "sell": 315,
+  "id": "re_co_thu",
+  "name": "Rễ Cổ Thụ",
+  "type": "material",
+  "tier": 4,
+  "price": 900,
+  "sprite": {
+   "kind": "material",
+   "tier": 4,
+   "id": "re_co_thu"
+  },
+  "desc": "Nguyên liệu bậc 4."
+ },
+ {
+  "stack": 999,
+  "sell": 909,
+  "id": "manh_kim_cuong",
+  "name": "Mảnh Kim Cương",
+  "type": "material",
+  "tier": 5,
+  "price": 2600,
+  "sprite": {
+   "kind": "material",
+   "tier": 5,
+   "id": "manh_kim_cuong"
+  },
+  "desc": "Nguyên liệu bậc 5."
+ },
+ {
+  "stack": 999,
+  "sell": 1050,
+  "id": "ngoc_trai",
+  "name": "Ngọc Trai",
+  "type": "material",
+  "tier": 5,
+  "price": 3000,
+  "sprite": {
+   "kind": "material",
+   "tier": 5,
+   "id": "ngoc_trai"
+  },
+  "desc": "Nguyên liệu bậc 5."
+ },
+ {
+  "stack": 999,
+  "sell": 2450,
+  "id": "loi_su_thi",
+  "name": "Lõi Sử Thi",
+  "type": "material",
+  "tier": 6,
+  "price": 7000,
+  "sprite": {
+   "kind": "material",
+   "tier": 6,
+   "id": "loi_su_thi"
+  },
+  "desc": "Nguyên liệu bậc 6."
+ },
+ {
+  "stack": 999,
+  "sell": 2800,
+  "id": "da_vuc",
+  "name": "Đá Vực",
+  "type": "material",
+  "tier": 6,
+  "price": 8000,
+  "sprite": {
+   "kind": "material",
+   "tier": 6,
+   "id": "da_vuc"
+  },
+  "desc": "Nguyên liệu bậc 6."
+ },
+ {
+  "stack": 999,
+  "sell": 7000,
+  "id": "vay_rong",
+  "name": "Vảy Rồng",
+  "type": "material",
+  "tier": 7,
+  "price": 20000,
+  "sprite": {
+   "kind": "material",
+   "tier": 7,
+   "id": "vay_rong"
+  },
+  "desc": "Nguyên liệu bậc 7."
+ },
+ {
+  "stack": 999,
+  "sell": 19250,
+  "id": "tinh_hoa_than_thoai",
+  "name": "Tinh Hoa Thần Thoại",
+  "type": "material",
+  "tier": 8,
+  "price": 55000,
+  "sprite": {
+   "kind": "material",
+   "tier": 8,
+   "id": "tinh_hoa_than_thoai"
+  },
+  "desc": "Nguyên liệu bậc 8."
+ },
+ {
+  "stack": 999,
+  "sell": 52500,
+  "id": "manh_co_dai",
+  "name": "Mảnh Cổ Đại",
+  "type": "material",
+  "tier": 9,
+  "price": 150000,
+  "sprite": {
+   "kind": "material",
+   "tier": 9,
+   "id": "manh_co_dai"
+  },
+  "desc": "Nguyên liệu bậc 9."
+ },
+ {
+  "stack": 999,
+  "sell": 140000,
+  "id": "tinh_hoa_than_cap",
+  "name": "Tinh Hoa Thần Cấp",
+  "type": "material",
+  "tier": 10,
+  "price": 400000,
+  "sprite": {
+   "kind": "material",
+   "tier": 10,
+   "id": "tinh_hoa_than_cap"
+  },
+  "desc": "Nguyên liệu bậc 10."
+ },
+ {
+  "stack": 999,
+  "sell": 42,
+  "id": "da_cuong_hoa_so",
+  "name": "Đá Cường Hóa Sơ",
+  "type": "stone",
+  "tier": 1,
+  "price": 120,
+  "sprite": {
+   "kind": "stone",
+   "tier": 1
+  },
+  "desc": "Dùng để cường hóa cần câu (+1~+5)."
+ },
+ {
+  "stack": 999,
+  "sell": 315,
+  "id": "da_cuong_hoa_trung",
+  "name": "Đá Cường Hóa Trung",
+  "type": "stone",
+  "tier": 2,
+  "price": 900,
+  "sprite": {
+   "kind": "stone",
+   "tier": 2
+  },
+  "desc": "Dùng để cường hóa cần câu (+6~+10)."
+ },
+ {
+  "stack": 999,
+  "sell": 2450,
+  "id": "da_cuong_hoa_cao",
+  "name": "Đá Cường Hóa Cao",
+  "type": "stone",
+  "tier": 3,
+  "price": 7000,
+  "sprite": {
+   "kind": "stone",
+   "tier": 3
+  },
+  "desc": "Dùng để cường hóa cần câu (+11~+15)."
+ },
+ {
+  "stack": 999,
+  "sell": 525,
+  "id": "bua_bao_ho",
+  "name": "Bùa Bảo Hộ",
+  "type": "stone",
+  "tier": 2,
+  "price": 1500,
+  "sprite": {
+   "kind": "charm"
+  },
+  "desc": "Giữ nguyên cấp cường hóa khi thất bại (tự dùng nếu bật)."
+ },
+ {
+  "stack": 999,
+  "sell": 105,
+  "id": "ngoc_may_man_1",
+  "name": "Ngọc May Mắn Sơ",
+  "type": "gem",
+  "tier": 1,
+  "price": 300,
+  "gem": {
+   "stat": "luck",
+   "value": 6
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 1,
+   "color": "#3ED16E"
+  },
+  "desc": "Khảm vào cần câu: +6 luck."
+ },
+ {
+  "stack": 999,
+  "sell": 875,
+  "id": "ngoc_may_man_2",
+  "name": "Ngọc May Mắn Trung",
+  "type": "gem",
+  "tier": 2,
+  "price": 2500,
+  "gem": {
+   "stat": "luck",
+   "value": 14.399999999999999
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 2,
+   "color": "#3ED16E"
+  },
+  "desc": "Khảm vào cần câu: +14 luck."
+ },
+ {
+  "stack": 999,
+  "sell": 7000,
+  "id": "ngoc_may_man_3",
+  "name": "Ngọc May Mắn Cao",
+  "type": "gem",
+  "tier": 3,
+  "price": 20000,
+  "gem": {
+   "stat": "luck",
+   "value": 33
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 3,
+   "color": "#3ED16E"
+  },
+  "desc": "Khảm vào cần câu: +33 luck."
+ },
+ {
+  "stack": 999,
+  "sell": 105,
+  "id": "ngoc_suc_manh_1",
+  "name": "Ngọc Sức Mạnh Sơ",
+  "type": "gem",
+  "tier": 1,
+  "price": 300,
+  "gem": {
+   "stat": "power",
+   "value": 8
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 1,
+   "color": "#E8483C"
+  },
+  "desc": "Khảm vào cần câu: +8 power."
+ },
+ {
+  "stack": 999,
+  "sell": 875,
+  "id": "ngoc_suc_manh_2",
+  "name": "Ngọc Sức Mạnh Trung",
+  "type": "gem",
+  "tier": 2,
+  "price": 2500,
+  "gem": {
+   "stat": "power",
+   "value": 19.2
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 2,
+   "color": "#E8483C"
+  },
+  "desc": "Khảm vào cần câu: +19 power."
+ },
+ {
+  "stack": 999,
+  "sell": 7000,
+  "id": "ngoc_suc_manh_3",
+  "name": "Ngọc Sức Mạnh Cao",
+  "type": "gem",
+  "tier": 3,
+  "price": 20000,
+  "gem": {
+   "stat": "power",
+   "value": 44
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 3,
+   "color": "#E8483C"
+  },
+  "desc": "Khảm vào cần câu: +44 power."
+ },
+ {
+  "stack": 999,
+  "sell": 105,
+  "id": "ngoc_toc_do_1",
+  "name": "Ngọc Tốc Độ Sơ",
+  "type": "gem",
+  "tier": 1,
+  "price": 300,
+  "gem": {
+   "stat": "reel",
+   "value": 5
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 1,
+   "color": "#FFD23F"
+  },
+  "desc": "Khảm vào cần câu: +5 reel."
+ },
+ {
+  "stack": 999,
+  "sell": 875,
+  "id": "ngoc_toc_do_2",
+  "name": "Ngọc Tốc Độ Trung",
+  "type": "gem",
+  "tier": 2,
+  "price": 2500,
+  "gem": {
+   "stat": "reel",
+   "value": 12
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 2,
+   "color": "#FFD23F"
+  },
+  "desc": "Khảm vào cần câu: +12 reel."
+ },
+ {
+  "stack": 999,
+  "sell": 7000,
+  "id": "ngoc_toc_do_3",
+  "name": "Ngọc Tốc Độ Cao",
+  "type": "gem",
+  "tier": 3,
+  "price": 20000,
+  "gem": {
+   "stat": "reel",
+   "value": 27.5
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 3,
+   "color": "#FFD23F"
+  },
+  "desc": "Khảm vào cần câu: +28 reel."
+ },
+ {
+  "stack": 999,
+  "sell": 105,
+  "id": "ngoc_ben_bi_1",
+  "name": "Ngọc Bền Bỉ Sơ",
+  "type": "gem",
+  "tier": 1,
+  "price": 300,
+  "gem": {
+   "stat": "durability",
+   "value": 14
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 1,
+   "color": "#B07A4A"
+  },
+  "desc": "Khảm vào cần câu: +14 durability."
+ },
+ {
+  "stack": 999,
+  "sell": 875,
+  "id": "ngoc_ben_bi_2",
+  "name": "Ngọc Bền Bỉ Trung",
+  "type": "gem",
+  "tier": 2,
+  "price": 2500,
+  "gem": {
+   "stat": "durability",
+   "value": 33.6
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 2,
+   "color": "#B07A4A"
+  },
+  "desc": "Khảm vào cần câu: +34 durability."
+ },
+ {
+  "stack": 999,
+  "sell": 7000,
+  "id": "ngoc_ben_bi_3",
+  "name": "Ngọc Bền Bỉ Cao",
+  "type": "gem",
+  "tier": 3,
+  "price": 20000,
+  "gem": {
+   "stat": "durability",
+   "value": 77
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 3,
+   "color": "#B07A4A"
+  },
+  "desc": "Khảm vào cần câu: +77 durability."
+ },
+ {
+  "stack": 999,
+  "sell": 105,
+  "id": "ngoc_mat_than_1",
+  "name": "Ngọc Mắt Thần Sơ",
+  "type": "gem",
+  "tier": 1,
+  "price": 300,
+  "gem": {
+   "stat": "detect",
+   "value": 5
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 1,
+   "color": "#B04CE0"
+  },
+  "desc": "Khảm vào cần câu: +5 detect."
+ },
+ {
+  "stack": 999,
+  "sell": 875,
+  "id": "ngoc_mat_than_2",
+  "name": "Ngọc Mắt Thần Trung",
+  "type": "gem",
+  "tier": 2,
+  "price": 2500,
+  "gem": {
+   "stat": "detect",
+   "value": 12
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 2,
+   "color": "#B04CE0"
+  },
+  "desc": "Khảm vào cần câu: +12 detect."
+ },
+ {
+  "stack": 999,
+  "sell": 7000,
+  "id": "ngoc_mat_than_3",
+  "name": "Ngọc Mắt Thần Cao",
+  "type": "gem",
+  "tier": 3,
+  "price": 20000,
+  "gem": {
+   "stat": "detect",
+   "value": 27.5
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 3,
+   "color": "#B04CE0"
+  },
+  "desc": "Khảm vào cần câu: +28 detect."
+ },
+ {
+  "stack": 999,
+  "sell": 105,
+  "id": "ngoc_chong_thoat_1",
+  "name": "Ngọc Chống Thoát Sơ",
+  "type": "gem",
+  "tier": 1,
+  "price": 300,
+  "gem": {
+   "stat": "resist",
+   "value": 4
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 1,
+   "color": "#3AA8FF"
+  },
+  "desc": "Khảm vào cần câu: +4 resist."
+ },
+ {
+  "stack": 999,
+  "sell": 875,
+  "id": "ngoc_chong_thoat_2",
+  "name": "Ngọc Chống Thoát Trung",
+  "type": "gem",
+  "tier": 2,
+  "price": 2500,
+  "gem": {
+   "stat": "resist",
+   "value": 9.6
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 2,
+   "color": "#3AA8FF"
+  },
+  "desc": "Khảm vào cần câu: +10 resist."
+ },
+ {
+  "stack": 999,
+  "sell": 7000,
+  "id": "ngoc_chong_thoat_3",
+  "name": "Ngọc Chống Thoát Cao",
+  "type": "gem",
+  "tier": 3,
+  "price": 20000,
+  "gem": {
+   "stat": "resist",
+   "value": 22
+  },
+  "sprite": {
+   "kind": "gem",
+   "tier": 3,
+   "color": "#3AA8FF"
+  },
+  "desc": "Khảm vào cần câu: +22 resist."
+ },
+ {
+  "stack": 999,
+  "sell": 140,
+  "id": "ruong_go",
+  "name": "Rương Gỗ",
+  "type": "chest",
+  "tier": 1,
+  "price": 400,
+  "shop": true,
+  "sprite": {
+   "kind": "chest",
+   "tier": 1,
+   "color": "#8B5A2B"
+  },
+  "desc": "Rương kho báu bậc 1, mở bằng /sudung."
+ },
+ {
+  "stack": 999,
+  "sell": 1050,
+  "id": "ruong_bac",
+  "name": "Rương Bạc",
+  "type": "chest",
+  "tier": 3,
+  "price": 3000,
+  "shop": true,
+  "sprite": {
+   "kind": "chest",
+   "tier": 3,
+   "color": "#C7CCD4"
+  },
+  "desc": "Rương kho báu bậc 3, mở bằng /sudung."
+ },
+ {
+  "stack": 999,
+  "sell": 4200,
+  "id": "ruong_vang",
+  "name": "Rương Vàng",
+  "type": "chest",
+  "tier": 4,
+  "price": 12000,
+  "shop": true,
+  "sprite": {
+   "kind": "chest",
+   "tier": 4,
+   "color": "#FFD23F"
+  },
+  "desc": "Rương kho báu bậc 4, mở bằng /sudung."
+ },
+ {
+  "stack": 999,
+  "sell": 21000,
+  "id": "ruong_kim_cuong",
+  "name": "Rương Kim Cương",
+  "type": "chest",
+  "tier": 5,
+  "price": 60000,
+  "shop": false,
+  "sprite": {
+   "kind": "chest",
+   "tier": 5,
+   "color": "#7DF9FF"
+  },
+  "desc": "Rương kho báu bậc 5, mở bằng /sudung."
+ },
+ {
+  "stack": 999,
+  "sell": 87500,
+  "id": "ruong_than_thoai",
+  "name": "Rương Thần Thoại",
+  "type": "chest",
+  "tier": 8,
+  "price": 250000,
+  "shop": false,
+  "sprite": {
+   "kind": "chest",
+   "tier": 8,
+   "color": "#F0443C"
+  },
+  "desc": "Rương kho báu bậc 8, mở bằng /sudung."
+ },
+ {
+  "stack": 999,
+  "sell": 210,
+  "id": "binh_may_man",
+  "name": "Bình May Mắn",
+  "type": "potion",
+  "tier": 2,
+  "price": 600,
+  "shop": true,
+  "potion": {
+   "stat": "luck",
+   "value": 30,
+   "minutes": 30
+  },
+  "sprite": {
+   "kind": "potion",
+   "color": "#3ED16E"
+  },
+  "desc": "Hiệu lực 30 phút: +30% luck."
+ },
+ {
+  "stack": 999,
+  "sell": 210,
+  "id": "binh_phat_hien",
+  "name": "Bình Phát Hiện",
+  "type": "potion",
+  "tier": 2,
+  "price": 600,
+  "shop": true,
+  "potion": {
+   "stat": "detect",
+   "value": 30,
+   "minutes": 30
+  },
+  "sprite": {
+   "kind": "potion",
+   "color": "#B04CE0"
+  },
+  "desc": "Hiệu lực 30 phút: +30% detect."
+ },
+ {
+  "stack": 999,
+  "sell": 175,
+  "id": "binh_toc_do",
+  "name": "Bình Tốc Độ",
+  "type": "potion",
+  "tier": 2,
+  "price": 500,
+  "shop": true,
+  "potion": {
+   "stat": "biteSpeed",
+   "value": 25,
+   "minutes": 30
+  },
+  "sprite": {
+   "kind": "potion",
+   "color": "#FFD23F"
+  },
+  "desc": "Hiệu lực 30 phút: +25% biteSpeed."
+ },
+ {
+  "stack": 999,
+  "sell": 315,
+  "id": "binh_kinh_nghiem",
+  "name": "Bình Kinh Nghiệm",
+  "type": "potion",
+  "tier": 2,
+  "price": 900,
+  "shop": true,
+  "potion": {
+   "stat": "expMult",
+   "value": 50,
+   "minutes": 30
+  },
+  "sprite": {
+   "kind": "potion",
+   "color": "#3AA8FF"
+  },
+  "desc": "Hiệu lực 30 phút: +50% expMult."
+ },
+ {
+  "stack": 999,
+  "sell": 210,
+  "id": "binh_ben_day",
+  "name": "Bình Bền Dây",
+  "type": "potion",
+  "tier": 2,
+  "price": 600,
+  "shop": true,
+  "potion": {
+   "stat": "resist",
+   "value": 30,
+   "minutes": 30
+  },
+  "sprite": {
+   "kind": "potion",
+   "color": "#B07A4A"
+  },
+  "desc": "Hiệu lực 30 phút: +30% resist."
+ },
+ {
+  "stack": 999,
+  "sell": 210,
+  "id": "binh_suc_manh",
+  "name": "Bình Sức Mạnh",
+  "type": "potion",
+  "tier": 2,
+  "price": 600,
+  "shop": true,
+  "potion": {
+   "stat": "power",
+   "value": 30,
+   "minutes": 30
+  },
+  "sprite": {
+   "kind": "potion",
+   "color": "#E8483C"
+  },
+  "desc": "Hiệu lực 30 phút: +30% power."
+ },
+ {
+  "stack": 999,
+  "sell": 525,
+  "id": "ve_dai_hoi",
+  "name": "Vé Đại Hội",
+  "type": "ticket",
+  "tier": 3,
+  "price": 1500,
+  "shop": true,
+  "sprite": {
+   "kind": "ticket",
+   "color": "#FFD23F"
+  },
+  "desc": "Dùng để tham gia sự kiện."
+ },
+ {
+  "stack": 999,
+  "sell": 280,
+  "id": "ve_su_kien",
+  "name": "Vé Sự Kiện",
+  "type": "ticket",
+  "tier": 3,
+  "price": 800,
+  "shop": true,
+  "sprite": {
+   "kind": "ticket",
+   "color": "#3AA8FF"
+  },
+  "desc": "Dùng để tham gia sự kiện."
+ },
+ {
+  "stack": 999,
+  "sell": 280,
+  "id": "ve_le_hoi",
+  "name": "Vé Lễ Hội",
+  "type": "ticket",
+  "tier": 3,
+  "price": 800,
+  "shop": true,
+  "sprite": {
+   "kind": "ticket",
+   "color": "#FF6FB5"
+  },
+  "desc": "Dùng để tham gia sự kiện."
+ },
+ {
+  "stack": 999,
+  "sell": 52,
+  "id": "phao_nua",
+  "name": "Phao Nứa",
+  "type": "float",
+  "tier": 1,
+  "price": 150,
+  "shop": true,
+  "float": {
+   "biteSpeed": 4,
+   "detect": 0
+  },
+  "sprite": {
+   "kind": "float",
+   "tier": 1
+  },
+  "desc": "Phao: cá cắn nhanh +4%, phát hiện +0."
+ },
+ {
+  "stack": 999,
+  "sell": 1050,
+  "id": "phao_phat_sang",
+  "name": "Phao Phát Sáng",
+  "type": "float",
+  "tier": 3,
+  "price": 3000,
+  "shop": true,
+  "float": {
+   "biteSpeed": 8,
+   "detect": 6
+  },
+  "sprite": {
+   "kind": "float",
+   "tier": 3
+  },
+  "desc": "Phao: cá cắn nhanh +8%, phát hiện +6."
+ },
+ {
+  "stack": 999,
+  "sell": 12250,
+  "id": "phao_ngoc",
+  "name": "Phao Ngọc",
+  "type": "float",
+  "tier": 5,
+  "price": 35000,
+  "shop": true,
+  "float": {
+   "biteSpeed": 14,
+   "detect": 12
+  },
+  "sprite": {
+   "kind": "float",
+   "tier": 5
+  },
+  "desc": "Phao: cá cắn nhanh +14%, phát hiện +12."
+ },
+ {
+  "stack": 999,
+  "sell": 140000,
+  "id": "phao_than",
+  "name": "Phao Thần",
+  "type": "float",
+  "tier": 8,
+  "price": 400000,
+  "shop": false,
+  "float": {
+   "biteSpeed": 22,
+   "detect": 20
+  },
+  "sprite": {
+   "kind": "float",
+   "tier": 8
+  },
+  "desc": "Phao: cá cắn nhanh +22%, phát hiện +20."
+ },
+ {
+  "stack": 999,
+  "sell": 52,
+  "id": "day_cuoc",
+  "name": "Dây Cước",
+  "type": "line",
+  "tier": 1,
+  "price": 150,
+  "shop": true,
+  "line": {
+   "resist": 4,
+   "durabilitySave": 5
+  },
+  "sprite": {
+   "kind": "line",
+   "tier": 1
+  },
+  "desc": "Dây: chống cá thoát +4%, giảm hao mòn 5%."
+ },
+ {
+  "stack": 999,
+  "sell": 1050,
+  "id": "day_to_bac",
+  "name": "Dây Tơ Bạc",
+  "type": "line",
+  "tier": 3,
+  "price": 3000,
+  "shop": true,
+  "line": {
+   "resist": 9,
+   "durabilitySave": 12
+  },
+  "sprite": {
+   "kind": "line",
+   "tier": 3
+  },
+  "desc": "Dây: chống cá thoát +9%, giảm hao mòn 12%."
+ },
+ {
+  "stack": 999,
+  "sell": 12250,
+  "id": "day_kim_tuyen",
+  "name": "Dây Kim Tuyến",
+  "type": "line",
+  "tier": 5,
+  "price": 35000,
+  "shop": true,
+  "line": {
+   "resist": 15,
+   "durabilitySave": 20
+  },
+  "sprite": {
+   "kind": "line",
+   "tier": 5
+  },
+  "desc": "Dây: chống cá thoát +15%, giảm hao mòn 20%."
+ },
+ {
+  "stack": 999,
+  "sell": 140000,
+  "id": "day_long_gan",
+  "name": "Dây Long Gân",
+  "type": "line",
+  "tier": 8,
+  "price": 400000,
+  "shop": false,
+  "line": {
+   "resist": 24,
+   "durabilitySave": 32
+  },
+  "sprite": {
+   "kind": "line",
+   "tier": 8
+  },
+  "desc": "Dây: chống cá thoát +24%, giảm hao mòn 32%."
+ },
+ {
+  "stack": 999,
+  "sell": 52,
+  "id": "luoi_sat",
+  "name": "Lưỡi Sắt",
+  "type": "hook",
+  "tier": 1,
+  "price": 150,
+  "shop": true,
+  "hook": {
+   "power": 3,
+   "luck": 0
+  },
+  "sprite": {
+   "kind": "hook",
+   "tier": 1
+  },
+  "desc": "Lưỡi: sức mạnh +3, may mắn +0."
+ },
+ {
+  "stack": 999,
+  "sell": 1050,
+  "id": "luoi_thep",
+  "name": "Lưỡi Thép",
+  "type": "hook",
+  "tier": 3,
+  "price": 3000,
+  "shop": true,
+  "hook": {
+   "power": 8,
+   "luck": 4
+  },
+  "sprite": {
+   "kind": "hook",
+   "tier": 3
+  },
+  "desc": "Lưỡi: sức mạnh +8, may mắn +4."
+ },
+ {
+  "stack": 999,
+  "sell": 12250,
+  "id": "luoi_kim_cuong",
+  "name": "Lưỡi Kim Cương",
+  "type": "hook",
+  "tier": 5,
+  "price": 35000,
+  "shop": true,
+  "hook": {
+   "power": 15,
+   "luck": 8
+  },
+  "sprite": {
+   "kind": "hook",
+   "tier": 5
+  },
+  "desc": "Lưỡi: sức mạnh +15, may mắn +8."
+ },
+ {
+  "stack": 999,
+  "sell": 140000,
+  "id": "luoi_thien_tong",
+  "name": "Lưỡi Thiên Tông",
+  "type": "hook",
+  "tier": 8,
+  "price": 400000,
+  "shop": false,
+  "hook": {
+   "power": 24,
+   "luck": 14
+  },
+  "sprite": {
+   "kind": "hook",
+   "tier": 8
+  },
+  "desc": "Lưỡi: sức mạnh +24, may mắn +14."
+ },
+ {
+  "stack": 999,
+  "sell": 1050,
+  "id": "trung_thu_thuong",
+  "name": "Trứng Thú Thường",
+  "type": "egg",
+  "tier": 2,
+  "price": 3000,
+  "shop": true,
+  "egg": {
+   "pool": [
+    1,
+    2,
+    3
+   ]
+  },
+  "sprite": {
+   "kind": "egg",
+   "tier": 2
+  },
+  "desc": "Ấp nở ngẫu nhiên một thú cưng."
+ },
+ {
+  "stack": 999,
+  "sell": 8750,
+  "id": "trung_thu_quy",
+  "name": "Trứng Thú Quý",
+  "type": "egg",
+  "tier": 4,
+  "price": 25000,
+  "shop": true,
+  "egg": {
+   "pool": [
+    3,
+    4,
+    5
+   ]
+  },
+  "sprite": {
+   "kind": "egg",
+   "tier": 4
+  },
+  "desc": "Ấp nở ngẫu nhiên một thú cưng."
+ },
+ {
+  "stack": 999,
+  "sell": 52500,
+  "id": "trung_thu_than",
+  "name": "Trứng Thú Thần",
+  "type": "egg",
+  "tier": 6,
+  "price": 150000,
+  "shop": false,
+  "egg": {
+   "pool": [
+    5,
+    6,
+    7,
+    8
+   ]
+  },
+  "sprite": {
+   "kind": "egg",
+   "tier": 6
+  },
+  "desc": "Ấp nở ngẫu nhiên một thú cưng."
+ },
+ {
+  "stack": 999,
+  "sell": 52,
+  "id": "thuc_an_thu",
+  "name": "Thức Ăn Thú Cưng",
+  "type": "petfood",
+  "tier": 1,
+  "price": 150,
+  "shop": true,
+  "petExp": 80,
+  "sprite": {
+   "kind": "petfood",
+   "tier": 1
+  },
+  "desc": "Cho thú cưng ăn: +80 EXP, +2 thân thiết."
+ },
+ {
+  "stack": 999,
+  "sell": 489,
+  "id": "thuc_an_thu_cao",
+  "name": "Thức Ăn Thú Cao Cấp",
+  "type": "petfood",
+  "tier": 3,
+  "price": 1400,
+  "shop": true,
+  "petExp": 600,
+  "sprite": {
+   "kind": "petfood",
+   "tier": 3
+  },
+  "desc": "Cho thú cưng ăn: +600 EXP, +8 thân thiết."
+ },
+ {
+  "stack": 999,
+  "sell": 2800,
+  "id": "phu_mo_rong_kho",
+  "name": "Phù Mở Rộng Kho",
+  "type": "misc",
+  "tier": 3,
+  "price": 8000,
+  "shop": true,
+  "expand": 20,
+  "sprite": {
+   "kind": "bag"
+  },
+  "desc": "Dùng để mở rộng kho thêm 20 ô."
+ },
+ {
+  "stack": 999,
+  "sell": 175,
+  "id": "phu_sua_can",
+  "name": "Phù Sửa Cần",
+  "type": "misc",
+  "tier": 2,
+  "price": 500,
+  "shop": true,
+  "repair": 50,
+  "sprite": {
+   "kind": "repair"
+  },
+  "desc": "Dùng để sửa 50 độ bền cho cần câu đang trang bị."
+ }
+]

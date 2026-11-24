@@ -1,0 +1,14 @@
+'use strict';
+const nf = new Intl.NumberFormat('vi-VN');
+const num = (n) => nf.format(Math.round(n));
+const xu = (n) => `${num(n)} xu`;
+const kg = (w) => `${(Math.round(w * 100) / 100).toLocaleString('vi-VN')} kg`;
+const pct = (p, d = 1) => `${(p * 100).toFixed(d)}%`;
+const bar = (v, max, len = 10, full = '█', empty = '░') => { const f = Math.max(0, Math.min(len, Math.round((v / Math.max(1, max)) * len))); return full.repeat(f) + empty.repeat(len - f); };
+const clip = (s, n) => (String(s).length > n ? `${String(s).slice(0, n - 1)}…` : String(s));
+const rel = (ms) => `<t:${Math.floor(ms / 1000)}:R>`;
+const abs = (ms) => `<t:${Math.floor(ms / 1000)}:f>`;
+const dur = (ms) => { const s = Math.max(0, Math.round(ms / 1000)); const h = Math.floor(s / 3600), m = Math.floor((s % 3600) / 60), r = s % 60; return h ? `${h}g ${m}p` : m ? `${m}p ${r}s` : `${r}s`; };
+const bytes = (n) => (n > 1048576 ? `${(n / 1048576).toFixed(2)} MB` : `${(n / 1024).toFixed(1)} KB`);
+const chunk = (arr, n) => { const o = []; for (let i = 0; i < arr.length; i += n) o.push(arr.slice(i, i + n)); return o; };
+module.exports = { num, xu, kg, pct, bar, clip, rel, abs, dur, bytes, chunk };

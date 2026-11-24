@@ -1,0 +1,375 @@
+{
+ "daily": [
+  {
+   "id": "d_catch",
+   "name": "Câu {target} con cá",
+   "on": "catch",
+   "amount": "count",
+   "base": 10,
+   "reward": {
+    "xu": 250,
+    "exp": 100
+   }
+  },
+  {
+   "id": "d_rare",
+   "name": "Câu {target} cá từ Quý Hiếm trở lên",
+   "on": "catch",
+   "filter": {
+    "minRarity": 3
+   },
+   "amount": "count",
+   "base": 2,
+   "reward": {
+    "xu": 500,
+    "exp": 200
+   }
+  },
+  {
+   "id": "d_weight",
+   "name": "Câu tổng cộng {target} kg cá",
+   "on": "catch",
+   "amount": "weight",
+   "base": 30,
+   "reward": {
+    "xu": 300,
+    "exp": 120
+   }
+  },
+  {
+   "id": "d_sell",
+   "name": "Bán cá thu về {target} xu",
+   "on": "sell",
+   "amount": "value",
+   "base": 500,
+   "reward": {
+    "xu": 300,
+    "exp": 100
+   }
+  },
+  {
+   "id": "d_fresh",
+   "name": "Câu {target} cá nước ngọt",
+   "on": "catch",
+   "filter": {
+    "category": "nuoc_ngot"
+   },
+   "amount": "count",
+   "base": 6,
+   "reward": {
+    "xu": 260,
+    "exp": 100
+   }
+  },
+  {
+   "id": "d_salt",
+   "name": "Câu {target} cá nước mặn",
+   "on": "catch",
+   "filter": {
+    "category": "nuoc_man"
+   },
+   "amount": "count",
+   "base": 4,
+   "reward": {
+    "xu": 300,
+    "exp": 120
+   },
+   "minLevel": 30
+  },
+  {
+   "id": "d_upgrade",
+   "name": "Nâng cấp cần câu {target} lần",
+   "on": "rod_upgrade",
+   "amount": "count",
+   "base": 1,
+   "fixed": true,
+   "reward": {
+    "xu": 350,
+    "exp": 120
+   }
+  },
+  {
+   "id": "d_boss",
+   "name": "Tấn công Boss {target} lần",
+   "on": "boss_hit",
+   "amount": "count",
+   "base": 3,
+   "fixed": true,
+   "reward": {
+    "xu": 500,
+    "exp": 200,
+    "items": {
+     "ruong_go": 1
+    }
+   }
+  }
+ ],
+ "weekly": [
+  {
+   "id": "w_catch",
+   "name": "Câu {target} con cá trong tuần",
+   "on": "catch",
+   "amount": "count",
+   "base": 120,
+   "reward": {
+    "xu": 3000,
+    "exp": 1500,
+    "items": {
+     "ruong_bac": 1
+    }
+   }
+  },
+  {
+   "id": "w_rare",
+   "name": "Câu {target} cá Sử Thi trở lên",
+   "on": "catch",
+   "filter": {
+    "minRarity": 4
+   },
+   "amount": "count",
+   "base": 5,
+   "fixed": true,
+   "reward": {
+    "xu": 6000,
+    "exp": 2500,
+    "items": {
+     "ruong_vang": 1
+    }
+   }
+  },
+  {
+   "id": "w_weight",
+   "name": "Tổng cân nặng cá {target} kg",
+   "on": "catch",
+   "amount": "weight",
+   "base": 400,
+   "reward": {
+    "xu": 3500,
+    "exp": 1800
+   }
+  },
+  {
+   "id": "w_sell",
+   "name": "Bán cá thu về {target} xu",
+   "on": "sell",
+   "amount": "value",
+   "base": 8000,
+   "reward": {
+    "xu": 4000,
+    "exp": 1500
+   }
+  },
+  {
+   "id": "w_enhance",
+   "name": "Cường hóa cần câu {target} lần",
+   "on": "rod_enhance",
+   "amount": "count",
+   "base": 8,
+   "fixed": true,
+   "reward": {
+    "xu": 2500,
+    "exp": 1000,
+    "items": {
+     "da_cuong_hoa_so": 5
+    }
+   }
+  },
+  {
+   "id": "w_boss",
+   "name": "Gây sát thương lên Boss {target} lần",
+   "on": "boss_hit",
+   "amount": "count",
+   "base": 15,
+   "fixed": true,
+   "reward": {
+    "xu": 5000,
+    "exp": 2500,
+    "items": {
+     "ruong_vang": 1
+    }
+   }
+  }
+ ],
+ "chains": [
+  {
+   "id": "chain_nguoi_moi",
+   "name": "Hành Trình Tân Thủ",
+   "steps": [
+    {
+     "name": "Câu 5 con cá đầu tiên",
+     "on": "catch",
+     "amount": "count",
+     "target": 5,
+     "reward": {
+      "xu": 200,
+      "exp": 60
+     }
+    },
+    {
+     "name": "Bán cá thu 150 xu",
+     "on": "sell",
+     "amount": "value",
+     "target": 150,
+     "reward": {
+      "xu": 200,
+      "exp": 80,
+      "items": {
+       "moi_giun_dat": 20
+      }
+     }
+    },
+    {
+     "name": "Nâng cấp cần câu 1 lần",
+     "on": "rod_upgrade",
+     "amount": "count",
+     "target": 1,
+     "reward": {
+      "xu": 300,
+      "exp": 100
+     }
+    },
+    {
+     "name": "Câu 1 cá Hiếm",
+     "on": "catch",
+     "filter": {
+      "minRarity": 2
+     },
+     "amount": "count",
+     "target": 1,
+     "reward": {
+      "xu": 500,
+      "exp": 150,
+      "items": {
+       "ruong_go": 1
+      }
+     }
+    },
+    {
+     "name": "Mở khóa Hồ Thanh Bình",
+     "on": "unlock_location",
+     "filter": {
+      "location": "ho_thanh_binh"
+     },
+     "amount": "count",
+     "target": 1,
+     "reward": {
+      "xu": 1000,
+      "exp": 300,
+      "items": {
+       "trung_thu_thuong": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "chain_cuong_hoa",
+   "name": "Thợ Rèn Cần Câu",
+   "steps": [
+    {
+     "name": "Cường hóa cần câu 3 lần",
+     "on": "rod_enhance",
+     "amount": "count",
+     "target": 3,
+     "reward": {
+      "xu": 800,
+      "exp": 200
+     }
+    },
+    {
+     "name": "Chế tạo 1 vật phẩm",
+     "on": "craft",
+     "amount": "count",
+     "target": 1,
+     "reward": {
+      "xu": 1000,
+      "exp": 300,
+      "items": {
+       "da_cuong_hoa_trung": 2
+      }
+     }
+    },
+    {
+     "name": "Câu 3 cá Quý Hiếm",
+     "on": "catch",
+     "filter": {
+      "minRarity": 3
+     },
+     "amount": "count",
+     "target": 3,
+     "reward": {
+      "xu": 2500,
+      "exp": 600,
+      "items": {
+       "ruong_bac": 1
+      }
+     }
+    },
+    {
+     "name": "Tấn công Boss 5 lần",
+     "on": "boss_hit",
+     "amount": "count",
+     "target": 5,
+     "reward": {
+      "xu": 5000,
+      "exp": 1200,
+      "items": {
+       "ruong_vang": 1
+      }
+     }
+    }
+   ]
+  },
+  {
+   "id": "chain_bien_sau",
+   "name": "Chinh Phục Đại Dương",
+   "steps": [
+    {
+     "name": "Mở khóa Biển Sâu",
+     "on": "unlock_location",
+     "filter": {
+      "location": "bien_sau"
+     },
+     "amount": "count",
+     "target": 1,
+     "reward": {
+      "xu": 8000,
+      "exp": 1500
+     }
+    },
+    {
+     "name": "Câu 10 cá tại Biển Sâu",
+     "on": "catch",
+     "filter": {
+      "location": "bien_sau"
+     },
+     "amount": "count",
+     "target": 10,
+     "reward": {
+      "xu": 12000,
+      "exp": 3000,
+      "items": {
+       "ruong_vang": 1
+      }
+     }
+    },
+    {
+     "name": "Câu 1 cá Huyền Thoại",
+     "on": "catch",
+     "filter": {
+      "minRarity": 5
+     },
+     "amount": "count",
+     "target": 1,
+     "reward": {
+      "xu": 30000,
+      "exp": 6000,
+      "items": {
+       "ruong_kim_cuong": 1
+      }
+     }
+    }
+   ]
+  }
+ ]
+}

@@ -1,0 +1,711 @@
+{
+ "tiers": [
+  {
+   "id": 1,
+   "name": "Gỗ",
+   "color": "#8B5A2B",
+   "mat": "go_soi"
+  },
+  {
+   "id": 2,
+   "name": "Đồng",
+   "color": "#B87333",
+   "mat": "phoi_dong"
+  },
+  {
+   "id": 3,
+   "name": "Bạc",
+   "color": "#C7CCD4",
+   "mat": "thoi_bac"
+  },
+  {
+   "id": 4,
+   "name": "Vàng",
+   "color": "#FFD23F",
+   "mat": "thoi_vang"
+  },
+  {
+   "id": 5,
+   "name": "Kim Cương",
+   "color": "#7DF9FF",
+   "mat": "manh_kim_cuong"
+  },
+  {
+   "id": 6,
+   "name": "Sử Thi",
+   "color": "#B04CE0",
+   "mat": "loi_su_thi"
+  },
+  {
+   "id": 7,
+   "name": "Huyền Thoại",
+   "color": "#FF9800",
+   "mat": "vay_rong"
+  },
+  {
+   "id": 8,
+   "name": "Thần Thoại",
+   "color": "#F0443C",
+   "mat": "tinh_hoa_than_thoai"
+  },
+  {
+   "id": 9,
+   "name": "Cổ Đại",
+   "color": "#C9A24A",
+   "mat": "manh_co_dai"
+  },
+  {
+   "id": 10,
+   "name": "Thần Cấp",
+   "color": "#27E8FF",
+   "mat": "tinh_hoa_than_cap"
+  }
+ ],
+ "innates": [
+  {
+   "id": "lucky_cast",
+   "name": "Vận May",
+   "desc": "Tăng tỷ lệ cá hiếm"
+  },
+  {
+   "id": "swift_bite",
+   "name": "Dụ Cá Nhanh",
+   "desc": "Giảm thời gian chờ cá cắn"
+  },
+  {
+   "id": "sturdy",
+   "name": "Kiên Cố",
+   "desc": "Giảm hao mòn độ bền"
+  },
+  {
+   "id": "bountiful",
+   "name": "Bội Thu",
+   "desc": "Tăng cân nặng cá"
+  },
+  {
+   "id": "gold_touch",
+   "name": "Chạm Vàng",
+   "desc": "Tăng giá bán cá"
+  },
+  {
+   "id": "exp_flow",
+   "name": "Dòng Tri Thức",
+   "desc": "Tăng EXP nhận được"
+  },
+  {
+   "id": "steady_line",
+   "name": "Dây Vững",
+   "desc": "Giảm căng dây khi kéo cá"
+  }
+ ],
+ "rods": [
+  {
+   "id": "rod_t1_a",
+   "name": "Cần Gỗ Sồi",
+   "tier": 1,
+   "tierName": "Gỗ",
+   "variant": "A",
+   "stats": {
+    "luck": 6,
+    "power": 11,
+    "reel": 9,
+    "durability": 57,
+    "detect": 4,
+    "resist": 5
+   },
+   "maxLevel": 25,
+   "enhanceCap": 5,
+   "sockets": 0,
+   "innate": null,
+   "price": 0,
+   "buyable": true,
+   "starter": true,
+   "sprite": {
+    "style": "A",
+    "tier": 1,
+    "color": "#8B5A2B"
+   },
+   "desc": "Cần câu Gỗ (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t1_b",
+   "name": "Cần Tre Xanh",
+   "tier": 1,
+   "tierName": "Gỗ",
+   "variant": "B",
+   "stats": {
+    "luck": 4,
+    "power": 14,
+    "reel": 8,
+    "durability": 69,
+    "detect": 3,
+    "resist": 6
+   },
+   "maxLevel": 25,
+   "enhanceCap": 5,
+   "sockets": 0,
+   "innate": null,
+   "price": 600,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 1,
+    "color": "#8B5A2B"
+   },
+   "desc": "Cần câu Gỗ (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t2_a",
+   "name": "Cần Đồng Cổ",
+   "tier": 2,
+   "tierName": "Đồng",
+   "variant": "A",
+   "stats": {
+    "luck": 14,
+    "power": 20,
+    "reel": 14,
+    "durability": 81,
+    "detect": 10,
+    "resist": 8
+   },
+   "maxLevel": 30,
+   "enhanceCap": 6,
+   "sockets": 0,
+   "innate": null,
+   "price": 1500,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 2,
+    "color": "#B87333"
+   },
+   "desc": "Cần câu Đồng (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t2_b",
+   "name": "Cần Hoa Đào",
+   "tier": 2,
+   "tierName": "Đồng",
+   "variant": "B",
+   "stats": {
+    "luck": 9,
+    "power": 26,
+    "reel": 12,
+    "durability": 98,
+    "detect": 7,
+    "resist": 11
+   },
+   "maxLevel": 30,
+   "enhanceCap": 6,
+   "sockets": 0,
+   "innate": null,
+   "price": 1500,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 2,
+    "color": "#B87333"
+   },
+   "desc": "Cần câu Đồng (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t3_a",
+   "name": "Cần Thép Lam",
+   "tier": 3,
+   "tierName": "Bạc",
+   "variant": "A",
+   "stats": {
+    "luck": 21,
+    "power": 29,
+    "reel": 20,
+    "durability": 105,
+    "detect": 16,
+    "resist": 12
+   },
+   "maxLevel": 35,
+   "enhanceCap": 7,
+   "sockets": 1,
+   "innate": {
+    "id": "steady_line",
+    "base": 6.5
+   },
+   "price": 9000,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 3,
+    "color": "#C7CCD4"
+   },
+   "desc": "Cần câu Bạc (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t3_b",
+   "name": "Cần Ngân Vân",
+   "tier": 3,
+   "tierName": "Bạc",
+   "variant": "B",
+   "stats": {
+    "luck": 14,
+    "power": 38,
+    "reel": 17,
+    "durability": 126,
+    "detect": 11,
+    "resist": 16
+   },
+   "maxLevel": 35,
+   "enhanceCap": 7,
+   "sockets": 1,
+   "innate": {
+    "id": "lucky_cast",
+    "base": 6.5
+   },
+   "price": 9000,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 3,
+    "color": "#C7CCD4"
+   },
+   "desc": "Cần câu Bạc (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t4_a",
+   "name": "Cần Hoàng Kim",
+   "tier": 4,
+   "tierName": "Vàng",
+   "variant": "A",
+   "stats": {
+    "luck": 29,
+    "power": 39,
+    "reel": 25,
+    "durability": 128,
+    "detect": 23,
+    "resist": 15
+   },
+   "maxLevel": 40,
+   "enhanceCap": 8,
+   "sockets": 1,
+   "innate": {
+    "id": "swift_bite",
+    "base": 8
+   },
+   "price": 40000,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 4,
+    "color": "#FFD23F"
+   },
+   "desc": "Cần câu Vàng (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t4_b",
+   "name": "Cần Hỏa Kim",
+   "tier": 4,
+   "tierName": "Vàng",
+   "variant": "B",
+   "stats": {
+    "luck": 20,
+    "power": 50,
+    "reel": 22,
+    "durability": 155,
+    "detect": 15,
+    "resist": 21
+   },
+   "maxLevel": 40,
+   "enhanceCap": 8,
+   "sockets": 1,
+   "innate": {
+    "id": "sturdy",
+    "base": 8
+   },
+   "price": 40000,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 4,
+    "color": "#FFD23F"
+   },
+   "desc": "Cần câu Vàng (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t5_a",
+   "name": "Cần Băng Tinh",
+   "tier": 5,
+   "tierName": "Kim Cương",
+   "variant": "A",
+   "stats": {
+    "luck": 36,
+    "power": 48,
+    "reel": 31,
+    "durability": 152,
+    "detect": 29,
+    "resist": 19
+   },
+   "maxLevel": 45,
+   "enhanceCap": 9,
+   "sockets": 2,
+   "innate": {
+    "id": "bountiful",
+    "base": 9.5
+   },
+   "price": 150000,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 5,
+    "color": "#7DF9FF"
+   },
+   "desc": "Cần câu Kim Cương (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t5_b",
+   "name": "Cần Lục Bảo",
+   "tier": 5,
+   "tierName": "Kim Cương",
+   "variant": "B",
+   "stats": {
+    "luck": 25,
+    "power": 62,
+    "reel": 27,
+    "durability": 184,
+    "detect": 20,
+    "resist": 26
+   },
+   "maxLevel": 45,
+   "enhanceCap": 9,
+   "sockets": 2,
+   "innate": {
+    "id": "gold_touch",
+    "base": 9.5
+   },
+   "price": 150000,
+   "buyable": true,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 5,
+    "color": "#7DF9FF"
+   },
+   "desc": "Cần câu Kim Cương (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t6_a",
+   "name": "Cần Tử Diễm",
+   "tier": 6,
+   "tierName": "Sử Thi",
+   "variant": "A",
+   "stats": {
+    "luck": 44,
+    "power": 57,
+    "reel": 36,
+    "durability": 176,
+    "detect": 35,
+    "resist": 23
+   },
+   "maxLevel": 50,
+   "enhanceCap": 11,
+   "sockets": 2,
+   "innate": {
+    "id": "steady_line",
+    "base": 11
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 6,
+    "color": "#B04CE0"
+   },
+   "desc": "Cần câu Sử Thi (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t6_b",
+   "name": "Cần Hắc Tử",
+   "tier": 6,
+   "tierName": "Sử Thi",
+   "variant": "B",
+   "stats": {
+    "luck": 30,
+    "power": 74,
+    "reel": 31,
+    "durability": 213,
+    "detect": 24,
+    "resist": 31
+   },
+   "maxLevel": 50,
+   "enhanceCap": 11,
+   "sockets": 2,
+   "innate": {
+    "id": "lucky_cast",
+    "base": 11
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 6,
+    "color": "#B04CE0"
+   },
+   "desc": "Cần câu Sử Thi (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t7_a",
+   "name": "Cần Thiên Sứ",
+   "tier": 7,
+   "tierName": "Huyền Thoại",
+   "variant": "A",
+   "stats": {
+    "luck": 51,
+    "power": 66,
+    "reel": 42,
+    "durability": 200,
+    "detect": 41,
+    "resist": 26
+   },
+   "maxLevel": 55,
+   "enhanceCap": 12,
+   "sockets": 3,
+   "innate": {
+    "id": "swift_bite",
+    "base": 12.5
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 7,
+    "color": "#FF9800"
+   },
+   "desc": "Cần câu Huyền Thoại (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t7_b",
+   "name": "Cần Tinh Tú",
+   "tier": 7,
+   "tierName": "Huyền Thoại",
+   "variant": "B",
+   "stats": {
+    "luck": 35,
+    "power": 86,
+    "reel": 36,
+    "durability": 241,
+    "detect": 28,
+    "resist": 36
+   },
+   "maxLevel": 55,
+   "enhanceCap": 12,
+   "sockets": 3,
+   "innate": {
+    "id": "sturdy",
+    "base": 12.5
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 7,
+    "color": "#FF9800"
+   },
+   "desc": "Cần câu Huyền Thoại (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t8_a",
+   "name": "Cần Xích Diễm",
+   "tier": 8,
+   "tierName": "Thần Thoại",
+   "variant": "A",
+   "stats": {
+    "luck": 59,
+    "power": 75,
+    "reel": 47,
+    "durability": 223,
+    "detect": 48,
+    "resist": 30
+   },
+   "maxLevel": 60,
+   "enhanceCap": 13,
+   "sockets": 3,
+   "innate": {
+    "id": "bountiful",
+    "base": 14
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 8,
+    "color": "#F0443C"
+   },
+   "desc": "Cần câu Thần Thoại (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t8_b",
+   "name": "Cần Xích Long",
+   "tier": 8,
+   "tierName": "Thần Thoại",
+   "variant": "B",
+   "stats": {
+    "luck": 40,
+    "power": 98,
+    "reel": 41,
+    "durability": 270,
+    "detect": 32,
+    "resist": 41
+   },
+   "maxLevel": 60,
+   "enhanceCap": 13,
+   "sockets": 3,
+   "innate": {
+    "id": "gold_touch",
+    "base": 14
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 8,
+    "color": "#F0443C"
+   },
+   "desc": "Cần câu Thần Thoại (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t9_a",
+   "name": "Cần Hắc Long",
+   "tier": 9,
+   "tierName": "Cổ Đại",
+   "variant": "A",
+   "stats": {
+    "luck": 66,
+    "power": 85,
+    "reel": 53,
+    "durability": 247,
+    "detect": 54,
+    "resist": 33
+   },
+   "maxLevel": 65,
+   "enhanceCap": 14,
+   "sockets": 4,
+   "innate": {
+    "id": "exp_flow",
+    "base": 15.5
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 9,
+    "color": "#C9A24A"
+   },
+   "desc": "Cần câu Cổ Đại (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t9_b",
+   "name": "Cần Kim Quang Cổ",
+   "tier": 9,
+   "tierName": "Cổ Đại",
+   "variant": "B",
+   "stats": {
+    "luck": 45,
+    "power": 110,
+    "reel": 46,
+    "durability": 299,
+    "detect": 37,
+    "resist": 46
+   },
+   "maxLevel": 65,
+   "enhanceCap": 14,
+   "sockets": 4,
+   "innate": {
+    "id": "steady_line",
+    "base": 15.5
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 9,
+    "color": "#C9A24A"
+   },
+   "desc": "Cần câu Cổ Đại (thiên về sức mạnh & độ bền)."
+  },
+  {
+   "id": "rod_t10_a",
+   "name": "Cần Thủy Thần",
+   "tier": 10,
+   "tierName": "Thần Cấp",
+   "variant": "A",
+   "stats": {
+    "luck": 74,
+    "power": 94,
+    "reel": 58,
+    "durability": 271,
+    "detect": 60,
+    "resist": 37
+   },
+   "maxLevel": 70,
+   "enhanceCap": 15,
+   "sockets": 4,
+   "innate": {
+    "id": "lucky_cast",
+    "base": 17
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "A",
+    "tier": 10,
+    "color": "#27E8FF"
+   },
+   "desc": "Cần câu Thần Cấp (thiên về may mắn & phát hiện)."
+  },
+  {
+   "id": "rod_t10_b",
+   "name": "Cần Thiên Tông",
+   "tier": 10,
+   "tierName": "Thần Cấp",
+   "variant": "B",
+   "stats": {
+    "luck": 50,
+    "power": 122,
+    "reel": 50,
+    "durability": 328,
+    "detect": 41,
+    "resist": 51
+   },
+   "maxLevel": 70,
+   "enhanceCap": 15,
+   "sockets": 4,
+   "innate": {
+    "id": "swift_bite",
+    "base": 17
+   },
+   "price": 0,
+   "buyable": false,
+   "starter": false,
+   "sprite": {
+    "style": "B",
+    "tier": 10,
+    "color": "#27E8FF"
+   },
+   "desc": "Cần câu Thần Cấp (thiên về sức mạnh & độ bền)."
+  }
+ ]
+}

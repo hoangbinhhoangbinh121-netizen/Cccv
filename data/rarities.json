@@ -1,0 +1,110 @@
+[
+ {
+  "id": 1,
+  "key": "pho_thong",
+  "name": "Phổ Thông",
+  "color": "#9AA0A6",
+  "weight": 100,
+  "priceMult": 1,
+  "expMult": 1,
+  "effect": "Không",
+  "frame": "Khung Gỗ Mộc",
+  "mark": "▫"
+ },
+ {
+  "id": 2,
+  "key": "hiem",
+  "name": "Hiếm",
+  "color": "#4CAF50",
+  "weight": 40,
+  "priceMult": 2.4,
+  "expMult": 1.6,
+  "effect": "Ánh Lục",
+  "frame": "Khung Đồng Xanh",
+  "mark": "◈"
+ },
+ {
+  "id": 3,
+  "key": "quy_hiem",
+  "name": "Quý Hiếm",
+  "color": "#2196F3",
+  "weight": 16,
+  "priceMult": 6,
+  "expMult": 2.6,
+  "effect": "Lấp Lánh",
+  "frame": "Khung Bạc Lam",
+  "mark": "◆"
+ },
+ {
+  "id": 4,
+  "key": "su_thi",
+  "name": "Sử Thi",
+  "color": "#B04CE0",
+  "weight": 6,
+  "priceMult": 15,
+  "expMult": 4.2,
+  "effect": "Hào Quang Tím",
+  "frame": "Khung Tử Tinh",
+  "mark": "✦"
+ },
+ {
+  "id": 5,
+  "key": "huyen_thoai",
+  "name": "Huyền Thoại",
+  "color": "#FF9800",
+  "weight": 2.2,
+  "priceMult": 38,
+  "expMult": 7,
+  "effect": "Ngọn Lửa Vàng",
+  "frame": "Khung Kim Hoàng",
+  "mark": "✹"
+ },
+ {
+  "id": 6,
+  "key": "than_thoai",
+  "name": "Thần Thoại",
+  "color": "#F0443C",
+  "weight": 0.8,
+  "priceMult": 95,
+  "expMult": 12,
+  "effect": "Huyết Quang",
+  "frame": "Khung Xích Long",
+  "mark": "❂"
+ },
+ {
+  "id": 7,
+  "key": "co_dai",
+  "name": "Cổ Đại",
+  "color": "#C9A24A",
+  "weight": 0.3,
+  "priceMult": 240,
+  "expMult": 20,
+  "effect": "Phù Văn Cổ",
+  "frame": "Khung Cổ Ngọc",
+  "mark": "❖"
+ },
+ {
+  "id": 8,
+  "key": "than_cap",
+  "name": "Thần Cấp",
+  "color": "#27E8FF",
+  "weight": 0.09,
+  "priceMult": 600,
+  "expMult": 35,
+  "effect": "Thánh Quang",
+  "frame": "Khung Thiên Quang",
+  "mark": "✺"
+ },
+ {
+  "id": 9,
+  "key": "doc_nhat",
+  "name": "Độc Nhất",
+  "color": "#FF4DE1",
+  "weight": 0.008,
+  "priceMult": 1600,
+  "expMult": 60,
+  "effect": "Cầu Vồng Vĩnh Hằng",
+  "frame": "Khung Vĩnh Hằng",
+  "mark": "✪"
+ }
+]

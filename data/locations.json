@@ -1,0 +1,323 @@
+[
+ {
+  "id": "ao_lang",
+  "name": "Ao Làng",
+  "order": 1,
+  "rarity": 1,
+  "category": "nuoc_ngot",
+  "scene": "pond",
+  "desc": "Ao nhỏ yên bình đầu làng, nơi mọi cần thủ bắt đầu hành trình.",
+  "unlock": {
+   "level": 1,
+   "rodTier": 1,
+   "cost": 0
+  },
+  "recommendedLevel": 1,
+  "weather": {
+   "nang": 50,
+   "mua": 30,
+   "suong_mu": 15,
+   "bao": 5
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1
+  },
+  "resources": [
+   {
+    "item": "vay_ca",
+    "chance": 0.1
+   },
+   {
+    "item": "go_soi",
+    "chance": 0.045
+   }
+  ],
+  "boss": "boss_lao_tre_ao_lang",
+  "baseBiteSeconds": 8,
+  "fishCount": 12
+ },
+ {
+  "id": "ho_thanh_binh",
+  "name": "Hồ Thanh Bình",
+  "order": 2,
+  "rarity": 2,
+  "category": "nuoc_ngot",
+  "scene": "lake",
+  "desc": "Mặt hồ phẳng lặng soi bóng núi xanh, ẩn chứa nhiều loài cá hiếm.",
+  "unlock": {
+   "level": 5,
+   "rodTier": 1,
+   "cost": 500
+  },
+  "recommendedLevel": 5,
+  "weather": {
+   "nang": 45,
+   "mua": 25,
+   "suong_mu": 25,
+   "bao": 5
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1
+  },
+  "resources": [
+   {
+    "item": "phoi_dong",
+    "chance": 0.1
+   },
+   {
+    "item": "go_soi",
+    "chance": 0.045
+   }
+  ],
+  "boss": "boss_ho_than_chep_vang",
+  "baseBiteSeconds": 9,
+  "fishCount": 12
+ },
+ {
+  "id": "song_bang",
+  "name": "Sông Băng",
+  "order": 3,
+  "rarity": 3,
+  "category": "vung_bang",
+  "scene": "glacier",
+  "desc": "Dòng sông đóng băng quanh năm, cá nơi đây có vảy lấp lánh như pha lê.",
+  "unlock": {
+   "level": 12,
+   "rodTier": 2,
+   "cost": 3000
+  },
+  "recommendedLevel": 12,
+  "weather": {
+   "tuyet": 50,
+   "nang": 20,
+   "suong_mu": 15,
+   "cuc_quang": 10,
+   "bao": 5
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1
+  },
+  "resources": [
+   {
+    "item": "tinh_the_bang",
+    "chance": 0.1
+   },
+   {
+    "item": "thoi_bac",
+    "chance": 0.045
+   }
+  ],
+  "boss": "boss_cu_kinh_song_bang",
+  "baseBiteSeconds": 10,
+  "fishCount": 12
+ },
+ {
+  "id": "rung_nguyen_sinh",
+  "name": "Rừng Nguyên Sinh",
+  "order": 4,
+  "rarity": 4,
+  "category": "nuoc_ngot",
+  "scene": "forest",
+  "desc": "Dòng suối cổ thụ giữa rừng già, linh khí nuôi dưỡng những loài cá sử thi.",
+  "unlock": {
+   "level": 20,
+   "rodTier": 3,
+   "cost": 15000
+  },
+  "recommendedLevel": 20,
+  "weather": {
+   "mua": 35,
+   "suong_mu": 30,
+   "nang": 25,
+   "bao": 10
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1
+  },
+  "resources": [
+   {
+    "item": "re_co_thu",
+    "chance": 0.1
+   },
+   {
+    "item": "thoi_vang",
+    "chance": 0.045
+   }
+  ],
+  "boss": "boss_thuy_quai_co_thu",
+  "baseBiteSeconds": 11,
+  "fishCount": 12
+ },
+ {
+  "id": "bien_sau",
+  "name": "Biển Sâu",
+  "order": 5,
+  "rarity": 5,
+  "category": "nuoc_man",
+  "scene": "ocean",
+  "desc": "Đại dương mênh mông, nơi ngự trị những truyền thuyết của biển cả.",
+  "unlock": {
+   "level": 30,
+   "rodTier": 4,
+   "cost": 60000
+  },
+  "recommendedLevel": 30,
+  "weather": {
+   "nang": 35,
+   "mua": 25,
+   "bao": 25,
+   "suong_mu": 15
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1
+  },
+  "resources": [
+   {
+    "item": "ngoc_trai",
+    "chance": 0.1
+   },
+   {
+    "item": "manh_kim_cuong",
+    "chance": 0.045
+   }
+  ],
+  "boss": "boss_dai_map_dai_duong",
+  "baseBiteSeconds": 12,
+  "fishCount": 12
+ },
+ {
+  "id": "vuc_tham",
+  "name": "Vực Thẳm",
+  "order": 6,
+  "rarity": 6,
+  "category": "bien_sau",
+  "scene": "abyss",
+  "desc": "Vực sâu không ánh sáng, mỗi con cá là một sinh vật thần thoại.",
+  "unlock": {
+   "level": 40,
+   "rodTier": 5,
+   "cost": 200000
+  },
+  "recommendedLevel": 40,
+  "weather": {
+   "suong_mu": 40,
+   "bao": 30,
+   "cuc_quang": 15,
+   "mua": 15
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1.25
+  },
+  "resources": [
+   {
+    "item": "da_vuc",
+    "chance": 0.1
+   },
+   {
+    "item": "loi_su_thi",
+    "chance": 0.045
+   }
+  ],
+  "boss": "boss_ma_muc_vuc_tham",
+  "baseBiteSeconds": 13,
+  "fishCount": 12
+ },
+ {
+  "id": "long_hai",
+  "name": "Long Hải",
+  "order": 7,
+  "rarity": 7,
+  "category": "nuoc_man",
+  "scene": "dragon",
+  "desc": "Biển rồng thiêng, di tích của những chủ nhân biển cả thời cổ đại.",
+  "unlock": {
+   "level": 52,
+   "rodTier": 6,
+   "cost": 700000
+  },
+  "recommendedLevel": 52,
+  "weather": {
+   "bao": 30,
+   "mua": 25,
+   "nang": 20,
+   "cuc_quang": 25
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1.25
+  },
+  "resources": [
+   {
+    "item": "vay_rong",
+    "chance": 0.1
+   },
+   {
+    "item": "tinh_hoa_than_thoai",
+    "chance": 0.045
+   }
+  ],
+  "boss": "boss_thanh_long_hai_chu",
+  "baseBiteSeconds": 14,
+  "fishCount": 12
+ },
+ {
+  "id": "hai_vuc_co_dai",
+  "name": "Hải Vực Cổ Đại",
+  "order": 8,
+  "rarity": 8,
+  "category": "bien_sau",
+  "scene": "ancient",
+  "desc": "Phế tích dưới đáy biển nơi ngủ yên sinh vật độc nhất của thế giới.",
+  "unlock": {
+   "level": 65,
+   "rodTier": 7,
+   "cost": 2000000
+  },
+  "recommendedLevel": 65,
+  "weather": {
+   "cuc_quang": 35,
+   "bao": 30,
+   "suong_mu": 25,
+   "mua": 10
+  },
+  "timeBands": {
+   "dawn": 1,
+   "day": 1,
+   "dusk": 1,
+   "night": 1.25
+  },
+  "resources": [
+   {
+    "item": "manh_co_dai",
+    "chance": 0.1
+   },
+   {
+    "item": "tinh_hoa_than_cap",
+    "chance": 0.03
+   }
+  ],
+  "boss": "boss_thai_co_leviathan",
+  "baseBiteSeconds": 15,
+  "fishCount": 12
+ }
+]

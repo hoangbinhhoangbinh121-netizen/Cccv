@@ -1,0 +1,242 @@
+[
+ {
+  "id": "moi_giun_dat",
+  "name": "Giun Đất",
+  "type": "bait",
+  "tier": 1,
+  "price": 5,
+  "sell": 1,
+  "stats": {
+   "biteSpeed": 0,
+   "rareBonus": 0,
+   "categoryBonus": 0,
+   "category": null
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 0
+  },
+  "desc": "Mồi câu: nhanh cá cắn +0%, tỷ lệ cá hiếm +0%."
+ },
+ {
+  "id": "moi_gioi_bo",
+  "name": "Giòi Bọ",
+  "type": "bait",
+  "tier": 2,
+  "price": 8,
+  "sell": 2,
+  "stats": {
+   "biteSpeed": 12,
+   "rareBonus": 0,
+   "categoryBonus": 0,
+   "category": null
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 1
+  },
+  "desc": "Mồi câu: nhanh cá cắn +12%, tỷ lệ cá hiếm +0%."
+ },
+ {
+  "id": "moi_bot_gao_thom",
+  "name": "Bột Gạo Thơm",
+  "type": "bait",
+  "tier": 3,
+  "price": 12,
+  "sell": 3,
+  "stats": {
+   "biteSpeed": 8,
+   "rareBonus": 0,
+   "categoryBonus": 25,
+   "category": "nuoc_ngot"
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 2
+  },
+  "desc": "Mồi câu: nhanh cá cắn +8%, tỷ lệ cá hiếm +0%, +25% cá nuoc_ngot."
+ },
+ {
+  "id": "moi_tom_nho",
+  "name": "Tôm Nhỏ",
+  "type": "bait",
+  "tier": 4,
+  "price": 30,
+  "sell": 9,
+  "stats": {
+   "biteSpeed": 8,
+   "rareBonus": 3,
+   "categoryBonus": 25,
+   "category": "nuoc_man"
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 3
+  },
+  "desc": "Mồi câu: nhanh cá cắn +8%, tỷ lệ cá hiếm +3%, +25% cá nuoc_man."
+ },
+ {
+  "id": "moi_ca_moi_nho",
+  "name": "Cá Mồi Nhỏ",
+  "type": "bait",
+  "tier": 5,
+  "price": 60,
+  "sell": 18,
+  "stats": {
+   "biteSpeed": 6,
+   "rareBonus": 5,
+   "categoryBonus": 20,
+   "category": "nuoc_man"
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 4
+  },
+  "desc": "Mồi câu: nhanh cá cắn +6%, tỷ lệ cá hiếm +5%, +20% cá nuoc_man."
+ },
+ {
+  "id": "moi_moi_gia_bac",
+  "name": "Mồi Giả Bạc",
+  "type": "bait",
+  "tier": 6,
+  "price": 150,
+  "sell": 45,
+  "stats": {
+   "biteSpeed": 10,
+   "rareBonus": 10,
+   "categoryBonus": 0,
+   "category": null
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 5
+  },
+  "desc": "Mồi câu: nhanh cá cắn +10%, tỷ lệ cá hiếm +10%."
+ },
+ {
+  "id": "moi_moi_phat_quang",
+  "name": "Mồi Phát Quang",
+  "type": "bait",
+  "tier": 7,
+  "price": 400,
+  "sell": 120,
+  "stats": {
+   "biteSpeed": 10,
+   "rareBonus": 14,
+   "categoryBonus": 30,
+   "category": "bien_sau"
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 6
+  },
+  "desc": "Mồi câu: nhanh cá cắn +10%, tỷ lệ cá hiếm +14%, +30% cá bien_sau."
+ },
+ {
+  "id": "moi_moi_bang_tinh",
+  "name": "Mồi Băng Tinh",
+  "type": "bait",
+  "tier": 8,
+  "price": 600,
+  "sell": 180,
+  "stats": {
+   "biteSpeed": 8,
+   "rareBonus": 14,
+   "categoryBonus": 35,
+   "category": "vung_bang"
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 7
+  },
+  "desc": "Mồi câu: nhanh cá cắn +8%, tỷ lệ cá hiếm +14%, +35% cá vung_bang."
+ },
+ {
+  "id": "moi_moi_re_co_thu",
+  "name": "Mồi Rễ Cổ Thụ",
+  "type": "bait",
+  "tier": 9,
+  "price": 900,
+  "sell": 270,
+  "stats": {
+   "biteSpeed": 8,
+   "rareBonus": 18,
+   "categoryBonus": 30,
+   "category": "nuoc_ngot"
+  },
+  "shop": true,
+  "sprite": {
+   "kind": "bait",
+   "index": 8
+  },
+  "desc": "Mồi câu: nhanh cá cắn +8%, tỷ lệ cá hiếm +18%, +30% cá nuoc_ngot."
+ },
+ {
+  "id": "moi_moi_long_lan",
+  "name": "Mồi Long Lân",
+  "type": "bait",
+  "tier": 10,
+  "price": 3000,
+  "sell": 900,
+  "stats": {
+   "biteSpeed": 12,
+   "rareBonus": 28,
+   "categoryBonus": 0,
+   "category": "sinh_vat_than_thoai"
+  },
+  "shop": false,
+  "sprite": {
+   "kind": "bait",
+   "index": 9
+  },
+  "desc": "Mồi câu: nhanh cá cắn +12%, tỷ lệ cá hiếm +28%, +0% cá sinh_vat_than_thoai."
+ },
+ {
+  "id": "moi_moi_thai_co",
+  "name": "Mồi Thái Cổ",
+  "type": "bait",
+  "tier": 11,
+  "price": 8000,
+  "sell": 2400,
+  "stats": {
+   "biteSpeed": 12,
+   "rareBonus": 34,
+   "categoryBonus": 0,
+   "category": "co_dai"
+  },
+  "shop": false,
+  "sprite": {
+   "kind": "bait",
+   "index": 10
+  },
+  "desc": "Mồi câu: nhanh cá cắn +12%, tỷ lệ cá hiếm +34%, +0% cá co_dai."
+ },
+ {
+  "id": "moi_moi_than_cap",
+  "name": "Mồi Thần Cấp",
+  "type": "bait",
+  "tier": 12,
+  "price": 30000,
+  "sell": 9000,
+  "stats": {
+   "biteSpeed": 15,
+   "rareBonus": 45,
+   "categoryBonus": 0,
+   "category": null
+  },
+  "shop": false,
+  "sprite": {
+   "kind": "bait",
+   "index": 11
+  },
+  "desc": "Mồi câu: nhanh cá cắn +15%, tỷ lệ cá hiếm +45%."
+ }
+]
