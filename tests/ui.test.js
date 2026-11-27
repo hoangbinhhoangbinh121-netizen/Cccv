@@ -5,6 +5,8 @@ const R = (p) => req(`database/repositories/${p}`);
 const router = req('interactions/router'); const logger = req('utils/logger'); const config = req('config');
 const { loadCommands } = req('commands'); const fishingUI = req('ui/fishingUI'); const mg = H.mg;
 
+/** Cách Discord tính giới hạn 8000: tổng độ dài name + description + value (của choices) trên toàn cây lệnh. */
+const cmdChars = (n) => (n && typeof n === 'object' ? Object.entries(n).reduce((a, [k, v]) => a + (['name', 'description'].includes(k) || (k === 'value' && typeof v === 'string') ? String(v).length : cmdChars(v)), 0) : 0);
 const commands = () => { const m = loadCommands(); router.setCommands(m); return m; };
 const give = (id, items) => svc('inventoryService').grant(id, items, { force: true });
 let errors = [];
@@ -30,7 +32,7 @@ group('Lệnh Discord');
 test('toàn bộ lệnh hợp lệ theo giới hạn Discord & đủ lệnh theo đặc tả', () => {
   const m = commands(); const need = 'cauca khuvuc codex thongtin daily nhiemvu thanh_tuu bangxephang cancau nangcap cuonghoa khamda thuctinh chetao kho khoca ban_ca sudung cuahang muamoi thitruong giaodich thucung boss toidau fishing-admin fishing-event fishing-config fishing-backup fishing-restore backupdb restore_db'.split(' ');
   for (const n of need) assert.ok(m.has(n), `thiếu lệnh /${n}`); assert.ok(m.size <= 100);
-  for (const c of m.values()) { const j = c.data.toJSON(); assert.ok(j.description && j.description.length <= 100, j.name); assert.ok(JSON.stringify(j).length < 6000, `${j.name} quá dài`); }
+  for (const c of m.values()) { const j = c.data.toJSON(); assert.ok(j.description && j.description.length <= 100, j.name); assert.ok(cmdChars(j) <= 8000, `${j.name} vượt 8000 ký tự (${cmdChars(j)})`); assert.ok(JSON.stringify(j).length < 9000, `${j.name} JSON quá lớn`); }
 });
 test('lệnh quản trị bị ẩn với người thường (default_member_permissions)', () => { const m = commands(); for (const n of ['fishing-admin', 'fishing-event', 'fishing-config', 'fishing-backup', 'fishing-restore', 'backupdb', 'restore_db']) assert.equal(m.get(n).data.toJSON().default_member_permissions, '8', n); });
 test('mọi lệnh mở được màn hình hợp lệ (người mới & người đầy đủ)', async () => {
@@ -59,9 +61,27 @@ test('chu trình đầy đủ: thả câu → cá cắn → giật → kéo đú
 test('nút của người khác / nonce cũ / phiên hết hiệu lực đều bị từ chối an toàn', async () => {
   commands(); const a = player('A'); const b = player('B'); await run(X.slash(a, 'cauca')); let s = R('sessions').active(a); clock.set(s.bite_at); s = svc('fishingService').advance(s.id);
   let i = await run(X.click(b, `fs|${s.id}|${s.nonce}|hook`)); assert.match(textOf(X.last(i).p), /không phải phiên/);
-  i = await run(X.click(a, `fs|${s.id}|saisai|hook`)); assert.match(textOf(X.last(i).p), /hiệu lực/); i = await run(X.click(b, `v|${a}|profile|show`)); assert.match(textOf(X.last(i).p), /thuộc về người khác/);
+  i = await run(X.click(a, `fs|${s.id}|saisai|hook`)); assert.match(textOf(X.last(i).p), /GIẬT CẦN/); /* nút cũ → tự làm mới, không báo lỗi */ assert.equal(R('sessions').get(s.id).state, 'bite'); i = await run(X.click(b, `v|${a}|profile|show`)); assert.match(textOf(X.last(i).p), /thuộc về người khác/);
 });
-test('không mở được hai phiên; giao diện báo rõ', async () => { commands(); const id = player(); await run(X.slash(id, 'cauca')); const i = await run(X.slash(id, 'cauca')); assert.match(textOf(X.last(i).p), /phiên câu chưa kết thúc/); });
+test('không mở được hai phiên; gõ lại /cauca thì mở lại đúng phiên đang chạy', async () => { commands(); const id = player(); await run(X.slash(id, 'cauca')); const first = R('sessions').active(id); const i = await run(X.slash(id, 'cauca')); assert.match(X.last(i).p.content, /đã mở lại/); assert.equal(R('sessions').active(id).id, first.id); fishingUI.clearAll(); });
+test('startCast báo rõ khi còn phiên, và tự dọn phiên đã quá hạn', async () => {
+  commands(); const id = player(); const s = svc('fishingService').startCast(id); assert.throws(() => svc('fishingService').startCast(id), /chưa kết thúc/);
+  clock.set(s.deadline_at + 20000); R('settings').clearCooldowns?.(id); const s2 = svc('fishingService').startCast(id); assert.notEqual(s2.id, s.id); assert.equal(R('sessions').get(s.id).state, 'escaped'); fishingUI.clearAll();
+});
+test('nút "Kiểm tra cá" làm mới giao diện khi hẹn giờ chưa kịp chạy', async () => {
+  commands(); const id = player(); await run(X.slash(id, 'cauca')); const s = R('sessions').active(id); clock.set(s.bite_at + 50);
+  const i = await run(X.click(id, `fs|${s.id}|${s.nonce}|refresh`)); assert.match(textOf(X.last(i).p), /CÁ CẮN CÂU/); fishingUI.clearAll();
+});
+test('lỗi ở bước thưởng phụ không làm kẹt phiên: vẫn giao cá và đóng phiên', async () => {
+  commands(); const id = player(); const s = svc('fishingService').startCast(id); clock.set(s.bite_at + 10); svc('fishingService').advance(s.id);
+  const prog = svc('progressService'); const orig = prog.checkAchievements; prog.checkAchievements = () => { throw new Error('boom'); };
+  try { let cur = R('sessions').get(s.id); cur = svc('fishingService').hook(id, s.id, cur.nonce); let g = 0; while (cur.state === 'reeling' && g++ < 30) { cur = svc('fishingService').reel(id, s.id, cur.nonce, mg.MOVES[cur.data.mini.move].correct); clock.adv(200); } assert.equal(cur.state, 'success'); assert.ok(cur.result.fishInstanceId); assert.equal(R('sessions').active(id), undefined); }
+  finally { prog.checkAchievements = orig; fishingUI.clearAll(); }
+});
+test('loài cá bị xoá khỏi dữ liệu giữa phiên: phiên được đóng và hoàn mồi', async () => {
+  commands(); const id = player(); const s = svc('fishingService').startCast(id); R('sessions').update(s.id, { data: { ...R('sessions').get(s.id).data, fishId: 'khong_ton_tai' } });
+  const out = svc('fishingService').cancel(id, s.id); assert.equal(out.state, 'cancelled'); assert.equal(R('sessions').active(id), undefined);
+});
 test('bộ hẹn giờ làm mới: cá cắn câu & hết hạn tự cập nhật tin nhắn', async () => {
   commands(); const id = player(); const i = await run(X.slash(id, 'cauca')); const s = R('sessions').active(id); clock.set(s.bite_at + 100); await fishingUI.tick(s.id);
   const e = i.log.filter((x) => x.kind === 'edit'); assert.ok(e.length >= 1, 'chưa cập nhật'); assert.match(textOf(e.pop().p), /CÁ CẮN CÂU/); fishingUI.clearAll();

@@ -56,6 +56,14 @@ Người chơi **tự đăng ký** ở lần dùng lệnh đầu tiên (tặng 5
 4. Lên cấp → mở khu vực (`/khuvuc`) và cần mạnh hơn (`/cuahang`, `/chetao`, `/nangcap`, `/cuonghoa`, `/khamda`, `/thuctinh`).
 5. Boss: `/boss` xem, `/toidau` đánh (lập tổ đội để cộng sát thương). Sự kiện: `/sukien`. Hằng ngày: `/daily`, `/nhiemvu`, `/thanh_tuu`.
 
+### Lệnh tiền tố `.` (lười gõ `/`)
+Gõ ngay trong kênh: `.cauca`, `.kho`, `.cuahang`, `.thongtin`… hoặc bí danh ngắn (`.c`, `.tt`, `.dd`, `.nv`, `.bxh`…). Gõ **`.lenh`** để xem tất cả.
+* Tham số đọc theo đúng khai báo của lệnh `/` tương ứng: `.cauca ao lang` (tự khớp tên khu vực), `.giaodich @bạn 1k` (hỗ trợ `1k`, `2.5m`, `1.000.000`), `.fishing-backup tao …`. Giá trị có dấu cách đặt trong "ngoặc kép".
+* Dùng chung bộ giới hạn tốc độ, khoá theo người chơi và kiểm tra quyền với lệnh `/` — admin/chủ bot vẫn phải đúng quyền.
+* Lệnh `.` trả lời ở kênh công khai (tin nhắn thường); lệnh `/` thì tin trả lời chỉ mình bạn thấy.
+* **Cần bật quyền đọc tin nhắn:** Developer Portal → ứng dụng → **Bot** → *Privileged Gateway Intents* → bật **Message Content Intent** → Save, rồi khởi động lại bot. Chưa bật thì bot vẫn chạy bình thường (chỉ ghi cảnh báo) nhưng không đọc được lệnh `.`; lệnh `/` không bị ảnh hưởng.
+* Đổi tiền tố: `PREFIX=!` trong `.env`; tắt hẳn: `PREFIX_ENABLED=0`. Bot cần quyền *View Channel*, *Send Messages*, *Embed Links*, *Attach Files* trong kênh.
+
 ### Danh sách lệnh
 
 | Nhóm | Lệnh |
@@ -69,6 +77,9 @@ Người chơi **tự đăng ký** ở lần dùng lệnh đầu tiên (tặng 5
 | Quản trị | `/fishing-admin` `/fishing-event` `/fishing-config` `/fishing-backup` `/fishing-restore` **`/backupdb`** **`/restore_db`** |
 
 ---
+
+## 🎪 Ngư Trường Giải Trí (module mới)
+`/ngutruong` (hoặc `.nt`): Đoán Ngư Vương (đua cá), Tài Xỉu Linh Vận, Linh Bảo Bí Hộp, Truy Tìm Linh Ngư + Linh Điểm riêng, xếp hạng tuần/mùa, nhiệm vụ ngày, thành tích. **Không cược xu/vật phẩm.** Chi tiết: [docs/ARCADE.md](docs/ARCADE.md) · emoji pixel: [docs/ARCADE-EMOJI.md](docs/ARCADE-EMOJI.md).
 
 ## 3. Quản trị, sao lưu & khôi phục ngay trên Discord
 

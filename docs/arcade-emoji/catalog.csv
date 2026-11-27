@@ -1,0 +1,120 @@
+﻿STT,Mã emoji,File,Nhóm,Tên gọi,Nó là gì (để vẽ lại),Dùng ở đâu,Emoji dự phòng
+1,:ng_hub_logo:,assets/arcade/hub_logo.png,Chung,Lều Hội Ngư Trường,Chiếc lều hội có cờ — biểu tượng của cả module Ngư Trường.,Tiêu đề màn hình chính /ngutruong,🎪
+2,:ng_hub_points:,assets/arcade/hub_points.png,Chung,Linh Điểm,Viên tinh thể xanh — đơn vị điểm giải trí (không phải xu).,Mọi chỗ hiện điểm thưởng,💠
+3,:ng_hub_rank:,assets/arcade/hub_rank.png,Chung,Cấp Bậc,Huy hiệu vương miện nhỏ — cấp bậc Ngư Trường.,"Hồ sơ giải trí, mở khoá hộp",🎖️
+4,:ng_hub_mission:,assets/arcade/hub_mission.png,Chung,Nhiệm Vụ Giải Trí,Cuộn giấy có dấu tích.,Nút/Màn hình nhiệm vụ ngày,📜
+5,:ng_hub_ach:,assets/arcade/hub_ach.png,Chung,Thành Tích,Chiếc cúp vàng nhỏ.,Nút/Màn hình thành tích,🏆
+6,:ng_hub_board:,assets/arcade/hub_board.png,Chung,Bảng Xếp Hạng,Bục ba cột cao thấp.,Nút/Màn hình bảng xếp hạng,📊
+7,:ng_hub_stats:,assets/arcade/hub_stats.png,Chung,Thống Kê,Biểu đồ cột có mũi tên đi lên.,Nút/Màn hình thống kê cá nhân,📈
+8,:ng_hub_help:,assets/arcade/hub_help.png,Chung,Hướng Dẫn,Dấu chấm hỏi trong khung sách.,Nút hướng dẫn,❓
+9,:ng_hub_cap:,assets/arcade/hub_cap.png,Chung,Trần Điểm Ngày,Đồng hồ cát đang chảy.,"Thanh ""điểm hôm nay / trần ngày""",⏳
+10,:ng_hub_claim:,assets/arcade/hub_claim.png,Chung,Nhận Thưởng,Hộp quà nhỏ có nơ.,Nút nhận thưởng nhiệm vụ,🎁
+11,:ng_rank_1:,assets/arcade/rank_1.png,Cấp bậc,Cấp 1: Tập Sự,Mầm non xanh — biểu tượng cấp Tập Sự.,Cạnh tên cấp bậc,🌱
+12,:ng_rank_2:,assets/arcade/rank_2.png,Cấp bậc,Cấp 2: Ngư Khách,Cá nhỏ bạc — biểu tượng cấp Ngư Khách.,Cạnh tên cấp bậc,🐟
+13,:ng_rank_3:,assets/arcade/rank_3.png,Cấp bậc,Cấp 3: Ngư Sĩ,Kiếm cá chéo — biểu tượng cấp Ngư Sĩ.,Cạnh tên cấp bậc,⚔️
+14,:ng_rank_4:,assets/arcade/rank_4.png,Cấp bậc,Cấp 4: Ngư Tướng,Khiên cá — biểu tượng cấp Ngư Tướng.,Cạnh tên cấp bậc,🛡️
+15,:ng_rank_5:,assets/arcade/rank_5.png,Cấp bậc,Cấp 5: Ngư Vương,Vương miện có cá — biểu tượng cấp Ngư Vương.,Cạnh tên cấp bậc,👑
+16,:ng_race_game:,assets/arcade/race_game.png,Đoán Ngư Vương,Đoán Ngư Vương,Lá cờ caro và một chú cá đang lao đi.,Nút vào trò Đoán Ngư Vương,🏁
+17,:ng_race_start:,assets/arcade/race_start.png,Đoán Ngư Vương,Vạch Xuất Phát,Cờ đỏ cắm trên vạch kẻ.,"Nút ""Xuất phát""",🚩
+18,:ng_race_finish:,assets/arcade/race_finish.png,Đoán Ngư Vương,Vạch Đích,Cổng đích với cờ caro.,Dòng kết quả cuộc đua,🏁
+19,:ng_race_pick:,assets/arcade/race_pick.png,Đoán Ngư Vương,Chọn Cá,Tâm ngắm nhỏ.,Menu chọn cá thắng,🎯
+20,:ng_race_speed:,assets/arcade/race_speed.png,Đoán Ngư Vương,Tốc Độ,Tia sét vàng.,Chỉ số Tốc độ của cá,⚡
+21,:ng_race_stamina:,assets/arcade/race_stamina.png,Đoán Ngư Vương,Thể Lực,Trái tim có vòng bảo vệ.,Chỉ số Thể lực (Bền) của cá,💪
+22,:ng_race_luck:,assets/arcade/race_luck.png,Đoán Ngư Vương,May Mắn,Cỏ bốn lá.,Chỉ số May mắn của cá,🍀
+23,:ng_race_fav:,assets/arcade/race_fav.png,Đoán Ngư Vương,Cá Cửa Trên,Ngọn lửa nhỏ — cá được đánh giá cao nhất.,"Nhãn ""cửa trên"" trước giờ đua",🔥
+24,:ng_medal_1:,assets/arcade/medal_1.png,Đoán Ngư Vương,Huy Chương Vàng,Huy chương vàng số 1.,Hạng nhất,🥇
+25,:ng_medal_2:,assets/arcade/medal_2.png,Đoán Ngư Vương,Huy Chương Bạc,Huy chương bạc số 2.,Hạng nhì,🥈
+26,:ng_medal_3:,assets/arcade/medal_3.png,Đoán Ngư Vương,Huy Chương Đồng,Huy chương đồng số 3.,Hạng ba,🥉
+27,:ng_trait_sprint:,assets/arcade/trait_sprint.png,Đoán Ngư Vương,Đặc tính Nước Rút,Mũi tên tăng tốc — Tăng tốc mạnh ở 2 vòng cuối.,Thẻ đặc tính dưới tên cá,🚀
+28,:ng_trait_endure:,assets/arcade/trait_endure.png,Đoán Ngư Vương,Đặc tính Bền Bỉ,Khiên bền bỉ — Không bị hụt sức về cuối cuộc đua.,Thẻ đặc tính dưới tên cá,🛡️
+29,:ng_trait_burst:,assets/arcade/trait_burst.png,Đoán Ngư Vương,Đặc tính Khởi Đầu Nhanh,Vụ nổ khởi động — Bứt tốc ở 2 vòng đầu nhưng dễ đuối.,Thẻ đặc tính dưới tên cá,💥
+30,:ng_trait_lucky:,assets/arcade/trait_lucky.png,Đoán Ngư Vương,Đặc tính May Mắn,Ngôi sao may mắn — Thỉnh thoảng gặp dòng nước thuận.,Thẻ đặc tính dưới tên cá,🌟
+31,:ng_trait_stealth:,assets/arcade/trait_stealth.png,Đoán Ngư Vương,Đặc tính Ẩn Mình,"Đám sương ẩn mình — Ít biến động, phong độ ổn định.",Thẻ đặc tính dưới tên cá,🌫️
+32,:ng_trait_wild:,assets/arcade/trait_wild.png,Đoán Ngư Vương,Đặc tính Thất Thường,Xoáy nước thất thường — Có thể bứt phá hoặc tụt lại bất ngờ.,Thẻ đặc tính dưới tên cá,🌀
+33,:ng_dice_game:,assets/arcade/dice_game.png,Tài Xỉu Linh Vận,Tài Xỉu Linh Vận,Ba viên xúc xắc xếp chồng.,Nút vào trò Tài Xỉu,🎲
+34,:ng_die_1:,assets/arcade/die_1.png,Tài Xỉu Linh Vận,Xúc Xắc 1,Mặt xúc xắc 1 chấm.,Hiển thị kết quả 3 xúc xắc,⚀
+35,:ng_die_2:,assets/arcade/die_2.png,Tài Xỉu Linh Vận,Xúc Xắc 2,Mặt xúc xắc 2 chấm.,Hiển thị kết quả 3 xúc xắc,⚁
+36,:ng_die_3:,assets/arcade/die_3.png,Tài Xỉu Linh Vận,Xúc Xắc 3,Mặt xúc xắc 3 chấm.,Hiển thị kết quả 3 xúc xắc,⚂
+37,:ng_die_4:,assets/arcade/die_4.png,Tài Xỉu Linh Vận,Xúc Xắc 4,Mặt xúc xắc 4 chấm.,Hiển thị kết quả 3 xúc xắc,⚃
+38,:ng_die_5:,assets/arcade/die_5.png,Tài Xỉu Linh Vận,Xúc Xắc 5,Mặt xúc xắc 5 chấm.,Hiển thị kết quả 3 xúc xắc,⚄
+39,:ng_die_6:,assets/arcade/die_6.png,Tài Xỉu Linh Vận,Xúc Xắc 6,Mặt xúc xắc 6 chấm.,Hiển thị kết quả 3 xúc xắc,⚅
+40,:ng_die_q:,assets/arcade/die_q.png,Tài Xỉu Linh Vận,Xúc Xắc Đang Lăn,"Xúc xắc nghiêng có dấu ""?"" và vệt chuyển động.",Khung hoạt ảnh khi đang lắc,❔
+41,:ng_dice_tai:,assets/arcade/dice_tai.png,Tài Xỉu Linh Vận,Tài,"Mũi tên đỏ chỉ lên, số 11–18.",Nút Tài,🔺
+42,:ng_dice_xiu:,assets/arcade/dice_xiu.png,Tài Xỉu Linh Vận,Xỉu,"Mũi tên xanh chỉ xuống, số 3–10.",Nút Xỉu,🔻
+43,:ng_dice_bao:,assets/arcade/dice_bao.png,Tài Xỉu Linh Vận,Bão,Cơn lốc xoáy — ba xúc xắc giống nhau.,Nút Bão / nhãn Bão,🌪️
+44,:ng_dice_cup:,assets/arcade/dice_cup.png,Tài Xỉu Linh Vận,Chén Lắc,Chiếc chén úp trên khay.,Khung hoạt ảnh lắc xúc xắc,🥣
+45,:ng_box_game:,assets/arcade/box_game.png,Linh Bảo Bí Hộp,Linh Bảo Bí Hộp,Chiếc rương có ánh sáng bên trong.,Nút vào trò Bí Hộp,🎁
+46,:ng_box_1:,assets/arcade/box_1.png,Linh Bảo Bí Hộp,Hộp Gỗ,Hộp Gỗ đang đóng (bậc 1/5).,"Nút chọn hộp, khung hộp đóng",📦
+47,:ng_box_1_open:,assets/arcade/box_1_open.png,Linh Bảo Bí Hộp,Hộp Gỗ (mở),"Hộp Gỗ đã bật nắp, hào quang bay lên.",Khung mở hộp,🎉
+48,:ng_box_2:,assets/arcade/box_2.png,Linh Bảo Bí Hộp,Hộp Đồng,Hộp Đồng đang đóng (bậc 2/5).,"Nút chọn hộp, khung hộp đóng",📦
+49,:ng_box_2_open:,assets/arcade/box_2_open.png,Linh Bảo Bí Hộp,Hộp Đồng (mở),"Hộp Đồng đã bật nắp, hào quang bay lên.",Khung mở hộp,🎉
+50,:ng_box_3:,assets/arcade/box_3.png,Linh Bảo Bí Hộp,Hộp Bạc,Hộp Bạc đang đóng (bậc 3/5).,"Nút chọn hộp, khung hộp đóng",📦
+51,:ng_box_3_open:,assets/arcade/box_3_open.png,Linh Bảo Bí Hộp,Hộp Bạc (mở),"Hộp Bạc đã bật nắp, hào quang bay lên.",Khung mở hộp,🎉
+52,:ng_box_4:,assets/arcade/box_4.png,Linh Bảo Bí Hộp,Hộp Vàng,Hộp Vàng đang đóng (bậc 4/5).,"Nút chọn hộp, khung hộp đóng",📦
+53,:ng_box_4_open:,assets/arcade/box_4_open.png,Linh Bảo Bí Hộp,Hộp Vàng (mở),"Hộp Vàng đã bật nắp, hào quang bay lên.",Khung mở hộp,🎉
+54,:ng_box_5:,assets/arcade/box_5.png,Linh Bảo Bí Hộp,Hộp Thiên Tông,Hộp Thiên Tông đang đóng (bậc 5/5).,"Nút chọn hộp, khung hộp đóng",📦
+55,:ng_box_5_open:,assets/arcade/box_5_open.png,Linh Bảo Bí Hộp,Hộp Thiên Tông (mở),"Hộp Thiên Tông đã bật nắp, hào quang bay lên.",Khung mở hộp,🎉
+56,:ng_box_crack:,assets/arcade/box_crack.png,Linh Bảo Bí Hộp,Hộp Nứt Sáng,"Chiếc hộp rạn nứt, tia sáng toả ra.",Khung giữa của hoạt ảnh mở hộp,💥
+57,:ng_box_lock:,assets/arcade/box_lock.png,Linh Bảo Bí Hộp,Hộp Khoá,Ổ khoá sắt trên nắp hộp.,Hộp chưa mở khoá cấp bậc,🔒
+58,:ng_box_spark:,assets/arcade/box_spark.png,Linh Bảo Bí Hộp,Tia Lấp Lánh,Ngôi sao 4 cánh.,Trang trí khi ra phẩm cao,✨
+59,:ng_box_pity:,assets/arcade/box_pity.png,Linh Bảo Bí Hộp,Bảo Hiểm May Mắn,Chiếc khiên có ngôi sao — bộ đếm đảm bảo ra phẩm tốt.,Dòng bảo hiểm của hộp,🛡️
+60,:ng_grade_1:,assets/arcade/grade_1.png,Linh Bảo Bí Hộp,Phẩm Thường,Viên đá màu phẩm Thường (hạng 1/6).,Nhãn phẩm của Linh Bảo,⚪
+61,:ng_grade_2:,assets/arcade/grade_2.png,Linh Bảo Bí Hộp,Phẩm Hiếm,Viên đá màu phẩm Hiếm (hạng 2/6).,Nhãn phẩm của Linh Bảo,🟢
+62,:ng_grade_3:,assets/arcade/grade_3.png,Linh Bảo Bí Hộp,Phẩm Quý Hiếm,Viên đá màu phẩm Quý Hiếm (hạng 3/6).,Nhãn phẩm của Linh Bảo,🔵
+63,:ng_grade_4:,assets/arcade/grade_4.png,Linh Bảo Bí Hộp,Phẩm Sử Thi,Viên đá màu phẩm Sử Thi (hạng 4/6).,Nhãn phẩm của Linh Bảo,🟣
+64,:ng_grade_5:,assets/arcade/grade_5.png,Linh Bảo Bí Hộp,Phẩm Huyền Thoại,Viên đá màu phẩm Huyền Thoại (hạng 5/6).,Nhãn phẩm của Linh Bảo,🟠
+65,:ng_grade_6:,assets/arcade/grade_6.png,Linh Bảo Bí Hộp,Phẩm Thần Thoại,Viên đá màu phẩm Thần Thoại (hạng 6/6).,Nhãn phẩm của Linh Bảo,🔴
+66,:ng_i_vo_oc_lang:,assets/arcade/i_vo_oc_lang.png,Linh Bảo — Thường,Vỏ Ốc Làng,Vỏ sò màu phẩm Thường.,Phần thưởng của Bí Hộp & Bộ sưu tập,🐚
+67,:ng_i_soi_song:,assets/arcade/i_soi_song.png,Linh Bảo — Thường,Sỏi Sông Bóng,Quả cầu màu phẩm Thường.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+68,:ng_i_chai_thu_cu:,assets/arcade/i_chai_thu_cu.png,Linh Bảo — Thường,Chai Thư Cũ,Chiếc chai màu phẩm Thường.,Phần thưởng của Bí Hộp & Bộ sưu tập,🍶
+69,:ng_i_long_co:,assets/arcade/i_long_co.png,Linh Bảo — Thường,Lông Cò Trắng,Chiếc lông vũ màu phẩm Thường.,Phần thưởng của Bí Hộp & Bộ sưu tập,🪶
+70,:ng_i_neo_gi:,assets/arcade/i_neo_gi.png,Linh Bảo — Thường,Neo Gỉ,Chiếc neo màu phẩm Thường.,Phần thưởng của Bí Hộp & Bộ sưu tập,⚓
+71,:ng_i_so_anh_luc:,assets/arcade/i_so_anh_luc.png,Linh Bảo — Hiếm,Sò Ánh Lục,Vỏ sò màu phẩm Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🐚
+72,:ng_i_ngoc_trai_nho:,assets/arcade/i_ngoc_trai_nho.png,Linh Bảo — Hiếm,Ngọc Trai Nhỏ,Viên ngọc trai màu phẩm Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+73,:ng_i_den_long_lang:,assets/arcade/i_den_long_lang.png,Linh Bảo — Hiếm,Đèn Lồng Làng,Chiếc đèn lồng màu phẩm Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🏮
+74,:ng_i_thu_bo_ho:,assets/arcade/i_thu_bo_ho.png,Linh Bảo — Hiếm,Thư Bờ Hồ,Cuộn thư màu phẩm Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,📜
+75,:ng_i_la_ban_go:,assets/arcade/i_la_ban_go.png,Linh Bảo — Hiếm,La Bàn Gỗ,Chiếc la bàn màu phẩm Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🧭
+76,:ng_i_trai_lam:,assets/arcade/i_trai_lam.png,Linh Bảo — Quý Hiếm,Trai Lam,Viên ngọc trai màu phẩm Quý Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+77,:ng_i_binh_suong_bang:,assets/arcade/i_binh_suong_bang.png,Linh Bảo — Quý Hiếm,Bình Sương Băng,Chiếc chai màu phẩm Quý Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🍶
+78,:ng_i_neo_bac:,assets/arcade/i_neo_bac.png,Linh Bảo — Quý Hiếm,Neo Bạc,Chiếc neo màu phẩm Quý Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,⚓
+79,:ng_i_long_phuong_lam:,assets/arcade/i_long_phuong_lam.png,Linh Bảo — Quý Hiếm,Lông Phượng Lam,Chiếc lông vũ màu phẩm Quý Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🪶
+80,:ng_i_cau_thuy_tinh:,assets/arcade/i_cau_thuy_tinh.png,Linh Bảo — Quý Hiếm,Cầu Thủy Tinh,Quả cầu màu phẩm Quý Hiếm.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+81,:ng_i_den_tim_vuc:,assets/arcade/i_den_tim_vuc.png,Linh Bảo — Sử Thi,Đèn Tím Hải Vực,Chiếc đèn lồng màu phẩm Sử Thi.,Phần thưởng của Bí Hộp & Bộ sưu tập,🏮
+82,:ng_i_thien_thu_rung:,assets/arcade/i_thien_thu_rung.png,Linh Bảo — Sử Thi,Thiên Thư Rừng Cổ,Cuộn thư màu phẩm Sử Thi.,Phần thưởng của Bí Hộp & Bộ sưu tập,📜
+83,:ng_i_la_ban_tinh_tu:,assets/arcade/i_la_ban_tinh_tu.png,Linh Bảo — Sử Thi,La Bàn Tinh Tú,Chiếc la bàn màu phẩm Sử Thi.,Phần thưởng của Bí Hộp & Bộ sưu tập,🧭
+84,:ng_i_vuong_mien_san_ho:,assets/arcade/i_vuong_mien_san_ho.png,Linh Bảo — Sử Thi,Vương Miện San Hô,Vương miện màu phẩm Sử Thi.,Phần thưởng của Bí Hộp & Bộ sưu tập,👑
+85,:ng_i_oc_tim_vuc:,assets/arcade/i_oc_tim_vuc.png,Linh Bảo — Sử Thi,Ốc Tím Vực Thẳm,Vỏ sò màu phẩm Sử Thi.,Phần thưởng của Bí Hộp & Bộ sưu tập,🐚
+86,:ng_i_long_chau:,assets/arcade/i_long_chau.png,Linh Bảo — Huyền Thoại,Long Châu,Viên ngọc trai màu phẩm Huyền Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+87,:ng_i_neo_vang_long_hai:,assets/arcade/i_neo_vang_long_hai.png,Linh Bảo — Huyền Thoại,Neo Vàng Long Hải,Chiếc neo màu phẩm Huyền Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,⚓
+88,:ng_i_vuong_mien_hai_than:,assets/arcade/i_vuong_mien_hai_than.png,Linh Bảo — Huyền Thoại,Vương Miện Hải Thần,Vương miện màu phẩm Huyền Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,👑
+89,:ng_i_linh_cau_cuc_quang:,assets/arcade/i_linh_cau_cuc_quang.png,Linh Bảo — Huyền Thoại,Linh Cầu Cực Quang,Quả cầu màu phẩm Huyền Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+90,:ng_i_long_bang:,assets/arcade/i_long_bang.png,Linh Bảo — Huyền Thoại,Lông Bằng,Chiếc lông vũ màu phẩm Huyền Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,🪶
+91,:ng_i_thien_tong_vuong_mien:,assets/arcade/i_thien_tong_vuong_mien.png,Linh Bảo — Thần Thoại,Thiên Tông Vương Miện,Vương miện màu phẩm Thần Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,👑
+92,:ng_i_thien_chau_bat_diet:,assets/arcade/i_thien_chau_bat_diet.png,Linh Bảo — Thần Thoại,Thiên Châu Bất Diệt,Viên ngọc trai màu phẩm Thần Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+93,:ng_i_la_ban_van_gioi:,assets/arcade/i_la_ban_van_gioi.png,Linh Bảo — Thần Thoại,La Bàn Vạn Giới,Chiếc la bàn màu phẩm Thần Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,🧭
+94,:ng_i_den_thien_ha:,assets/arcade/i_den_thien_ha.png,Linh Bảo — Thần Thoại,Đèn Thiên Hà,Chiếc đèn lồng màu phẩm Thần Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,🏮
+95,:ng_i_hon_nguyen_cau:,assets/arcade/i_hon_nguyen_cau.png,Linh Bảo — Thần Thoại,Hỗn Nguyên Cầu,Quả cầu màu phẩm Thần Thoại.,Phần thưởng của Bí Hộp & Bộ sưu tập,🔮
+96,:ng_quiz_game:,assets/arcade/quiz_game.png,Truy Tìm Linh Ngư,Truy Tìm Linh Ngư,Cá nhỏ đeo kính lúp.,Nút vào trò đố,🧠
+97,:ng_quiz_q:,assets/arcade/quiz_q.png,Truy Tìm Linh Ngư,Câu Hỏi,Dấu hỏi lớn trong khung tròn.,Tiêu đề từng câu đố,❓
+98,:ng_quiz_time:,assets/arcade/quiz_time.png,Truy Tìm Linh Ngư,Đồng Hồ,Đồng hồ bấm giờ.,Hạn trả lời mỗi câu,⏱️
+99,:ng_quiz_ok:,assets/arcade/quiz_ok.png,Truy Tìm Linh Ngư,Trả Lời Đúng,Dấu tích xanh lá.,Kết quả câu đúng,✅
+100,:ng_quiz_no:,assets/arcade/quiz_no.png,Truy Tìm Linh Ngư,Trả Lời Sai,Dấu X đỏ.,Kết quả câu sai / hết giờ,❌
+101,:ng_quiz_streak:,assets/arcade/quiz_streak.png,Truy Tìm Linh Ngư,Chuỗi Đúng,Ngọn lửa xanh-cam.,Thưởng chuỗi đúng liên tiếp,🔥
+102,:ng_quiz_speed:,assets/arcade/quiz_speed.png,Truy Tìm Linh Ngư,Thưởng Tốc Độ,Chiếc giày có cánh.,Thưởng trả lời nhanh,💨
+103,:ng_quiz_lv1:,assets/arcade/quiz_lv1.png,Truy Tìm Linh Ngư,Độ Khó 1,Một ngôi sao — dễ.,Nhãn độ khó câu đố,⭐
+104,:ng_quiz_lv2:,assets/arcade/quiz_lv2.png,Truy Tìm Linh Ngư,Độ Khó 2,Hai ngôi sao — vừa.,Nhãn độ khó câu đố,⭐⭐
+105,:ng_quiz_lv3:,assets/arcade/quiz_lv3.png,Truy Tìm Linh Ngư,Độ Khó 3,Ba ngôi sao — khó.,Nhãn độ khó câu đố,⭐⭐⭐
+106,:ng_quiz_a:,assets/arcade/quiz_a.png,Truy Tìm Linh Ngư,Đáp Án A,Chữ A trong khung ô vuông (đáp án 1).,Nút đáp án,🇦
+107,:ng_quiz_b:,assets/arcade/quiz_b.png,Truy Tìm Linh Ngư,Đáp Án B,Chữ B trong khung ô vuông (đáp án 2).,Nút đáp án,🇧
+108,:ng_quiz_c:,assets/arcade/quiz_c.png,Truy Tìm Linh Ngư,Đáp Án C,Chữ C trong khung ô vuông (đáp án 3).,Nút đáp án,🇨
+109,:ng_quiz_d:,assets/arcade/quiz_d.png,Truy Tìm Linh Ngư,Đáp Án D,Chữ D trong khung ô vuông (đáp án 4).,Nút đáp án,🇩
+110,:ng_ui_back:,assets/arcade/ui_back.png,Giao diện,Quay Lại,Mũi tên trái.,Nút quay lại,◀️
+111,:ng_ui_next:,assets/arcade/ui_next.png,Giao diện,Tiếp Theo,Mũi tên phải.,Nút tiếp,▶️
+112,:ng_ui_refresh:,assets/arcade/ui_refresh.png,Giao diện,Làm Mới,Hai mũi tên xoay vòng.,Nút làm mới,🔄
+113,:ng_ui_ok:,assets/arcade/ui_ok.png,Giao diện,Hoàn Thành,Dấu tích trắng trên nền xanh.,Nhiệm vụ đã nhận,✅
+114,:ng_ui_no:,assets/arcade/ui_no.png,Giao diện,Không Được,Biển cấm tròn đỏ.,Bị khoá / hết lượt,⛔
+115,:ng_ui_lock:,assets/arcade/ui_lock.png,Giao diện,Khoá,Ổ khoá xám.,Thành tích chưa mở,🔒
+116,:ng_ui_new:,assets/arcade/ui_new.png,Giao diện,Mới,Nhãn NEW vàng.,Linh Bảo mới nhận,🆕
+117,:ng_ui_dup:,assets/arcade/ui_dup.png,Giao diện,Trùng,Hai mũi tên tái chế.,Linh Bảo trùng (quy đổi điểm),♻️
+118,:ng_ui_up:,assets/arcade/ui_up.png,Giao diện,Lên Cấp,Mũi tên xanh chỉ lên.,Thông báo lên cấp,⬆️
+119,:ng_ui_star:,assets/arcade/ui_star.png,Giao diện,Ngôi Sao,Ngôi sao vàng 5 cánh.,Điểm nhấn thưởng,⭐

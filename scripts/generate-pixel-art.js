@@ -41,7 +41,7 @@ if (regen.includes('items')) items.forEach((i) => save(drawItem({ ...i.sprite, i
 if (regen.includes('ui')) UI_NAMES.forEach((n) => save(drawUi(n), 'ui', n));
 
 /* manifest: tên emoji Discord (2–32 ký tự, [A-Za-z0-9_]) → file. Quét thực tế thư mục assets/. */
-const PREFIX = { fish: 'f', rods: 'rod', baits: 'bait', pets: 'pet', items: 'it', locations: 'loc', effects: 'fx', ui: 'ui' };
+const PREFIX = { fish: 'f', rods: 'rod', baits: 'bait', pets: 'pet', items: 'it', locations: 'loc', effects: 'fx', ui: 'ui', arcade: 'ng' };
 const manifest = {};
 for (const dir of Object.keys(PREFIX)) {
   if (!fs.existsSync(A(dir))) continue;

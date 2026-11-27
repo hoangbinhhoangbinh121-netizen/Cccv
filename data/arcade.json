@@ -1,0 +1,127 @@
+{
+  "currency": { "name": "Linh Điểm", "short": "LĐ", "note": "Điểm giải trí riêng của Ngư Trường — không đổi được sang xu, không dùng để mua bán." },
+  "dailyCap": 500,
+  "ranks": [
+    { "id": 1, "name": "Tập Sự", "need": 0 },
+    { "id": 2, "name": "Ngư Khách", "need": 300 },
+    { "id": 3, "name": "Ngư Sĩ", "need": 1200 },
+    { "id": 4, "name": "Ngư Tướng", "need": 3500 },
+    { "id": 5, "name": "Ngư Vương", "need": 9000 }
+  ],
+  "limits": { "race": 15, "dice": 40, "quiz": 6 },
+  "cooldownMs": { "race": 4000, "dice": 2500, "box": 2000, "quiz": 5000 },
+
+  "race": {
+    "rounds": 6, "roundMs": 2400, "minRacers": 4, "maxRacers": 6, "pickWindowMs": 180000, "settleGraceMs": 800,
+    "points": { "win": 24, "underdogMax": 16, "podium": 6, "join": 2, "streakStep": 2, "streakMax": 10 },
+    "traits": [
+      { "id": "nuoc_rut", "name": "Nước Rút", "desc": "Tăng tốc mạnh ở 2 vòng cuối." },
+      { "id": "ben_bi", "name": "Bền Bỉ", "desc": "Không bị hụt sức về cuối cuộc đua." },
+      { "id": "khoi_dau", "name": "Khởi Đầu Nhanh", "desc": "Bứt tốc ở 2 vòng đầu nhưng dễ đuối." },
+      { "id": "may_man", "name": "May Mắn", "desc": "Thỉnh thoảng gặp dòng nước thuận." },
+      { "id": "an_minh", "name": "Ẩn Mình", "desc": "Ít biến động, phong độ ổn định." },
+      { "id": "that_thuong", "name": "Thất Thường", "desc": "Có thể bứt phá hoặc tụt lại bất ngờ." }
+    ]
+  },
+
+  "dice": {
+    "stageMs": 900, "history": 12,
+    "points": { "win": 8, "lose": 1, "streakStep": 2, "streakMax": 5, "bao": 70, "baoMiss": 1 },
+    "note": "Chỉ là trò đoán vui lấy Linh Điểm — không cược xu, không cược vật phẩm."
+  },
+
+  "box": {
+    "stageMs": 1100, "history": 15, "dupeRatio": 0.5,
+    "gradePoints": [2, 5, 12, 30, 80, 200],
+    "tiers": [
+      { "id": 1, "key": "go", "name": "Hộp Gỗ", "rank": 1, "daily": 8, "mult": 1, "weights": [62, 30, 7, 1, 0, 0], "pity": { "after": 0, "grade": 0 } },
+      { "id": 2, "key": "dong", "name": "Hộp Đồng", "rank": 2, "daily": 6, "mult": 1.2, "weights": [35, 38, 20, 6, 1, 0], "pity": { "after": 8, "grade": 3 } },
+      { "id": 3, "key": "bac", "name": "Hộp Bạc", "rank": 3, "daily": 4, "mult": 1.5, "weights": [15, 33, 32, 15, 4.7, 0.3], "pity": { "after": 10, "grade": 4 } },
+      { "id": 4, "key": "vang", "name": "Hộp Vàng", "rank": 4, "daily": 3, "mult": 2, "weights": [5, 20, 35, 28, 10, 2], "pity": { "after": 6, "grade": 4 } },
+      { "id": 5, "key": "thien", "name": "Hộp Thiên Tông", "rank": 5, "daily": 2, "mult": 3, "weights": [0, 8, 27, 38, 22, 5], "pity": { "after": 8, "grade": 5 } }
+    ],
+    "grades": [
+      { "id": 1, "name": "Thường" }, { "id": 2, "name": "Hiếm" }, { "id": 3, "name": "Quý Hiếm" },
+      { "id": 4, "name": "Sử Thi" }, { "id": 5, "name": "Huyền Thoại" }, { "id": 6, "name": "Thần Thoại" }
+    ],
+    "items": [
+      { "id": "vo_oc_lang", "name": "Vỏ Ốc Làng", "grade": 1, "shape": "shell", "hue": 30 },
+      { "id": "soi_song", "name": "Sỏi Sông Bóng", "grade": 1, "shape": "orb", "hue": 200 },
+      { "id": "chai_thu_cu", "name": "Chai Thư Cũ", "grade": 1, "shape": "bottle", "hue": 150 },
+      { "id": "long_co", "name": "Lông Cò Trắng", "grade": 1, "shape": "feather", "hue": 190 },
+      { "id": "neo_gi", "name": "Neo Gỉ", "grade": 1, "shape": "anchor", "hue": 20 },
+
+      { "id": "so_anh_luc", "name": "Sò Ánh Lục", "grade": 2, "shape": "shell", "hue": 130 },
+      { "id": "ngoc_trai_nho", "name": "Ngọc Trai Nhỏ", "grade": 2, "shape": "pearl", "hue": 300 },
+      { "id": "den_long_lang", "name": "Đèn Lồng Làng", "grade": 2, "shape": "lantern", "hue": 25 },
+      { "id": "thu_bo_ho", "name": "Thư Bờ Hồ", "grade": 2, "shape": "scroll", "hue": 45 },
+      { "id": "la_ban_go", "name": "La Bàn Gỗ", "grade": 2, "shape": "compass", "hue": 35 },
+
+      { "id": "trai_lam", "name": "Trai Lam", "grade": 3, "shape": "pearl", "hue": 215 },
+      { "id": "binh_suong_bang", "name": "Bình Sương Băng", "grade": 3, "shape": "bottle", "hue": 195 },
+      { "id": "neo_bac", "name": "Neo Bạc", "grade": 3, "shape": "anchor", "hue": 210 },
+      { "id": "long_phuong_lam", "name": "Lông Phượng Lam", "grade": 3, "shape": "feather", "hue": 225 },
+      { "id": "cau_thuy_tinh", "name": "Cầu Thủy Tinh", "grade": 3, "shape": "orb", "hue": 185 },
+
+      { "id": "den_tim_vuc", "name": "Đèn Tím Hải Vực", "grade": 4, "shape": "lantern", "hue": 285 },
+      { "id": "thien_thu_rung", "name": "Thiên Thư Rừng Cổ", "grade": 4, "shape": "scroll", "hue": 275 },
+      { "id": "la_ban_tinh_tu", "name": "La Bàn Tinh Tú", "grade": 4, "shape": "compass", "hue": 265 },
+      { "id": "vuong_mien_san_ho", "name": "Vương Miện San Hô", "grade": 4, "shape": "crown", "hue": 330 },
+      { "id": "oc_tim_vuc", "name": "Ốc Tím Vực Thẳm", "grade": 4, "shape": "shell", "hue": 290 },
+
+      { "id": "long_chau", "name": "Long Châu", "grade": 5, "shape": "pearl", "hue": 38 },
+      { "id": "neo_vang_long_hai", "name": "Neo Vàng Long Hải", "grade": 5, "shape": "anchor", "hue": 45 },
+      { "id": "vuong_mien_hai_than", "name": "Vương Miện Hải Thần", "grade": 5, "shape": "crown", "hue": 40 },
+      { "id": "linh_cau_cuc_quang", "name": "Linh Cầu Cực Quang", "grade": 5, "shape": "orb", "hue": 165 },
+      { "id": "long_bang", "name": "Lông Bằng", "grade": 5, "shape": "feather", "hue": 15 },
+
+      { "id": "thien_tong_vuong_mien", "name": "Thiên Tông Vương Miện", "grade": 6, "shape": "crown", "hue": 350 },
+      { "id": "thien_chau_bat_diet", "name": "Thiên Châu Bất Diệt", "grade": 6, "shape": "pearl", "hue": 175 },
+      { "id": "la_ban_van_gioi", "name": "La Bàn Vạn Giới", "grade": 6, "shape": "compass", "hue": 320 },
+      { "id": "den_thien_ha", "name": "Đèn Thiên Hà", "grade": 6, "shape": "lantern", "hue": 240 },
+      { "id": "hon_nguyen_cau", "name": "Hỗn Nguyên Cầu", "grade": 6, "shape": "orb", "hue": 0 }
+    ]
+  },
+
+  "quiz": {
+    "perRound": 10, "baseSeconds": 15, "minSeconds": 10, "graceMs": 1500, "idleExpireMs": 300000,
+    "levels": [ { "upTo": 3, "level": 1 }, { "upTo": 7, "level": 2 }, { "upTo": 10, "level": 3 } ],
+    "points": { "base": 4, "perLevel": 2, "speedMax": 3, "streakStep": 1, "streakMax": 5, "round8": 10, "perfect": 20 }
+  },
+
+  "missionCount": 3,
+  "missions": [
+    { "id": "m_race2", "name": "Khán Giả Nhiệt Tình", "desc": "Xem 2 cuộc đua Ngư Vương", "ev": "play:race", "target": 2, "reward": 25 },
+    { "id": "m_race_win", "name": "Mắt Tinh Đường Đua", "desc": "Đoán đúng 1 nhà vô địch", "ev": "win:race", "target": 1, "reward": 30 },
+    { "id": "m_dice8", "name": "Tay Xúc Xắc", "desc": "Tung xúc xắc 8 lần", "ev": "play:dice", "target": 8, "reward": 20 },
+    { "id": "m_dice_win4", "name": "Linh Cảm Tốt", "desc": "Đoán đúng Tài/Xỉu 4 lần", "ev": "win:dice", "target": 4, "reward": 25 },
+    { "id": "m_box3", "name": "Thợ Săn Hộp", "desc": "Mở 3 Linh Bảo Bí Hộp", "ev": "play:box", "target": 3, "reward": 25 },
+    { "id": "m_box_rare", "name": "Phúc Duyên", "desc": "Mở được Linh Bảo Quý Hiếm trở lên", "ev": "box:g3", "target": 1, "reward": 40 },
+    { "id": "m_quiz1", "name": "Học Trò Chăm", "desc": "Hoàn thành 1 vòng Truy Tìm Linh Ngư", "ev": "play:quiz", "target": 1, "reward": 30 },
+    { "id": "m_quiz12", "name": "Bách Khoa Cá", "desc": "Trả lời đúng 12 câu đố", "ev": "quizc", "target": 12, "reward": 35 },
+    { "id": "m_pts100", "name": "Chăm Chỉ", "desc": "Kiếm 100 Linh Điểm trong ngày", "ev": "pts", "target": 100, "reward": 30 }
+  ],
+  "missionAll": { "id": "m_all", "name": "Bốn Phương Tám Hướng", "desc": "Chơi đủ cả 4 trò chơi trong ngày", "target": 4, "reward": 50 },
+
+  "achievements": [
+    { "id": "a_race1", "name": "Khởi Động", "desc": "Xem cuộc đua đầu tiên", "stat": "race.plays", "target": 1, "reward": 10 },
+    { "id": "a_race_win5", "name": "Mắt Thần", "desc": "Đoán đúng 5 nhà vô địch", "stat": "race.wins", "target": 5, "reward": 40 },
+    { "id": "a_race_win25", "name": "Tiên Tri Đường Đua", "desc": "Đoán đúng 25 nhà vô địch", "stat": "race.wins", "target": 25, "reward": 150, "title": "Tiên Tri Đường Đua" },
+    { "id": "a_race_streak3", "name": "Ba Liên Thắng", "desc": "Đoán đúng 3 cuộc đua liên tiếp", "stat": "race.best_streak", "target": 3, "reward": 60 },
+    { "id": "a_race_under", "name": "Chọn Ngựa Ô", "desc": "Đoán đúng khi chọn cá bị đánh giá thấp nhất", "stat": "race.underdog_wins", "target": 1, "reward": 80 },
+    { "id": "a_dice50", "name": "Tay Quen Xúc Xắc", "desc": "Tung xúc xắc 50 lần", "stat": "dice.plays", "target": 50, "reward": 40 },
+    { "id": "a_dice_streak5", "name": "Năm Lần Linh Cảm", "desc": "Đoán đúng Tài/Xỉu 5 lần liên tiếp", "stat": "dice.best_streak", "target": 5, "reward": 60 },
+    { "id": "a_dice_bao", "name": "Bão Về", "desc": "Đoán trúng một ván Bão (3 xúc xắc giống nhau)", "stat": "dice.bao_hits", "target": 1, "reward": 120, "title": "Kẻ Gọi Bão" },
+    { "id": "a_box20", "name": "Mở Hộp Thành Nghiện", "desc": "Mở 20 hộp", "stat": "box.opens", "target": 20, "reward": 50 },
+    { "id": "a_box_epic", "name": "Ánh Sáng Tím", "desc": "Mở được Linh Bảo Sử Thi trở lên", "stat": "box.epic_plus", "target": 1, "reward": 60 },
+    { "id": "a_box_legend", "name": "Huyền Thoại Hiện Thân", "desc": "Mở được Linh Bảo Huyền Thoại trở lên", "stat": "box.legend_plus", "target": 1, "reward": 150 },
+    { "id": "a_collect10", "name": "Nhà Sưu Tầm", "desc": "Sưu tầm 10 Linh Bảo khác nhau", "stat": "box.collected", "target": 10, "reward": 80 },
+    { "id": "a_collect30", "name": "Bộ Sưu Tập Hoàn Hảo", "desc": "Sưu tầm đủ 30 Linh Bảo", "stat": "box.collected", "target": 30, "reward": 500, "title": "Chủ Bảo Khố" },
+    { "id": "a_quiz1", "name": "Học Trò Mới", "desc": "Hoàn thành 1 vòng đố", "stat": "quiz.rounds", "target": 1, "reward": 10 },
+    { "id": "a_quiz_streak10", "name": "Thông Thái", "desc": "Trả lời đúng 10 câu liên tiếp", "stat": "quiz.best_streak", "target": 10, "reward": 100 },
+    { "id": "a_quiz_perfect", "name": "Điểm Tuyệt Đối", "desc": "Đúng cả 10/10 câu trong một vòng", "stat": "quiz.perfect", "target": 1, "reward": 120, "title": "Bách Khoa Ngư Học" },
+    { "id": "a_pts1000", "name": "Ngàn Điểm Đầu Tiên", "desc": "Đạt 1.000 Linh Điểm tích luỹ", "stat": "points.all", "target": 1000, "reward": 50 },
+    { "id": "a_rank5", "name": "Ngư Vương", "desc": "Đạt cấp bậc Ngư Vương", "stat": "points.rank", "target": 5, "reward": 300, "title": "Ngư Vương Ngư Trường" },
+    { "id": "a_missions10", "name": "Cần Cù", "desc": "Nhận thưởng 10 nhiệm vụ giải trí", "stat": "missions.claimed", "target": 10, "reward": 60 }
+  ]
+}

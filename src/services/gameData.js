@@ -20,6 +20,8 @@ function load() {
   D.recipes = read('recipes.json');
   D.missions = read('missions.json');
   const ach = read('achievements.json'); D.achievements = ach.achievements; D.achMap = byId(ach.achievements); D.titles = ach.titles;
+  D.arcade = read('arcade.json'); D.arcadeItems = byId(D.arcade.box.items);
+  D.arcadeEmoji = new Map(read('arcade-emoji.json').map((x) => [x.id, x.fb]));
   D.events = read('events.json'); D.eventTemplates = byId(D.events.templates, 'key');
   D.manifest = fs.existsSync(path.join(config.assetsDir, 'manifest.json')) ? JSON.parse(fs.readFileSync(path.join(config.assetsDir, 'manifest.json'), 'utf8')) : {};
   D.fishByLoc = new Map();
@@ -42,6 +44,13 @@ function validate() {
   for (const t of D.events.templates) { rewardItems(t.rewards, `sự kiện ${t.key}`); need(t.rewards && t.durationMin > 0, `sự kiện ${t.key}: thiếu phần thưởng/thời lượng`); for (const x of (t.rewards.top || [])) rewardItems(x, `sự kiện ${t.key} top`); for (const p of (t.fishPool || [])) need(D.fishes.has(p), `sự kiện ${t.key}: cá ${p}`); }
   for (const p of D.petList) need(D.rarities[p.rarity - 1], `thú ${p.id}`);
   for (const rod of D.rodList) { need(D.tiers[rod.tier - 1], `cần ${rod.id}`); need(fs.existsSync(path.join(config.assetsDir, 'rods', `${rod.id}.png`)) || process.env.SKIP_ASSET_CHECK, `thiếu ảnh cần ${rod.id}`); }
+  const A = D.arcade;
+  need(A.ranks.length === 5 && A.box.tiers.length === 5, 'arcade: cần 5 cấp bậc và 5 hộp');
+  for (const t of A.box.tiers) { need(t.weights.length === A.box.grades.length, `hộp ${t.id}: số trọng số`); need(t.weights.reduce((a, b) => a + b, 0) > 0, `hộp ${t.id}: tổng trọng số`); }
+  for (const g of A.box.grades) need(A.box.items.some((x) => x.grade === g.id), `arcade: thiếu Linh Bảo hạng ${g.id}`);
+  need(A.box.items.length === byId(A.box.items).size, 'arcade: Linh Bảo trùng id');
+  for (const a of A.achievements) need(a.stat && a.target > 0, `arcade: thành tích ${a.id}`);
+  for (const m of A.missions) need(m.ev && m.target > 0 && m.reward > 0, `arcade: nhiệm vụ ${m.id}`);
   if (errs.length) throw new Error(`Dữ liệu game không hợp lệ:\n - ${errs.join('\n - ')}`);
 }
 /** Định nghĩa vật phẩm thống nhất (mồi + vật phẩm) */

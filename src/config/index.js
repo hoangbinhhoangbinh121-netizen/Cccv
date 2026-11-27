@@ -25,6 +25,8 @@ module.exports = {
   clientId: e.CLIENT_ID || '',
   guildId: e.GUILD_ID || '',
   ownerIds: list(e.OWNER_IDS),
+  prefix: (e.PREFIX || '.').trim(), // tiền tố lệnh gõ trong kênh (.cauca …). Đặt PREFIX_ENABLED=0 để tắt
+  prefixEnabled: String(e.PREFIX_ENABLED ?? '1') !== '0',
   adminRoleId: e.ADMIN_ROLE_ID || '',
   announceChannelId: e.ANNOUNCE_CHANNEL_ID || '',
   logChannelId: e.LOG_CHANNEL_ID || '',

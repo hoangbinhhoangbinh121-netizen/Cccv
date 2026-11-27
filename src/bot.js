@@ -27,13 +27,33 @@ function wireAnnouncements() {
   ctx.on('eventEnded', ({ event, result }) => announce({ embeds: [K.embed({ title: `🏁 Sự kiện kết thúc: ${event.name}`, color: COLOR.info, desc: result?.winners?.length ? result.winners.slice(0, 5).map((w) => `${w.rank}. **${w.name}** — ${F.num(w.score)} điểm`).join('\n') : 'Cảm ơn mọi người đã tham gia!' })] }));
   ctx.on('sessionEnded', (s) => { const r = s.result; if (s.kind !== 'boss' && r?.outcome === 'success') { const f = D.fishes.get(r.fishId); if (f && f.rarity >= 7) announce({ content: `🎣 <@${s.user_id}> vừa câu được **${f.name}** [${require('./systems/rarity').name(f.rarity)}] nặng ${F.kg(r.weight)}! 🎉` }); } });
 }
-function create() {
-  client = new Client({ intents: [GatewayIntentBits.Guilds] }); ctx.client = client;
-  const commands = loadCommands(); router.setCommands(commands);
+const prefix = require('./prefix');
+let readyFns = []; let wantContent = config.prefixEnabled;
+/** Dựng client. Có Message Content Intent (đặc quyền) thì đọc được lệnh tiền tố; nếu Discord từ chối intent này, login() dựng lại không có nó. */
+function build() {
+  const intents = [GatewayIntentBits.Guilds]; if (wantContent) intents.push(GatewayIntentBits.GuildMessages, GatewayIntentBits.MessageContent);
+  client = new Client({ intents }); ctx.client = client;
   client.on(Events.InteractionCreate, (i) => { router.handle(i).catch((e) => logger.error('router lỗi không bắt được:', e.stack || e.message)); });
+  if (wantContent) client.on(Events.MessageCreate, (m) => { prefix.onMessage(m); });
   client.on(Events.Error, (e) => logger.error('Discord client lỗi:', e.message));
-  wireAnnouncements();
+  for (const f of readyFns) client.once(Events.ClientReady, f);
+  return client;
+}
+function create() {
+  const commands = loadCommands(); router.setCommands(commands); prefix.setCommands(commands);
+  build(); wireAnnouncements();
   return { client, commands };
 }
+const onReady = (fn) => { readyFns.push(fn); if (client) client.once(Events.ClientReady, fn); };
+async function login() {
+  try { return await client.login(config.token); }
+  catch (e) {
+    const denied = /disallowed intents/i.test(String(e && e.message)) || (e && (e.code === 'DisallowedIntents' || e.code === 4014));
+    if (!(wantContent && denied)) throw e;
+    logger.warn(`Chưa bật "Message Content Intent" nên tạm tắt lệnh tiền tố (${config.prefix}). Bật tại discord.com/developers/applications → ứng dụng → Bot → Privileged Gateway Intents → Message Content Intent, rồi khởi động lại bot. Lệnh / vẫn dùng bình thường.`);
+    wantContent = false; try { client.destroy(); } catch { /* đã đóng */ }
+    build(); return client.login(config.token);
+  }
+}
 const getClient = () => client;
-module.exports = { create, announce, logChannel, getClient };
+module.exports = { create, login, onReady, announce, logChannel, getClient };

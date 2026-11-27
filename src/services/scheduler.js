@@ -9,6 +9,7 @@ const marketSvc = require('./marketService');
 const backup = require('../database/backup');
 const ctx = require('./context');
 const logger = require('../utils/logger');
+const arcade = require('./arcadeService');
 const { now, dayKey, weekKey } = require('../utils/time');
 
 const timers = [];
@@ -18,8 +19,9 @@ function start() {
   every(30000, 'events', () => { for (const n of eventSvc.tick()) ctx.emit(n.type === 'started' ? 'eventStarted' : 'eventEnded', n); });
   every(30000, 'boss', () => bossSvc.tick());
   every(60000, 'market', () => { for (const l of marketSvc.expireDue()) ctx.emit('listingExpired', l); });
+  every(30000, 'arcade', () => { arcade.sweep(); }, 8000); // chốt cuộc đua/vòng đố dở (kể cả sau khi bot khởi động lại)
   every(300000, 'leaderboards', () => progRepo.refreshAll(), 15000);
-  every(3600000, 'cleanup', () => { settings.purgeBuffs(); sessRepo.purgeOld(now() - 7 * 86400000); progRepo.missionPurge(dayKey(now() - 14 * 86400000)); }, 60000);
+  every(3600000, 'cleanup', () => { settings.purgeBuffs(); sessRepo.purgeOld(now() - 7 * 86400000); progRepo.missionPurge(dayKey(now() - 14 * 86400000)); arcade.purge(); }, 60000);
   backup.startAuto();
 }
 const stop = () => { timers.forEach((t) => { clearTimeout(t); clearInterval(t); }); timers.length = 0; backup.stopAuto(); };

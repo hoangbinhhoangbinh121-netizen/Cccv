@@ -9,7 +9,8 @@ const config = require('../config');
 const logger = require('../utils/logger');
 
 function loadDriver(want) {
-  const tryBetter = () => { const D = require('better-sqlite3'); return { name: 'better-sqlite3', open: (f) => new D(f) }; };
+  // require() thành công chưa đủ: thiếu file nhị phân (.node) trên host/Node mới thì lỗi chỉ xuất hiện khi mở DB → thử mở DB tạm trước.
+  const tryBetter = () => { const D = require('better-sqlite3'); new D(':memory:').close(); return { name: 'better-sqlite3', open: (f) => new D(f) }; };
   const tryNode = () => { const { DatabaseSync } = require('node:sqlite'); return { name: 'node-sqlite', open: (f) => new DatabaseSync(f) }; };
   if (want === 'better-sqlite3') return tryBetter();
   if (want === 'node-sqlite') return tryNode();

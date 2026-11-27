@@ -42,7 +42,7 @@ function renderFish(s) {
   const rodImg = rodDef ? K.img('rods', rodDef.skin || rodDef.rod_id) : null; if (rodImg) { files.push(rodImg.file); em.thumb = rodImg.url; }
   if (s.state === 'waiting') {
     const e = K.embed({ title: '🎣 Đã thả câu – đang chờ cá cắn…', desc: `${header(s)}\n\n${hint(d)}\nMồi: ${d.baitName ? `**${d.baitName}**` : '*không dùng*'}\nCá sẽ cắn câu ${F.rel(s.bite_at)} — đừng giật cần quá sớm!`, color: COLOR.info, thumb: em.thumb, image: em.image, footer: `Phiên #${s.id}${d.skill ? ` · Thú cưng kích hoạt: ${d.skill}` : ''}` });
-    return K.msg({ embeds: [e], files, components: K.rows([K.button({ id: K.cid('fs', s.id, s.nonce, 'wait'), label: 'Đang chờ…', disabled: true, emoji: '⏳' }), sessionBtn(s, 'cancel', 'Thu cần', 'secondary', { emoji: '↩️' })]) });
+    return K.msg({ embeds: [e], files, components: K.rows([sessionBtn(s, 'refresh', 'Kiểm tra cá', 'secondary', { emoji: '🔄' }), sessionBtn(s, 'cancel', 'Thu cần', 'secondary', { emoji: '↩️' })]) });
   }
   if (s.state === 'bite') {
     const b = fx('bite'); if (b) files.push(b.file);
@@ -110,13 +110,20 @@ function track(s, edit) {
   const delay = Math.max(200, Math.min(at - t, 2 ** 30)); const entry = { edit };
   entry.timer = setTimeout(() => tick(s.id), delay); entry.timer.unref?.(); timers.set(s.id, entry);
 }
+// Mã lỗi Discord không thể phục hồi (tin nhắn đã xoá, token hết hạn, thiếu quyền…) → ngừng thử lại.
+const PERMANENT = new Set([10003, 10008, 10015, 10062, 50001, 50013, 50027, 40060]);
 async function tick(id) {
   const entry = timers.get(id); if (!entry) return; timers.delete(id);
   if (ctxBus.restoring) { entry.timer = setTimeout(() => tick(id), 3000); entry.timer.unref?.(); timers.set(id, entry); return; }
   try {
     const s = fishing.advance(id); if (!s) return;
     await entry.edit(render(s)); track(s, entry.edit);
-  } catch (e) { logger.warn(`Làm mới phiên ${id} lỗi: ${e.message}`); }
+  } catch (e) {
+    logger.warn(`Làm mới phiên ${id} lỗi: ${e.message}`);
+    // Lỗi tạm thời (mạng, rate limit…) → thử lại vài lần để tin nhắn không bị kẹt ở "đang chờ"; người chơi vẫn có nút 🔄 Kiểm tra cá.
+    entry.fails = (entry.fails || 0) + 1;
+    if (!PERMANENT.has(e.code) && entry.fails <= 4) { entry.timer = setTimeout(() => tick(id), 1500 * 2 ** entry.fails); entry.timer.unref?.(); timers.set(id, entry); }
+  }
 }
 const clearAll = () => { for (const v of timers.values()) clearTimeout(v.timer); timers.clear(); };
 module.exports = { render, renderFish, renderBoss, track, tick, clearAll, ACTIVE, timers };

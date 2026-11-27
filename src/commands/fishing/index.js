@@ -14,7 +14,11 @@ const cauca = {
     .addStringOption((o) => o.setName('moi').setDescription('Loại mồi dùng cho lần này (mặc định: mồi đang trang bị)').setAutocomplete(true)),
   async execute(i) {
     const uid = i.user.id; const cur = fishing.getActive(uid);
-    if (cur) { if (cur.state === 'waiting' || cur.state === 'bite' || cur.state === 'reeling') throw new GameError('Bạn đang có một phiên câu chưa kết thúc! Hãy hoàn tất hoặc bấm **Thu cần** ở tin nhắn câu cũ.', 'BUSY'); }
+    if (cur && fishingUI.ACTIVE.includes(cur.state)) { // đang có phiên (mất tin nhắn cũ, bấm nhầm…) → mở lại đúng phiên đó thay vì báo lỗi
+      await i.reply({ ...fishingUI.render(cur), content: '🔁 Bạn đang có một phiên câu — đã mở lại ở bên dưới (tin nhắn câu cũ nếu còn thì cũng dùng được).' });
+      try { const m = await i.fetchReply(); sessRepo.update(cur.id, { message_id: m.id }); } catch { /* không bắt buộc */ }
+      fishingUI.track(cur, (p) => i.editReply(H.finalize(p))); return;
+    }
     const s = fishing.startCast(uid, { location: i.options.getString('khuvuc') || undefined, baitId: i.options.getString('moi') || undefined, channelId: i.channelId });
     await i.reply(fishingUI.render(s)); try { const m = await i.fetchReply(); sessRepo.update(s.id, { message_id: m.id }); } catch { /* không bắt buộc */ }
     fishingUI.track(s, (p) => i.editReply(H.finalize(p)));

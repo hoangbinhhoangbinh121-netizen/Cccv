@@ -1,0 +1,1073 @@
+[
+ {
+  "no": 1,
+  "id": "hub_logo",
+  "group": "Chung",
+  "name": "Lều Hội Ngư Trường",
+  "meaning": "Chiếc lều hội có cờ — biểu tượng của cả module Ngư Trường.",
+  "use": "Tiêu đề màn hình chính /ngutruong",
+  "fb": "🎪"
+ },
+ {
+  "no": 2,
+  "id": "hub_points",
+  "group": "Chung",
+  "name": "Linh Điểm",
+  "meaning": "Viên tinh thể xanh — đơn vị điểm giải trí (không phải xu).",
+  "use": "Mọi chỗ hiện điểm thưởng",
+  "fb": "💠"
+ },
+ {
+  "no": 3,
+  "id": "hub_rank",
+  "group": "Chung",
+  "name": "Cấp Bậc",
+  "meaning": "Huy hiệu vương miện nhỏ — cấp bậc Ngư Trường.",
+  "use": "Hồ sơ giải trí, mở khoá hộp",
+  "fb": "🎖️"
+ },
+ {
+  "no": 4,
+  "id": "hub_mission",
+  "group": "Chung",
+  "name": "Nhiệm Vụ Giải Trí",
+  "meaning": "Cuộn giấy có dấu tích.",
+  "use": "Nút/Màn hình nhiệm vụ ngày",
+  "fb": "📜"
+ },
+ {
+  "no": 5,
+  "id": "hub_ach",
+  "group": "Chung",
+  "name": "Thành Tích",
+  "meaning": "Chiếc cúp vàng nhỏ.",
+  "use": "Nút/Màn hình thành tích",
+  "fb": "🏆"
+ },
+ {
+  "no": 6,
+  "id": "hub_board",
+  "group": "Chung",
+  "name": "Bảng Xếp Hạng",
+  "meaning": "Bục ba cột cao thấp.",
+  "use": "Nút/Màn hình bảng xếp hạng",
+  "fb": "📊"
+ },
+ {
+  "no": 7,
+  "id": "hub_stats",
+  "group": "Chung",
+  "name": "Thống Kê",
+  "meaning": "Biểu đồ cột có mũi tên đi lên.",
+  "use": "Nút/Màn hình thống kê cá nhân",
+  "fb": "📈"
+ },
+ {
+  "no": 8,
+  "id": "hub_help",
+  "group": "Chung",
+  "name": "Hướng Dẫn",
+  "meaning": "Dấu chấm hỏi trong khung sách.",
+  "use": "Nút hướng dẫn",
+  "fb": "❓"
+ },
+ {
+  "no": 9,
+  "id": "hub_cap",
+  "group": "Chung",
+  "name": "Trần Điểm Ngày",
+  "meaning": "Đồng hồ cát đang chảy.",
+  "use": "Thanh \"điểm hôm nay / trần ngày\"",
+  "fb": "⏳"
+ },
+ {
+  "no": 10,
+  "id": "hub_claim",
+  "group": "Chung",
+  "name": "Nhận Thưởng",
+  "meaning": "Hộp quà nhỏ có nơ.",
+  "use": "Nút nhận thưởng nhiệm vụ",
+  "fb": "🎁"
+ },
+ {
+  "no": 11,
+  "id": "rank_1",
+  "group": "Cấp bậc",
+  "name": "Cấp 1: Tập Sự",
+  "meaning": "Mầm non xanh — biểu tượng cấp Tập Sự.",
+  "use": "Cạnh tên cấp bậc",
+  "fb": "🌱"
+ },
+ {
+  "no": 12,
+  "id": "rank_2",
+  "group": "Cấp bậc",
+  "name": "Cấp 2: Ngư Khách",
+  "meaning": "Cá nhỏ bạc — biểu tượng cấp Ngư Khách.",
+  "use": "Cạnh tên cấp bậc",
+  "fb": "🐟"
+ },
+ {
+  "no": 13,
+  "id": "rank_3",
+  "group": "Cấp bậc",
+  "name": "Cấp 3: Ngư Sĩ",
+  "meaning": "Kiếm cá chéo — biểu tượng cấp Ngư Sĩ.",
+  "use": "Cạnh tên cấp bậc",
+  "fb": "⚔️"
+ },
+ {
+  "no": 14,
+  "id": "rank_4",
+  "group": "Cấp bậc",
+  "name": "Cấp 4: Ngư Tướng",
+  "meaning": "Khiên cá — biểu tượng cấp Ngư Tướng.",
+  "use": "Cạnh tên cấp bậc",
+  "fb": "🛡️"
+ },
+ {
+  "no": 15,
+  "id": "rank_5",
+  "group": "Cấp bậc",
+  "name": "Cấp 5: Ngư Vương",
+  "meaning": "Vương miện có cá — biểu tượng cấp Ngư Vương.",
+  "use": "Cạnh tên cấp bậc",
+  "fb": "👑"
+ },
+ {
+  "no": 16,
+  "id": "race_game",
+  "group": "Đoán Ngư Vương",
+  "name": "Đoán Ngư Vương",
+  "meaning": "Lá cờ caro và một chú cá đang lao đi.",
+  "use": "Nút vào trò Đoán Ngư Vương",
+  "fb": "🏁"
+ },
+ {
+  "no": 17,
+  "id": "race_start",
+  "group": "Đoán Ngư Vương",
+  "name": "Vạch Xuất Phát",
+  "meaning": "Cờ đỏ cắm trên vạch kẻ.",
+  "use": "Nút \"Xuất phát\"",
+  "fb": "🚩"
+ },
+ {
+  "no": 18,
+  "id": "race_finish",
+  "group": "Đoán Ngư Vương",
+  "name": "Vạch Đích",
+  "meaning": "Cổng đích với cờ caro.",
+  "use": "Dòng kết quả cuộc đua",
+  "fb": "🏁"
+ },
+ {
+  "no": 19,
+  "id": "race_pick",
+  "group": "Đoán Ngư Vương",
+  "name": "Chọn Cá",
+  "meaning": "Tâm ngắm nhỏ.",
+  "use": "Menu chọn cá thắng",
+  "fb": "🎯"
+ },
+ {
+  "no": 20,
+  "id": "race_speed",
+  "group": "Đoán Ngư Vương",
+  "name": "Tốc Độ",
+  "meaning": "Tia sét vàng.",
+  "use": "Chỉ số Tốc độ của cá",
+  "fb": "⚡"
+ },
+ {
+  "no": 21,
+  "id": "race_stamina",
+  "group": "Đoán Ngư Vương",
+  "name": "Thể Lực",
+  "meaning": "Trái tim có vòng bảo vệ.",
+  "use": "Chỉ số Thể lực (Bền) của cá",
+  "fb": "💪"
+ },
+ {
+  "no": 22,
+  "id": "race_luck",
+  "group": "Đoán Ngư Vương",
+  "name": "May Mắn",
+  "meaning": "Cỏ bốn lá.",
+  "use": "Chỉ số May mắn của cá",
+  "fb": "🍀"
+ },
+ {
+  "no": 23,
+  "id": "race_fav",
+  "group": "Đoán Ngư Vương",
+  "name": "Cá Cửa Trên",
+  "meaning": "Ngọn lửa nhỏ — cá được đánh giá cao nhất.",
+  "use": "Nhãn \"cửa trên\" trước giờ đua",
+  "fb": "🔥"
+ },
+ {
+  "no": 24,
+  "id": "medal_1",
+  "group": "Đoán Ngư Vương",
+  "name": "Huy Chương Vàng",
+  "meaning": "Huy chương vàng số 1.",
+  "use": "Hạng nhất",
+  "fb": "🥇"
+ },
+ {
+  "no": 25,
+  "id": "medal_2",
+  "group": "Đoán Ngư Vương",
+  "name": "Huy Chương Bạc",
+  "meaning": "Huy chương bạc số 2.",
+  "use": "Hạng nhì",
+  "fb": "🥈"
+ },
+ {
+  "no": 26,
+  "id": "medal_3",
+  "group": "Đoán Ngư Vương",
+  "name": "Huy Chương Đồng",
+  "meaning": "Huy chương đồng số 3.",
+  "use": "Hạng ba",
+  "fb": "🥉"
+ },
+ {
+  "no": 27,
+  "id": "trait_sprint",
+  "group": "Đoán Ngư Vương",
+  "name": "Đặc tính Nước Rút",
+  "meaning": "Mũi tên tăng tốc — Tăng tốc mạnh ở 2 vòng cuối.",
+  "use": "Thẻ đặc tính dưới tên cá",
+  "fb": "🚀"
+ },
+ {
+  "no": 28,
+  "id": "trait_endure",
+  "group": "Đoán Ngư Vương",
+  "name": "Đặc tính Bền Bỉ",
+  "meaning": "Khiên bền bỉ — Không bị hụt sức về cuối cuộc đua.",
+  "use": "Thẻ đặc tính dưới tên cá",
+  "fb": "🛡️"
+ },
+ {
+  "no": 29,
+  "id": "trait_burst",
+  "group": "Đoán Ngư Vương",
+  "name": "Đặc tính Khởi Đầu Nhanh",
+  "meaning": "Vụ nổ khởi động — Bứt tốc ở 2 vòng đầu nhưng dễ đuối.",
+  "use": "Thẻ đặc tính dưới tên cá",
+  "fb": "💥"
+ },
+ {
+  "no": 30,
+  "id": "trait_lucky",
+  "group": "Đoán Ngư Vương",
+  "name": "Đặc tính May Mắn",
+  "meaning": "Ngôi sao may mắn — Thỉnh thoảng gặp dòng nước thuận.",
+  "use": "Thẻ đặc tính dưới tên cá",
+  "fb": "🌟"
+ },
+ {
+  "no": 31,
+  "id": "trait_stealth",
+  "group": "Đoán Ngư Vương",
+  "name": "Đặc tính Ẩn Mình",
+  "meaning": "Đám sương ẩn mình — Ít biến động, phong độ ổn định.",
+  "use": "Thẻ đặc tính dưới tên cá",
+  "fb": "🌫️"
+ },
+ {
+  "no": 32,
+  "id": "trait_wild",
+  "group": "Đoán Ngư Vương",
+  "name": "Đặc tính Thất Thường",
+  "meaning": "Xoáy nước thất thường — Có thể bứt phá hoặc tụt lại bất ngờ.",
+  "use": "Thẻ đặc tính dưới tên cá",
+  "fb": "🌀"
+ },
+ {
+  "no": 33,
+  "id": "dice_game",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Tài Xỉu Linh Vận",
+  "meaning": "Ba viên xúc xắc xếp chồng.",
+  "use": "Nút vào trò Tài Xỉu",
+  "fb": "🎲"
+ },
+ {
+  "no": 34,
+  "id": "die_1",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xúc Xắc 1",
+  "meaning": "Mặt xúc xắc 1 chấm.",
+  "use": "Hiển thị kết quả 3 xúc xắc",
+  "fb": "⚀"
+ },
+ {
+  "no": 35,
+  "id": "die_2",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xúc Xắc 2",
+  "meaning": "Mặt xúc xắc 2 chấm.",
+  "use": "Hiển thị kết quả 3 xúc xắc",
+  "fb": "⚁"
+ },
+ {
+  "no": 36,
+  "id": "die_3",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xúc Xắc 3",
+  "meaning": "Mặt xúc xắc 3 chấm.",
+  "use": "Hiển thị kết quả 3 xúc xắc",
+  "fb": "⚂"
+ },
+ {
+  "no": 37,
+  "id": "die_4",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xúc Xắc 4",
+  "meaning": "Mặt xúc xắc 4 chấm.",
+  "use": "Hiển thị kết quả 3 xúc xắc",
+  "fb": "⚃"
+ },
+ {
+  "no": 38,
+  "id": "die_5",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xúc Xắc 5",
+  "meaning": "Mặt xúc xắc 5 chấm.",
+  "use": "Hiển thị kết quả 3 xúc xắc",
+  "fb": "⚄"
+ },
+ {
+  "no": 39,
+  "id": "die_6",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xúc Xắc 6",
+  "meaning": "Mặt xúc xắc 6 chấm.",
+  "use": "Hiển thị kết quả 3 xúc xắc",
+  "fb": "⚅"
+ },
+ {
+  "no": 40,
+  "id": "die_q",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xúc Xắc Đang Lăn",
+  "meaning": "Xúc xắc nghiêng có dấu \"?\" và vệt chuyển động.",
+  "use": "Khung hoạt ảnh khi đang lắc",
+  "fb": "❔"
+ },
+ {
+  "no": 41,
+  "id": "dice_tai",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Tài",
+  "meaning": "Mũi tên đỏ chỉ lên, số 11–18.",
+  "use": "Nút Tài",
+  "fb": "🔺"
+ },
+ {
+  "no": 42,
+  "id": "dice_xiu",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Xỉu",
+  "meaning": "Mũi tên xanh chỉ xuống, số 3–10.",
+  "use": "Nút Xỉu",
+  "fb": "🔻"
+ },
+ {
+  "no": 43,
+  "id": "dice_bao",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Bão",
+  "meaning": "Cơn lốc xoáy — ba xúc xắc giống nhau.",
+  "use": "Nút Bão / nhãn Bão",
+  "fb": "🌪️"
+ },
+ {
+  "no": 44,
+  "id": "dice_cup",
+  "group": "Tài Xỉu Linh Vận",
+  "name": "Chén Lắc",
+  "meaning": "Chiếc chén úp trên khay.",
+  "use": "Khung hoạt ảnh lắc xúc xắc",
+  "fb": "🥣"
+ },
+ {
+  "no": 45,
+  "id": "box_game",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Linh Bảo Bí Hộp",
+  "meaning": "Chiếc rương có ánh sáng bên trong.",
+  "use": "Nút vào trò Bí Hộp",
+  "fb": "🎁"
+ },
+ {
+  "no": 46,
+  "id": "box_1",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Gỗ",
+  "meaning": "Hộp Gỗ đang đóng (bậc 1/5).",
+  "use": "Nút chọn hộp, khung hộp đóng",
+  "fb": "📦"
+ },
+ {
+  "no": 47,
+  "id": "box_1_open",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Gỗ (mở)",
+  "meaning": "Hộp Gỗ đã bật nắp, hào quang bay lên.",
+  "use": "Khung mở hộp",
+  "fb": "🎉"
+ },
+ {
+  "no": 48,
+  "id": "box_2",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Đồng",
+  "meaning": "Hộp Đồng đang đóng (bậc 2/5).",
+  "use": "Nút chọn hộp, khung hộp đóng",
+  "fb": "📦"
+ },
+ {
+  "no": 49,
+  "id": "box_2_open",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Đồng (mở)",
+  "meaning": "Hộp Đồng đã bật nắp, hào quang bay lên.",
+  "use": "Khung mở hộp",
+  "fb": "🎉"
+ },
+ {
+  "no": 50,
+  "id": "box_3",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Bạc",
+  "meaning": "Hộp Bạc đang đóng (bậc 3/5).",
+  "use": "Nút chọn hộp, khung hộp đóng",
+  "fb": "📦"
+ },
+ {
+  "no": 51,
+  "id": "box_3_open",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Bạc (mở)",
+  "meaning": "Hộp Bạc đã bật nắp, hào quang bay lên.",
+  "use": "Khung mở hộp",
+  "fb": "🎉"
+ },
+ {
+  "no": 52,
+  "id": "box_4",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Vàng",
+  "meaning": "Hộp Vàng đang đóng (bậc 4/5).",
+  "use": "Nút chọn hộp, khung hộp đóng",
+  "fb": "📦"
+ },
+ {
+  "no": 53,
+  "id": "box_4_open",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Vàng (mở)",
+  "meaning": "Hộp Vàng đã bật nắp, hào quang bay lên.",
+  "use": "Khung mở hộp",
+  "fb": "🎉"
+ },
+ {
+  "no": 54,
+  "id": "box_5",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Thiên Tông",
+  "meaning": "Hộp Thiên Tông đang đóng (bậc 5/5).",
+  "use": "Nút chọn hộp, khung hộp đóng",
+  "fb": "📦"
+ },
+ {
+  "no": 55,
+  "id": "box_5_open",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Thiên Tông (mở)",
+  "meaning": "Hộp Thiên Tông đã bật nắp, hào quang bay lên.",
+  "use": "Khung mở hộp",
+  "fb": "🎉"
+ },
+ {
+  "no": 56,
+  "id": "box_crack",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Nứt Sáng",
+  "meaning": "Chiếc hộp rạn nứt, tia sáng toả ra.",
+  "use": "Khung giữa của hoạt ảnh mở hộp",
+  "fb": "💥"
+ },
+ {
+  "no": 57,
+  "id": "box_lock",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Hộp Khoá",
+  "meaning": "Ổ khoá sắt trên nắp hộp.",
+  "use": "Hộp chưa mở khoá cấp bậc",
+  "fb": "🔒"
+ },
+ {
+  "no": 58,
+  "id": "box_spark",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Tia Lấp Lánh",
+  "meaning": "Ngôi sao 4 cánh.",
+  "use": "Trang trí khi ra phẩm cao",
+  "fb": "✨"
+ },
+ {
+  "no": 59,
+  "id": "box_pity",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Bảo Hiểm May Mắn",
+  "meaning": "Chiếc khiên có ngôi sao — bộ đếm đảm bảo ra phẩm tốt.",
+  "use": "Dòng bảo hiểm của hộp",
+  "fb": "🛡️"
+ },
+ {
+  "no": 60,
+  "id": "grade_1",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Phẩm Thường",
+  "meaning": "Viên đá màu phẩm Thường (hạng 1/6).",
+  "use": "Nhãn phẩm của Linh Bảo",
+  "fb": "⚪"
+ },
+ {
+  "no": 61,
+  "id": "grade_2",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Phẩm Hiếm",
+  "meaning": "Viên đá màu phẩm Hiếm (hạng 2/6).",
+  "use": "Nhãn phẩm của Linh Bảo",
+  "fb": "🟢"
+ },
+ {
+  "no": 62,
+  "id": "grade_3",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Phẩm Quý Hiếm",
+  "meaning": "Viên đá màu phẩm Quý Hiếm (hạng 3/6).",
+  "use": "Nhãn phẩm của Linh Bảo",
+  "fb": "🔵"
+ },
+ {
+  "no": 63,
+  "id": "grade_4",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Phẩm Sử Thi",
+  "meaning": "Viên đá màu phẩm Sử Thi (hạng 4/6).",
+  "use": "Nhãn phẩm của Linh Bảo",
+  "fb": "🟣"
+ },
+ {
+  "no": 64,
+  "id": "grade_5",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Phẩm Huyền Thoại",
+  "meaning": "Viên đá màu phẩm Huyền Thoại (hạng 5/6).",
+  "use": "Nhãn phẩm của Linh Bảo",
+  "fb": "🟠"
+ },
+ {
+  "no": 65,
+  "id": "grade_6",
+  "group": "Linh Bảo Bí Hộp",
+  "name": "Phẩm Thần Thoại",
+  "meaning": "Viên đá màu phẩm Thần Thoại (hạng 6/6).",
+  "use": "Nhãn phẩm của Linh Bảo",
+  "fb": "🔴"
+ },
+ {
+  "no": 66,
+  "id": "i_vo_oc_lang",
+  "group": "Linh Bảo — Thường",
+  "name": "Vỏ Ốc Làng",
+  "meaning": "Vỏ sò màu phẩm Thường.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🐚"
+ },
+ {
+  "no": 67,
+  "id": "i_soi_song",
+  "group": "Linh Bảo — Thường",
+  "name": "Sỏi Sông Bóng",
+  "meaning": "Quả cầu màu phẩm Thường.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 68,
+  "id": "i_chai_thu_cu",
+  "group": "Linh Bảo — Thường",
+  "name": "Chai Thư Cũ",
+  "meaning": "Chiếc chai màu phẩm Thường.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🍶"
+ },
+ {
+  "no": 69,
+  "id": "i_long_co",
+  "group": "Linh Bảo — Thường",
+  "name": "Lông Cò Trắng",
+  "meaning": "Chiếc lông vũ màu phẩm Thường.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🪶"
+ },
+ {
+  "no": 70,
+  "id": "i_neo_gi",
+  "group": "Linh Bảo — Thường",
+  "name": "Neo Gỉ",
+  "meaning": "Chiếc neo màu phẩm Thường.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "⚓"
+ },
+ {
+  "no": 71,
+  "id": "i_so_anh_luc",
+  "group": "Linh Bảo — Hiếm",
+  "name": "Sò Ánh Lục",
+  "meaning": "Vỏ sò màu phẩm Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🐚"
+ },
+ {
+  "no": 72,
+  "id": "i_ngoc_trai_nho",
+  "group": "Linh Bảo — Hiếm",
+  "name": "Ngọc Trai Nhỏ",
+  "meaning": "Viên ngọc trai màu phẩm Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 73,
+  "id": "i_den_long_lang",
+  "group": "Linh Bảo — Hiếm",
+  "name": "Đèn Lồng Làng",
+  "meaning": "Chiếc đèn lồng màu phẩm Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🏮"
+ },
+ {
+  "no": 74,
+  "id": "i_thu_bo_ho",
+  "group": "Linh Bảo — Hiếm",
+  "name": "Thư Bờ Hồ",
+  "meaning": "Cuộn thư màu phẩm Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "📜"
+ },
+ {
+  "no": 75,
+  "id": "i_la_ban_go",
+  "group": "Linh Bảo — Hiếm",
+  "name": "La Bàn Gỗ",
+  "meaning": "Chiếc la bàn màu phẩm Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🧭"
+ },
+ {
+  "no": 76,
+  "id": "i_trai_lam",
+  "group": "Linh Bảo — Quý Hiếm",
+  "name": "Trai Lam",
+  "meaning": "Viên ngọc trai màu phẩm Quý Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 77,
+  "id": "i_binh_suong_bang",
+  "group": "Linh Bảo — Quý Hiếm",
+  "name": "Bình Sương Băng",
+  "meaning": "Chiếc chai màu phẩm Quý Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🍶"
+ },
+ {
+  "no": 78,
+  "id": "i_neo_bac",
+  "group": "Linh Bảo — Quý Hiếm",
+  "name": "Neo Bạc",
+  "meaning": "Chiếc neo màu phẩm Quý Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "⚓"
+ },
+ {
+  "no": 79,
+  "id": "i_long_phuong_lam",
+  "group": "Linh Bảo — Quý Hiếm",
+  "name": "Lông Phượng Lam",
+  "meaning": "Chiếc lông vũ màu phẩm Quý Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🪶"
+ },
+ {
+  "no": 80,
+  "id": "i_cau_thuy_tinh",
+  "group": "Linh Bảo — Quý Hiếm",
+  "name": "Cầu Thủy Tinh",
+  "meaning": "Quả cầu màu phẩm Quý Hiếm.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 81,
+  "id": "i_den_tim_vuc",
+  "group": "Linh Bảo — Sử Thi",
+  "name": "Đèn Tím Hải Vực",
+  "meaning": "Chiếc đèn lồng màu phẩm Sử Thi.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🏮"
+ },
+ {
+  "no": 82,
+  "id": "i_thien_thu_rung",
+  "group": "Linh Bảo — Sử Thi",
+  "name": "Thiên Thư Rừng Cổ",
+  "meaning": "Cuộn thư màu phẩm Sử Thi.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "📜"
+ },
+ {
+  "no": 83,
+  "id": "i_la_ban_tinh_tu",
+  "group": "Linh Bảo — Sử Thi",
+  "name": "La Bàn Tinh Tú",
+  "meaning": "Chiếc la bàn màu phẩm Sử Thi.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🧭"
+ },
+ {
+  "no": 84,
+  "id": "i_vuong_mien_san_ho",
+  "group": "Linh Bảo — Sử Thi",
+  "name": "Vương Miện San Hô",
+  "meaning": "Vương miện màu phẩm Sử Thi.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "👑"
+ },
+ {
+  "no": 85,
+  "id": "i_oc_tim_vuc",
+  "group": "Linh Bảo — Sử Thi",
+  "name": "Ốc Tím Vực Thẳm",
+  "meaning": "Vỏ sò màu phẩm Sử Thi.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🐚"
+ },
+ {
+  "no": 86,
+  "id": "i_long_chau",
+  "group": "Linh Bảo — Huyền Thoại",
+  "name": "Long Châu",
+  "meaning": "Viên ngọc trai màu phẩm Huyền Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 87,
+  "id": "i_neo_vang_long_hai",
+  "group": "Linh Bảo — Huyền Thoại",
+  "name": "Neo Vàng Long Hải",
+  "meaning": "Chiếc neo màu phẩm Huyền Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "⚓"
+ },
+ {
+  "no": 88,
+  "id": "i_vuong_mien_hai_than",
+  "group": "Linh Bảo — Huyền Thoại",
+  "name": "Vương Miện Hải Thần",
+  "meaning": "Vương miện màu phẩm Huyền Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "👑"
+ },
+ {
+  "no": 89,
+  "id": "i_linh_cau_cuc_quang",
+  "group": "Linh Bảo — Huyền Thoại",
+  "name": "Linh Cầu Cực Quang",
+  "meaning": "Quả cầu màu phẩm Huyền Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 90,
+  "id": "i_long_bang",
+  "group": "Linh Bảo — Huyền Thoại",
+  "name": "Lông Bằng",
+  "meaning": "Chiếc lông vũ màu phẩm Huyền Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🪶"
+ },
+ {
+  "no": 91,
+  "id": "i_thien_tong_vuong_mien",
+  "group": "Linh Bảo — Thần Thoại",
+  "name": "Thiên Tông Vương Miện",
+  "meaning": "Vương miện màu phẩm Thần Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "👑"
+ },
+ {
+  "no": 92,
+  "id": "i_thien_chau_bat_diet",
+  "group": "Linh Bảo — Thần Thoại",
+  "name": "Thiên Châu Bất Diệt",
+  "meaning": "Viên ngọc trai màu phẩm Thần Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 93,
+  "id": "i_la_ban_van_gioi",
+  "group": "Linh Bảo — Thần Thoại",
+  "name": "La Bàn Vạn Giới",
+  "meaning": "Chiếc la bàn màu phẩm Thần Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🧭"
+ },
+ {
+  "no": 94,
+  "id": "i_den_thien_ha",
+  "group": "Linh Bảo — Thần Thoại",
+  "name": "Đèn Thiên Hà",
+  "meaning": "Chiếc đèn lồng màu phẩm Thần Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🏮"
+ },
+ {
+  "no": 95,
+  "id": "i_hon_nguyen_cau",
+  "group": "Linh Bảo — Thần Thoại",
+  "name": "Hỗn Nguyên Cầu",
+  "meaning": "Quả cầu màu phẩm Thần Thoại.",
+  "use": "Phần thưởng của Bí Hộp & Bộ sưu tập",
+  "fb": "🔮"
+ },
+ {
+  "no": 96,
+  "id": "quiz_game",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Truy Tìm Linh Ngư",
+  "meaning": "Cá nhỏ đeo kính lúp.",
+  "use": "Nút vào trò đố",
+  "fb": "🧠"
+ },
+ {
+  "no": 97,
+  "id": "quiz_q",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Câu Hỏi",
+  "meaning": "Dấu hỏi lớn trong khung tròn.",
+  "use": "Tiêu đề từng câu đố",
+  "fb": "❓"
+ },
+ {
+  "no": 98,
+  "id": "quiz_time",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Đồng Hồ",
+  "meaning": "Đồng hồ bấm giờ.",
+  "use": "Hạn trả lời mỗi câu",
+  "fb": "⏱️"
+ },
+ {
+  "no": 99,
+  "id": "quiz_ok",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Trả Lời Đúng",
+  "meaning": "Dấu tích xanh lá.",
+  "use": "Kết quả câu đúng",
+  "fb": "✅"
+ },
+ {
+  "no": 100,
+  "id": "quiz_no",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Trả Lời Sai",
+  "meaning": "Dấu X đỏ.",
+  "use": "Kết quả câu sai / hết giờ",
+  "fb": "❌"
+ },
+ {
+  "no": 101,
+  "id": "quiz_streak",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Chuỗi Đúng",
+  "meaning": "Ngọn lửa xanh-cam.",
+  "use": "Thưởng chuỗi đúng liên tiếp",
+  "fb": "🔥"
+ },
+ {
+  "no": 102,
+  "id": "quiz_speed",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Thưởng Tốc Độ",
+  "meaning": "Chiếc giày có cánh.",
+  "use": "Thưởng trả lời nhanh",
+  "fb": "💨"
+ },
+ {
+  "no": 103,
+  "id": "quiz_lv1",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Độ Khó 1",
+  "meaning": "Một ngôi sao — dễ.",
+  "use": "Nhãn độ khó câu đố",
+  "fb": "⭐"
+ },
+ {
+  "no": 104,
+  "id": "quiz_lv2",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Độ Khó 2",
+  "meaning": "Hai ngôi sao — vừa.",
+  "use": "Nhãn độ khó câu đố",
+  "fb": "⭐⭐"
+ },
+ {
+  "no": 105,
+  "id": "quiz_lv3",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Độ Khó 3",
+  "meaning": "Ba ngôi sao — khó.",
+  "use": "Nhãn độ khó câu đố",
+  "fb": "⭐⭐⭐"
+ },
+ {
+  "no": 106,
+  "id": "quiz_a",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Đáp Án A",
+  "meaning": "Chữ A trong khung ô vuông (đáp án 1).",
+  "use": "Nút đáp án",
+  "fb": "🇦"
+ },
+ {
+  "no": 107,
+  "id": "quiz_b",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Đáp Án B",
+  "meaning": "Chữ B trong khung ô vuông (đáp án 2).",
+  "use": "Nút đáp án",
+  "fb": "🇧"
+ },
+ {
+  "no": 108,
+  "id": "quiz_c",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Đáp Án C",
+  "meaning": "Chữ C trong khung ô vuông (đáp án 3).",
+  "use": "Nút đáp án",
+  "fb": "🇨"
+ },
+ {
+  "no": 109,
+  "id": "quiz_d",
+  "group": "Truy Tìm Linh Ngư",
+  "name": "Đáp Án D",
+  "meaning": "Chữ D trong khung ô vuông (đáp án 4).",
+  "use": "Nút đáp án",
+  "fb": "🇩"
+ },
+ {
+  "no": 110,
+  "id": "ui_back",
+  "group": "Giao diện",
+  "name": "Quay Lại",
+  "meaning": "Mũi tên trái.",
+  "use": "Nút quay lại",
+  "fb": "◀️"
+ },
+ {
+  "no": 111,
+  "id": "ui_next",
+  "group": "Giao diện",
+  "name": "Tiếp Theo",
+  "meaning": "Mũi tên phải.",
+  "use": "Nút tiếp",
+  "fb": "▶️"
+ },
+ {
+  "no": 112,
+  "id": "ui_refresh",
+  "group": "Giao diện",
+  "name": "Làm Mới",
+  "meaning": "Hai mũi tên xoay vòng.",
+  "use": "Nút làm mới",
+  "fb": "🔄"
+ },
+ {
+  "no": 113,
+  "id": "ui_ok",
+  "group": "Giao diện",
+  "name": "Hoàn Thành",
+  "meaning": "Dấu tích trắng trên nền xanh.",
+  "use": "Nhiệm vụ đã nhận",
+  "fb": "✅"
+ },
+ {
+  "no": 114,
+  "id": "ui_no",
+  "group": "Giao diện",
+  "name": "Không Được",
+  "meaning": "Biển cấm tròn đỏ.",
+  "use": "Bị khoá / hết lượt",
+  "fb": "⛔"
+ },
+ {
+  "no": 115,
+  "id": "ui_lock",
+  "group": "Giao diện",
+  "name": "Khoá",
+  "meaning": "Ổ khoá xám.",
+  "use": "Thành tích chưa mở",
+  "fb": "🔒"
+ },
+ {
+  "no": 116,
+  "id": "ui_new",
+  "group": "Giao diện",
+  "name": "Mới",
+  "meaning": "Nhãn NEW vàng.",
+  "use": "Linh Bảo mới nhận",
+  "fb": "🆕"
+ },
+ {
+  "no": 117,
+  "id": "ui_dup",
+  "group": "Giao diện",
+  "name": "Trùng",
+  "meaning": "Hai mũi tên tái chế.",
+  "use": "Linh Bảo trùng (quy đổi điểm)",
+  "fb": "♻️"
+ },
+ {
+  "no": 118,
+  "id": "ui_up",
+  "group": "Giao diện",
+  "name": "Lên Cấp",
+  "meaning": "Mũi tên xanh chỉ lên.",
+  "use": "Thông báo lên cấp",
+  "fb": "⬆️"
+ },
+ {
+  "no": 119,
+  "id": "ui_star",
+  "group": "Giao diện",
+  "name": "Ngôi Sao",
+  "meaning": "Ngôi sao vàng 5 cánh.",
+  "use": "Điểm nhấn thưởng",
+  "fb": "⭐"
+ }
+]

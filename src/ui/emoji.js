@@ -12,7 +12,7 @@ const settings = require('../database/repositories/settings');
 const logger = require('../utils/logger');
 const { D, ensureLoaded } = require('../services/gameData');
 
-const FALLBACK = { fish: '🐟', rods: '🎣', baits: '🪱', pets: '🐾', items: '🎒', locations: '🏞️', effects: '✨', ui: '🔹' };
+const FALLBACK = { fish: '🐟', rods: '🎣', baits: '🪱', pets: '🐾', items: '🎒', locations: '🏞️', effects: '✨', ui: '🔹', arcade: '🎮' };
 const UI_FALLBACK = { coin: '🪙', exp: '⭐', durability: '🔧', fish: '🐟', rod: '🎣', backpack: '🎒', boss: '👹', market: '🏪', mission: '📜', achievement: '🏆', pet: '🐾', location: '📍', title: '🎖️', stat_luck: '🍀', stat_power: '💪', stat_speed: '⚡', stat_detect: '🔍', stat_resist: '🛡️', stat_durability: '🔧', time_dawn: '🌅', time_day: '☀️', time_dusk: '🌇', time_night: '🌙', weather_nang: '☀️', weather_mua: '🌧️', weather_bao: '⛈️', weather_suong_mu: '🌫️', weather_tuyet: '❄️', weather_cuc_quang: '🌌' };
 
 let reverse = null; // "dir/id.png" → khoá emoji
@@ -25,17 +25,23 @@ const reset = () => { reverse = null; ids = null; };
 const relFile = (kind, id) => `${kind}/${id}.png`;
 const hasFile = (kind, id) => fs.existsSync(path.join(config.assetsDir, relFile(kind, id)));
 const key = (kind, id) => { if (!reverse) build(); return reverse.get(relFile(kind, id)) || null; };
+/** Emoji Unicode dự phòng (arcade có bảng riêng theo từng id trong data/arcade-emoji.json). */
+function plain(kind, id) {
+  if (kind === 'ui') return UI_FALLBACK[id] || FALLBACK.ui;
+  if (kind === 'arcade') { ensureLoaded(); return D.arcadeEmoji.get(id) || FALLBACK.arcade; }
+  return FALLBACK[kind] || '▫️';
+}
 /** Emoji dạng văn bản: <:khoá:id> nếu đã tải lên, ngược lại Unicode dự phòng. */
 function e(kind, id) {
   if (!ids) loadIds(); const k = key(kind, id);
   if (k && ids[k]) return `<:${k}:${ids[k]}>`;
-  return kind === 'ui' ? UI_FALLBACK[id] || FALLBACK.ui : FALLBACK[kind] || '▫️';
+  return plain(kind, id);
 }
 /** Phần "emoji" cho nút/menu (object {id,name} hoặc chuỗi Unicode). */
 function btn(kind, id) {
   if (!ids) loadIds(); const k = key(kind, id);
   if (k && ids[k]) return { id: ids[k], name: k };
-  return kind === 'ui' ? UI_FALLBACK[id] || FALLBACK.ui : FALLBACK[kind];
+  return plain(kind, id);
 }
 /** Tệp đính kèm cho ảnh pixel art. Trả {file, url, name} hoặc null nếu thiếu ảnh. */
 function attach(kind, id, nameHint) {

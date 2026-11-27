@@ -26,14 +26,17 @@ const rarity = require('../systems/rarity');
 const progression = require('../systems/progression');
 const { getDb } = require('../database/connection');
 const { GameError } = require('../utils/errors');
+const logger = require('../utils/logger');
 const { now } = require('../utils/time');
 const { rand, randInt, chance, token } = require('../utils/rng');
 const ctx = require('./context');
 
-const SESSION_CAP_MS = 6 * 60000; const GRACE_MS = 1500; const CAST_COOLDOWN_MS = 2500;
+const SESSION_CAP_MS = 6 * 60000; const GRACE_MS = 3000; const CAST_COOLDOWN_MS = 2500; // GRACE_MS: bù độ trễ mạng/điện thoại
 const DEEP_ORDER = 5;
 const weatherOverride = (loc) => { const raw = settings.getRaw(`weather:${loc}`); if (!raw) return null; try { return JSON.parse(raw); } catch { return null; } };
-const currentWeather = (loc, t = now()) => weather.weatherAt(loc, t, weatherOverride(loc));
+const currentWeather = (loc, t = now()) => { const w = weather.weatherAt(loc, t, weatherOverride(loc)); return weather.WEATHER[w] ? w : weather.weatherAt(loc, t, null); }; // ghi đè thời tiết sai tên → dùng thời tiết tự nhiên
+/** Chạy một bước phụ (thưởng thêm, nhiệm vụ…) trong savepoint: lỗi chỉ bị ghi log, không làm hỏng cả phiên câu của người chơi. */
+function soft(label, fn, dflt = null) { try { return getDb().tx(fn); } catch (e) { logger.error(`[câu cá] bước phụ "${label}" lỗi: ${e.stack || e.message}`); return dflt; } }
 
 /** Dựng toàn bộ thông tin trang bị + hệ số của người chơi (bait tuỳ chọn ghi đè ô mồi). */
 function loadout(userId, { location, baitId, t = now() } = {}) {
@@ -63,9 +66,12 @@ function checkLocationAccess(userId, locId) {
 function startCast(userId, { location, baitId, channelId = null, messageId = null } = {}) {
   userSvc.assertCanPlay(userId);
   return getDb().tx(() => {
-    const t = now(); if (sessRepo.active(userId)) throw new GameError('Bạn đang có một phiên câu cá chưa kết thúc!', 'BUSY');
+    const t = now(); const act = sessRepo.active(userId);
+    if (act) { const cur = advance(act.id, t); if (cur && ['waiting', 'bite', 'reeling'].includes(cur.state)) throw new GameError('Bạn đang có một phiên câu cá chưa kết thúc! Gõ `/cauca` (hoặc `.cauca`) để mở lại phiên đó.', 'BUSY'); }
     const cd = settings.cooldownLeft(userId, 'cast', t); if (cd) throw new GameError(`Cần nghỉ tay một chút… (${Math.ceil(cd / 1000)}s)`, 'COOLDOWN');
-    const user = users.get(userId); const locId = location || user.location; const loc = checkLocationAccess(userId, locId);
+    const user = users.get(userId); let locId = location || user.location;
+    if (!location) { const open = users.unlockedLocations(userId); if (!open.includes(locId)) locId = open[0] || 'ao_lang'; } // đang đứng ở khu chưa mở (dữ liệu cũ) → về khu đã mở
+    const loc = checkLocationAccess(userId, locId);
     let L = loadout(userId, { location: locId, baitId, t });
     if (!L.rod) throw new GameError('Bạn chưa trang bị cần câu! Dùng `/cancau trang-bi`.');
     if (L.rod.inst.durability <= 0) throw new GameError('Cần câu đã hỏng hết độ bền! Dùng `/cancau sua` hoặc **Phù Sửa Cần**.', 'BROKEN');
@@ -143,16 +149,32 @@ function cancel(userId, sessionId) {
 function finish(s, outcome, reason = '') {
   return getDb().tx(() => {
     const fresh = sessRepo.get(s.id); if (!['waiting', 'bite', 'reeling'].includes(fresh.state)) return fresh; // đã kết thúc (chống xử lý hai lần)
-    const t = now(); const d = fresh.data; const fish = D.fishes.get(d.fishId);
+    const t = now(); const d = fresh.data;
     if (fresh.kind === 'boss') return require('./bossService').finishAttack(fresh, outcome, reason);
+    const fish = D.fishes.get(d.fishId);
+    if (!fish) { // loài cá đã bị xoá khỏi dữ liệu giữa chừng → đóng phiên, hoàn mồi, không để người chơi kẹt
+      if (fresh.bait_id) invRepo.add(fresh.user_id, fresh.bait_id, 1);
+      const res = { outcome: 'cancel', reason: 'Loài cá này không còn trong dữ liệu nên phiên đã được đóng. Mồi đã được hoàn lại.' };
+      sessRepo.update(fresh.id, { state: 'cancelled', ended_at: t, nonce: token(6), result: JSON.stringify(res) });
+      const o = sessRepo.get(fresh.id); o.result = res; ctx.emit('sessionEnded', o); return o;
+    }
     const result = { outcome, reason };
-    if (outcome === 'success') Object.assign(result, award(fresh, fish));
-    else {
-      users.bumpStats(fresh.user_id, outcome === 'fail' ? { fail_count: 1 } : outcome === 'cancel' ? {} : { escaped_count: 1 });
-      if (outcome !== 'cancel') fishRepo.addHistory({ user_id: fresh.user_id, session_id: fresh.id, fish_id: fish.id, location: fresh.location, rarity: fish.rarity, result: outcome });
+    let oc = outcome;
+    if (outcome === 'success') {
+      try { Object.assign(result, getDb().tx(() => award(fresh, fish))); }
+      catch (e) {
+        logger.error(`[câu cá] trao thưởng phiên #${fresh.id} (user ${fresh.user_id}) lỗi: ${e.stack || e.message}`);
+        try { Object.assign(result, getDb().tx(() => awardMinimal(fresh, fish))); }
+        catch (e2) { logger.error(`[câu cá] trao thưởng tối thiểu cũng lỗi: ${e2.stack || e2.message}`); oc = 'escaped'; result.outcome = 'escaped'; result.reason = `Lỗi hệ thống khi trao thưởng nên phiên đã được đóng (mã #${fresh.id}). Hãy báo quản trị viên.`; }
+      }
+    }
+    if (oc !== 'success') {
+      soft('thống kê', () => { users.bumpStats(fresh.user_id, oc === 'fail' ? { fail_count: 1 } : oc === 'cancel' ? {} : { escaped_count: 1 });
+        if (oc !== 'cancel') fishRepo.addHistory({ user_id: fresh.user_id, session_id: fresh.id, fish_id: fish.id, location: fresh.location, rarity: fish.rarity, result: oc }); });
       result.lost = { fishId: fish.id, rarity: fish.rarity, revealed: d.revealed };
     }
-    sessRepo.update(fresh.id, { state: outcome === 'cancel' ? 'cancelled' : outcome, ended_at: t, nonce: token(6), result: JSON.stringify(result) });
+    sessRepo.update(fresh.id, { state: oc === 'cancel' ? 'cancelled' : oc, ended_at: t, nonce: token(6), result: JSON.stringify(result) });
+    if (settings.cooldownLeft(fresh.user_id, 'cast', t) > 1000) settings.setCooldown(fresh.user_id, 'cast', 1000, t); // kết thúc sớm (thu cần…) thì không bắt chờ hết thời gian chờ cũ
     const out = sessRepo.get(fresh.id); out.result = result; ctx.emit('sessionEnded', out); return out;
   });
 }
@@ -162,7 +184,7 @@ function award(s, fish) {
   const fid = fishRepo.create(userId, { fish_id: fish.id, weight: d.weight, variant: d.variant, rarity: fish.rarity, base_value: d.baseValue, location: s.location });
   const cdx = fishRepo.codexUpsert(userId, fish.id, d.weight, d.variant);
   const exp = Math.max(1, Math.round(d.exp * d.mods.expMult));
-  const lv = userSvc.addExp(userId, exp);
+  const lv = soft('exp', () => userSvc.addExp(userId, exp), { up: false });
   const st = users.stats(userId);
   users.bumpStats(userId, { total_catch: 1, total_weight: d.weight, rare_catch: fish.rarity >= 3 ? 1 : 0, legend_catch: fish.rarity >= 5 ? 1 : 0, ancient_catch: fish.rarity >= 7 ? 1 : 0, unique_catch: fish.rarity >= 9 ? 1 : 0, deep_catch: loc && loc.order >= DEEP_ORDER ? 1 : 0 });
   if (d.weight > st.best_weight) getDb().run('UPDATE user_stats SET best_weight=?, best_fish=? WHERE user_id=?', d.weight, fish.id, userId);
@@ -171,14 +193,21 @@ function award(s, fish) {
   for (const r of loc?.resources || []) if (chance(Math.min(0.5, r.chance * (1 + d.mods.rareBonus / 200)))) drops[r.item] = (drops[r.item] || 0) + 1;
   const chestId = ['ruong_go', 'ruong_go', 'ruong_bac', 'ruong_bac', 'ruong_vang', 'ruong_vang', 'ruong_kim_cuong', 'ruong_kim_cuong'][(loc?.order || 1) - 1];
   if (chance(0.012 * (1 + d.mods.rareBonus / 200))) drops[chestId] = (drops[chestId] || 0) + 1;
-  invSvc.grant(userId, drops, { force: true });
+  soft('rơi đồ', () => invSvc.grant(userId, drops, { force: true }));
   // thú cưng nhận EXP
-  const eq = users.equipment(userId); let petUp = null; if (eq.pet_id) petUp = require('./petService').gainExp(userId, eq.pet_id, Math.round(10 + exp * 0.12), 1);
+  const eq = users.equipment(userId); let petUp = null; if (eq.pet_id) petUp = soft('exp thú cưng', () => require('./petService').gainExp(userId, eq.pet_id, Math.round(10 + exp * 0.12), 1));
   fishRepo.addHistory({ user_id: userId, session_id: s.id, fish_id: fish.id, fish_instance_id: fid, location: s.location, weight: d.weight, rarity: fish.rarity, variant: d.variant, result: 'success', exp, value: d.baseValue });
-  progressSvc.track(userId, 'catch', { rarity: fish.rarity, category: fish.category, location: s.location, weight: d.weight, count: 1 });
-  eventSvc.score(userId, { weight: d.weight });
-  const newAch = progressSvc.checkAchievements(userId);
+  soft('nhiệm vụ', () => progressSvc.track(userId, 'catch', { rarity: fish.rarity, category: fish.category, location: s.location, weight: d.weight, count: 1 }));
+  soft('điểm sự kiện', () => eventSvc.score(userId, { weight: d.weight }));
+  const newAch = soft('thành tựu', () => progressSvc.checkAchievements(userId), []);
   return { fishInstanceId: fid, fishId: fish.id, weight: d.weight, variant: d.variant, rarity: fish.rarity, baseValue: d.baseValue, exp, level: lv, drops, codex: cdx, petUp, newAch, record: d.weight > st.best_weight, skill: d.skill };
+}
+
+/** Phương án dự phòng khi award() lỗi: vẫn giao con cá + ít EXP để người chơi không mất công sức. */
+function awardMinimal(s, fish) {
+  const d = s.data; const fid = fishRepo.create(s.user_id, { fish_id: fish.id, weight: d.weight, variant: d.variant, rarity: fish.rarity, base_value: d.baseValue, location: s.location });
+  const exp = Math.max(1, Math.round(d.exp || 1)); const lv = soft('exp', () => userSvc.addExp(s.user_id, exp), { up: false });
+  return { fishInstanceId: fid, fishId: fish.id, weight: d.weight, variant: d.variant, rarity: fish.rarity, baseValue: d.baseValue, exp, level: lv, drops: {}, codex: null, petUp: null, newAch: [], record: false, skill: null };
 }
 
 /** Khôi phục sau khi bot khởi động lại: phiên dang dở bị huỷ, hoàn lại mồi. */

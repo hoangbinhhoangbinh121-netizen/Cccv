@@ -22,7 +22,7 @@ const { F } = K;
 
 let commands = new Map();
 const setCommands = (m) => { commands = m; };
-const SESSION_ACTIONS = new Set(['hook', 'pull', 'hold', 'release', 'cancel']);
+const SESSION_ACTIONS = new Set(['hook', 'pull', 'hold', 'release', 'cancel', 'refresh']);
 
 async function safeReply(i, payload) {
   try { if (i.deferred || i.replied) return await i.followUp({ ...payload, flags: K.EPHEMERAL }); return await i.reply({ ...payload, flags: K.EPHEMERAL }); } catch (e) { logger.warn(`Không gửi được phản hồi: ${e.message}`); return null; }
@@ -48,7 +48,9 @@ async function present(i, view, c, out, args) {
     return i.update(H.finalize(K.msg({ embeds: [e], components: K.rows([K.button({ id: K.cid('v', c.uid, ...k.yes), label: 'Xác nhận', style: 'danger', emoji: '✅' }), K.button({ id: K.cid('v', c.uid, ...k.no), label: 'Huỷ', style: 'secondary' })]) })));
   }
   const nextArgs = out.args !== undefined ? out.args : args;
-  const payload = await view.render(c, nextArgs); return i.update(H.finalize(payload, out.notice));
+  const payload = await view.render(c, nextArgs); const r = await i.update(H.finalize(payload, out.notice));
+  if (view.afterShow) { try { view.afterShow(c, nextArgs, (p) => i.editReply(p)); } catch (e) { logger.debug(`afterShow lỗi: ${e.message}`); } } // hoạt ảnh tự cập nhật (Ngư Trường)
+  return r;
 }
 async function onView(i, parts) {
   const [uid, name, act = 'show', ...rest] = parts;
@@ -72,9 +74,16 @@ async function onSession(i, parts) {
   if (!s0 || s0.user_id !== i.user.id) throw new GameError('Đây không phải phiên câu của bạn.', 'OWNER');
   if (!SESSION_ACTIONS.has(action)) throw new GameError('Thao tác không hợp lệ.');
   let s;
-  if (action === 'cancel') s = fishing.cancel(i.user.id, +sid);
-  else if (s0.kind === 'boss' && action !== 'cancel') s = (action === 'hook') ? s0 : fishing.reel(i.user.id, +sid, nonce, action);
-  else if (action === 'hook') s = fishing.hook(i.user.id, +sid, nonce); else s = fishing.reel(i.user.id, +sid, nonce, action);
+  try {
+    if (action === 'cancel') s = fishing.cancel(i.user.id, +sid);
+    else if (action === 'refresh') s = fishing.advance(+sid);
+    else if (s0.kind === 'boss' && action !== 'cancel') s = (action === 'hook') ? s0 : fishing.reel(i.user.id, +sid, nonce, action);
+    else if (action === 'hook') s = fishing.hook(i.user.id, +sid, nonce); else s = fishing.reel(i.user.id, +sid, nonce, action);
+  } catch (e) {
+    // Nút cũ (tin nhắn chưa kịp làm mới, mở nhiều tin nhắn câu…): không báo lỗi mà tự làm mới giao diện theo trạng thái thật của phiên.
+    if (e instanceof GameError && e.code === 'STALE') s = fishing.advance(+sid); else throw e;
+  }
+  if (!s) throw new GameError('Phiên câu không tồn tại.');
   await i.update(H.finalize(fishingUI.render(s))); fishingUI.track(s, (p) => i.editReply(H.finalize(p)));
 }
 async function onQuick(i, parts) {
@@ -84,6 +93,13 @@ async function onQuick(i, parts) {
   if (action === 'sell') { const r = shopSvc.sellFish(uid, { ids: [+arg] }); return safeReply(i, { content: `💰 Đã bán cá được **${F.xu(r.total)}**.` }); }
   if (action === 'lock') { const f = fishRepo.owned(uid, +arg); if (!f) throw new GameError('Không tìm thấy con cá (có thể đã bán).'); const v = f.locked ? 0 : 1; fishRepo.setLocked(uid, f.id, v); return safeReply(i, { content: v ? '🔒 Đã khoá cá này.' : '🔓 Đã mở khoá cá.' }); }
   throw new GameError('Nút đã cũ.', 'STALE');
+}
+/** Chạy một lệnh đã xác định sẵn (dùng cho lệnh tiền tố `.`): cùng giới hạn tốc độ + khoá theo người chơi như slash command. */
+async function runCommand(i, cmd) {
+  try {
+    gate(i);
+    return await withLock(`u:${i.user.id}`, async () => { if (!cmd.skipEnsure) H.ensureUser(i); return cmd.execute(i); });
+  } catch (e) { return fail(i, e); }
 }
 /* ---- cổng vào ---- */
 async function handle(i) {
@@ -103,4 +119,4 @@ async function handle(i) {
     });
   } catch (e) { return fail(i, e); }
 }
-module.exports = { handle, setCommands, onView, fail };
+module.exports = { handle, runCommand, setCommands, onView, fail };
